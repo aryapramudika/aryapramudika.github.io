@@ -29,17 +29,19 @@ Untuk persyaratan installasi yaitu:
 
 Untuk membuat bootable saya menggunakan software balenaEtcher bisa di download di https://www.balena.io/etcher/
 
-![balenaetcher](/img/p1-0bootable.png)
-
 Pertama buka balenaEtcher lalu pilih **Flash from file**
 
-![balenaetcher](/img/p1-1bootable.png)
+![balenaetcher](/img/p1-0bootable.png)
 
 Kedua pilih file iso debian
 
-![balenaEtcher](/img/p1-2bootable.png)
+![balenaetcher](/img/p1-1bootable.png)
 
 Ketiga klik **Select Target**
+
+![balenaEtcher](/img/p1-2bootable.png)
+
+Ke-empat pilih flashdisk yang dijadikan bootable
 
 ![balenaEtcher](/img/p1-3bootable.png)
 
