@@ -29,3 +29,5 @@ Untuk persyaratan installasi yaitu:
 
 Untuk membuat bootable saya menggunakan software balenaEtcher bisa di download di https://www.balena.io/etcher/
 
+![balenaetcher](/static/p1-0bootable.png)
+
