@@ -29,11 +29,11 @@ Untuk persyaratan installasi yaitu:
 
 Untuk membuat bootable saya menggunakan software balenaEtcher bisa di download di https://www.balena.io/etcher/
 
-Pertama buka balenaEtcher lalu pilih **Flash from file**
+Pertama buka balenaEtcher lalu klik **Flash from file**
 
 ![balenaetcher](/img/p1-0bootable.png)
 
-Kedua pilih file iso debian
+Kedua pilih file iso **Debian 10**
 
 ![balenaetcher](/img/p1-1bootable.png)
 
