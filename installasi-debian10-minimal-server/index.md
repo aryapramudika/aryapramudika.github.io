@@ -23,5 +23,7 @@ Untuk persyaratan installasi yaitu:
 
 5. Penyimpanan 2GB
 
-## Installasi di PC/Laptop
+## Installasi 1 (Installasi Pada PC/Laptop)
+
+### Membuat bootable pada flashdisk
 
