@@ -51,3 +51,9 @@ Terakhir klik **Flash**, lalu tunggu sampai selesai
 
 ![balenaEtcher](/img/p1-5bootable.png)
 
+Pembuatan bootable berhasil
+
+![balenaEtcher](/img/p1-6bootable.png)
+
+### Installasi
+
