@@ -23,9 +23,9 @@ Untuk persyaratan installasi yaitu:
 
 5. Penyimpanan 2GB
 
-## Installasi 1 (Installasi Pada PC/Laptop)
+## Membuat bootable pada flashdisk
 
-### Membuat bootable pada flashdisk
+Untuk installasi pada laptop/PC yang harus dilakukan pertama kali adalah membuat bootable di flashdisk.
 
 Untuk membuat bootable saya menggunakan software balenaEtcher bisa di download di https://www.balena.io/etcher/
 
@@ -55,5 +55,6 @@ Pembuatan bootable berhasil
 
 ![balenaEtcher](/img/p1-6bootable.png)
 
-### Installasi
+
+## Installasi
 
