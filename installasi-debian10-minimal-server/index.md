@@ -31,3 +31,9 @@ Untuk membuat bootable saya menggunakan software balenaEtcher bisa di download d
 
 ![balenaetcher](/img/p1-0bootable.png)
 
+Pertama buka balenaEtcher lalu pilih **Flash from file**
+
+![balenaetcher](/img/p1-1bootable.png)
+
+Kedua pilih file iso debian
+
