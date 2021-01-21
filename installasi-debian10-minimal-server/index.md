@@ -37,3 +37,15 @@ Pertama buka balenaEtcher lalu pilih **Flash from file**
 
 Kedua pilih file iso debian
 
+![balenaEtcher](/img/p1-2bootable.png)
+
+Ketiga klik **Select Target**
+
+![balenaEtcher](/img/p1-3bootable.png)
+
+Terakhir klik **Flash**, lalu tunggu sampai selesai
+
+![balenaEtcher](/img/p1-4bootable.png)
+
+![balenaEtcher](/img/p1-5bootable.png)
+
