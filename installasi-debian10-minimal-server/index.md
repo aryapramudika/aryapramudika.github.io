@@ -1,4 +1,4 @@
-# Installasi Debian10 Minimal Server
+# Installasi Debian 10 Minimal Server
 
 
 ## Latar Belakang Masalah
