@@ -27,3 +27,5 @@ Untuk persyaratan installasi yaitu:
 
 ### Membuat bootable pada flashdisk
 
+Untuk membuat bootable saya menggunakan software balenaEtcher bisa di download di https://www.balena.io/etcher/
+
