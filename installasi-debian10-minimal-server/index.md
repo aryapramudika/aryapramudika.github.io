@@ -126,7 +126,7 @@ Isi sesuai keinginan
 
 Isi password sesuai keinginan
 
-![installasi11](/img/p11-installasi.png)
+![installasi11](/img/p1-11installasi.png)
 
 Masukkan password ulang
 
