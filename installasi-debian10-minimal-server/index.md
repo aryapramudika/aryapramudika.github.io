@@ -130,7 +130,7 @@ Isi password sesuai keinginan
 
 Masukkan password ulang
 
-![installasi12](/p1-12installasi.png)
+![installasi12](/img/p1-12installasi.png)
 
 ### 11.Konfigurasi Waktu
 
