@@ -68,97 +68,97 @@ Langsung saja..
 
 Disini saya menggunakan mode Install CLI, kalian bisa memilih menggunakan GUI kalau dirasa menggunakan CLI kurang nyaman.
 
-[installasi](/img/p1-01installasi.png)
+![installasi](/img/p1-01installasi.png)
 
 ### 2. Pilih Bahasa
 
 Disini saya memilih bahasa **English**
 
-[installasi2](/img/p1-02installasi.png)
+![installasi2](/img/p1-02installasi.png)
 
 ### 3. Pilih Country/Negara
 
 Karena country Indonesia tidak ada di pilihan maka kita pilih **Other**
 
-[installasi3](/img/p1-03installasi.png)
+![installasi3](/img/p1-03installasi.png)
 
 ### 4. Pilih Continent/Region
 
 Kita pilih **Asia**
 
-[installasi4](/img/p1-04installasi.png)
+![installasi4](/img/p1-04installasi.png)
 
 Lalu kita pilih **Indonesia**
 
-[installasi5](/img/p1-05installasi.png)
+![installasi5](/img/p1-05installasi.png)
 
 ### 5. Konfigurasi Locale
 
 Kita pilih **United States**
 
-[installasi6](/img/p1-06installasi.png)
+![installasi6](/img/p1-06installasi.png)
 
 ### 6. Konfigurasi Keymap Keyboard
 
 Kita pilih **American English**
 
-[installasi7](/img/p1-07installasi.png)
+![installasi7](/img/p1-07installasi.png)
 
 ### 7. Konfigurasi Hostname
 
 Silahkan isi sesuai keinginan
 
-[installasi8](/img/p1-08installasi.png)
+![installasi8](/img/p1-08installasi.png)
 
 ### 8. Konfigurasi Password Root
 
 Isi password sesuai keinginan
 
-[installasi9](/img/p1-09installasi.png)
+![installasi9](/img/p1-09installasi.png)
 
 ### 9. Konfigurasi User Baru
 
 Isi sesuai keinginan
 
-[installasi10](/img/p1-10installasi.png)
+![installasi10](/img/p1-10installasi.png)
 
 ### 10. Konfigurasi Password untuk User Baru
 
 Isi password sesuai keinginan
 
-[installasi11](/img/p11-installasi.png)
+![installasi11](/img/p11-installasi.png)
 
 Masukkan password ulang
 
-[installasi12](/p1-12installasi.png)
+![installasi12](/p1-12installasi.png)
 
 ### 11.Konfigurasi Waktu
 
 Sesuaikan dengan waktu wilayah masing-masing, karena saya WIB maka saya memilih **Western(Sumatra, Jakarta, Java, West and Central Kalimantan)**
 
-[installasi13](/img/p1-13installasi.png)
+![installasi13](/img/p1-13installasi.png)
 
 ### 12. Konfigurasi Partisi
 
 Pilih **Guided Entire Disk**
 
-[installasi14](/img/p1-14installasi.png)
+![installasi14](/img/p1-14installasi.png)
 
 Setelah itu pilih penyimpanan
 
-[installasi15](/img/p1-15installasi.png)
+![installasi15](/img/p1-15installasi.png)
 
 Lalu pada Partitioning Scheme kita pilih, **All files in one partition**
 
-[installasi16](/img/p1-16installasi.png)
+![installasi16](/img/p1-16installasi.png)
 
 Write Change to Disk? kita pilih **yes**
 
-[installasi17](/img/p1-17installasi.png)
+![installasi17](/img/p1-17installasi.png)
 
 ### 13. Menunggu Installasi Base System
 
-[installasi18](/img/p1-18installasi.png)
+![installasi18](/img/p1-18installasi.png)
 
 ### 14. Konfigurasi Packet Manager
 
@@ -166,49 +166,49 @@ Write Change to Disk? kita pilih **yes**
 
 Jika kalian menggunakan iso DVD kalian bisa memasukkan DVD yang lain, karena saya menggunakan iso netinstaller maka saya pilih **No**
 
-[installasi19](/img/p1-19installasi.png)
+![installasi19](/img/p1-19installasi.png)
 
 Untuk konfigurasi mirrorlist pilih **Indonesia**
 
-[installasi20](/img/p1-20installasi.png)
+![installasi20](/img/p1-20installasi.png)
 
 Lalu kita pilih salah satu, misal **kartolo.sby.datautama.net.id**
 
-[installasi21](/img/p1-21installasi.png)
+![installasi21](/img/p1-21installasi.png)
 
 Pada HTTP Proxy kita kosongkan
 
-[installasi22](/img/p1-22installasi.png)
+![installasi22](/img/p1-22installasi.png)
 
 ### 15. Konfigurasi Popularity Contest
 
 **Participate in package usage survey?**, kita pilih **No**
 
-[installasi23](/img/p1-23installasi.png)
+![installasi23](/img/p1-23installasi.png)
 
 ### 16. Konfigurasi software
 
 Pada menu **Choose Software to Install** hanya kita centang pada **SSH Server** dan **standard system utilities**
 
-[installasi24](/img/p1-24installasi.png)
+![installasi24](/img/p1-24installasi.png)
 
 Lalu kita tunggu installasi software selesai
 
-[installasi25](/img/p1-25installasi.png)
+![installasi25](/img/p1-25installasi.png)
 
 ### 17. Konfigurasi Boot-loader
 
 **Install the GRUB boot loader to the master boot record?** kita pilih **Yes**
 
-[installasi26](/img/p1-26installasi.png)
+![installasi26](/img/p1-26installasi.png)
 
 Lalu kita pilih partisi yang kita buat tadi
 
-[installasi27](/img/p1-27installasi.png)
+![installasi27](/img/p1-27installasi.png)
 
 Lalu kita tunggu dan installasi selesai..
 
-[installasi28](/img/p1-29installasi.png)
+![installasi28](/img/p1-29installasi.png)
 
 Semoga membantu!!
 
