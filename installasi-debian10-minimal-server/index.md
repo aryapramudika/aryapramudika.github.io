@@ -1,5 +1,6 @@
 # Installasi Debian 10 Minimal Server
 
+![debian](/img/thumb/debian.png)
 
 ## Latar Belakang Masalah
 
