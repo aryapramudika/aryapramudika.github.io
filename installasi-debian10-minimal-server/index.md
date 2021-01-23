@@ -5,7 +5,7 @@
 
 Saya sedang belajar tentang debian server, terutama debian CLI. Saya sering lupa konfigurasi awal saat installasi debian untuk itu saya membuat tulisan ini.
 
-## Tujuane
+## Tujuan
 
 Tujuan saya menulis ini yaitu sebagai catatan belajar, jika saya lupa sesuatu maka saya bisa membaca tulisan ini.
 
