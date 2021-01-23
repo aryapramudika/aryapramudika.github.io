@@ -4,7 +4,18 @@
         <link>https://aryapramudika.github.io/</link>
         <description>About LoveIt Theme</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>aryapramudika1@gmail.com (Arya Pramudika)</managingEditor>
-            <webMaster>aryapramudika1@gmail.com (Arya Pramudika)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+            <webMaster>aryapramudika1@gmail.com (Arya Pramudika)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 19 Jan 2021 11:26:22 &#43;0700</lastBuildDate>
             <atom:link href="https://aryapramudika.github.io/index.xml" rel="self" type="application/rss+xml" />
-        </channel>
+        <item>
+    <title>Installasi Debian 10 Minimal Server</title>
+    <link>https://aryapramudika.github.io/installasi-debian10-minimal-server/</link>
+    <pubDate>Tue, 19 Jan 2021 11:26:22 &#43;0700</pubDate>
+    <author>Author</author>
+    <guid>https://aryapramudika.github.io/installasi-debian10-minimal-server/</guid>
+    <description><![CDATA[Latar Belakang Masalah Saya sedang belajar tentang debian server, terutama debian CLI. Saya sering lupa konfigurasi awal saat installasi debian untuk itu saya membuat tulisan ini.
+Tujuan Tujuan saya menulis ini yaitu sebagai catatan belajar, jika saya lupa sesuatu maka saya bisa membaca tulisan ini.
+Persyaratan Untuk persyaratan installasi yaitu:
+  Mempunyai koneksi Internet untuk mendownload iso CD/DVD Debian Buster.
+  Perangkat Laptop/PC bisa juga Virtual seperti VirtualBox/VMWare]]></description>
+</item></channel>
 </rss>
