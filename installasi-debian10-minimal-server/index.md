@@ -56,7 +56,7 @@ Pembuatan bootable berhasil
 
 ![balenaEtcher](/img/p1-6bootable.png)
 
-{{< admonition tip >}}
+{{< admonition tip "Tips" >}}
 Kalian bisa membuat bootable menggunakan aplikasi lain seperti, [rufus](https://rufus.ie).
 {{< /admonition >}}
 
