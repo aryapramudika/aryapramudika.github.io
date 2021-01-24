@@ -44,3 +44,48 @@ INTERFACESv4="ens33" #isi nama interface disini
 #INTERFACESv6=""
 ```
 
+Setelah itu kita lakukan konfigurasi IP Address
+
+```bash
+nano /etc/dhcpd.dhcpd.conf
+```
+
+Lakukan konfigurasi pada baris ke 49 sampai 58,
+
+* Default
+
+```bash
+# A slightly different configuration for an internal subnet.
+#subnet 10.5.5.0 netmask 255.255.255.224 {
+  #range 10.5.5.26 10.5.5.30;
+  #option domain-name-servers ns1.internal.example.org;
+  #option domain-name "internal.example.org";
+  #option routers 10.5.5.1;
+  #option broadcast-address 10.5.5.31;
+  #default-lease-time 600;
+  #max-lease-time 7200;
+#}
+```
+* Setelah Dikonfigurasi
+
+```bash
+# A slightly different configuration for an internal subnet.
+subnet 10.10.10.0 netmask 255.255.255.0 {
+  range 10.10.10.2 10.10.10.100;
+  option domain-name-servers 8.8.8.8;
+  option domain-name "arya.com";
+  option routers 10.10.10.1;
+  option broadcast-address 10.10.10.255;
+  default-lease-time 600;
+  max-lease-time 7200;
+}
+```
+{{< admonition note "Catatan">}}
+Konfigurasikan sesuai dengan keinginan, di **Interface ens33** ip saya yaitu 10.10.10.1
+**range** yaitu batas awal dan terakhir yang akan di berikan
+**domain-name-servers** bisa di isi 8.8.8.8 atau **IP Interface**
+**domain-name** bisa di custom
+**routers** di isi **IP Interface**
+**broadcast-address** batas maksimal ip dari subnet
+{{< /admonition >}}
+

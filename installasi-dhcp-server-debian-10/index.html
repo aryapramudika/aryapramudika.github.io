@@ -35,7 +35,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/aryapramudika.github.io\/installasi-dhcp-server-debian-10\/"
-        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  179 ,
+        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  333 ,
         "url": "https:\/\/aryapramudika.github.io\/installasi-dhcp-server-debian-10\/","datePublished": "2021-01-24T07:39:56+07:00","dateModified": "2021-01-24T07:39:56+07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/aryapramudika.github.io\/images\/avatar.png"},"author": {
@@ -112,8 +112,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Installasi DHCP Server Debian 10</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Arya Pramudika</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-24">2021-01-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;179 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-24">2021-01-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;333 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -195,7 +195,88 @@
 <span class="c1">#INTERFACESv6=&#34;&#34;</span>
 </code></pre></td></tr></table>
 </div>
-</div></div><div class="post-footer" id="post-footer">
+</div><p>Setelah itu kita lakukan konfigurasi IP Address</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">nano /etc/dhcpd.dhcpd.conf
+</code></pre></td></tr></table>
+</div>
+</div><p>Lakukan konfigurasi pada baris ke 49 sampai 58,</p>
+<ul>
+<li>Default</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># A slightly different configuration for an internal subnet.</span>
+<span class="c1">#subnet 10.5.5.0 netmask 255.255.255.224 {</span>
+  <span class="c1">#range 10.5.5.26 10.5.5.30;</span>
+  <span class="c1">#option domain-name-servers ns1.internal.example.org;</span>
+  <span class="c1">#option domain-name &#34;internal.example.org&#34;;</span>
+  <span class="c1">#option routers 10.5.5.1;</span>
+  <span class="c1">#option broadcast-address 10.5.5.31;</span>
+  <span class="c1">#default-lease-time 600;</span>
+  <span class="c1">#max-lease-time 7200;</span>
+<span class="c1">#}</span>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>Setelah Dikonfigurasi</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># A slightly different configuration for an internal subnet.</span>
+subnet 10.10.10.0 netmask 255.255.255.0 <span class="o">{</span>
+  range 10.10.10.2 10.10.10.100<span class="p">;</span>
+  option domain-name-servers 8.8.8.8<span class="p">;</span>
+  option domain-name <span class="s2">&#34;arya.com&#34;</span><span class="p">;</span>
+  option routers 10.10.10.1<span class="p">;</span>
+  option broadcast-address 10.10.10.255<span class="p">;</span>
+  default-lease-time 600<span class="p">;</span>
+  max-lease-time 7200<span class="p">;</span>
+<span class="o">}</span>
+</code></pre></td></tr></table>
+</div>
+</div><div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw"></i>Catatan<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content">Konfigurasikan sesuai dengan keinginan, di <strong>Interface ens33</strong> ip saya yaitu 10.10.10.1
+<strong>range</strong> yaitu batas awal dan terakhir yang akan di berikan
+<strong>domain-name-servers</strong> bisa di isi 8.8.8.8 atau <strong>IP Interface</strong>
+<strong>domain-name</strong> bisa di custom
+<strong>routers</strong> di isi <strong>IP Interface</strong>
+<strong>broadcast-address</strong> batas maksimal ip dari subnet</div>
+        </div>
+    </div>
+</div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
