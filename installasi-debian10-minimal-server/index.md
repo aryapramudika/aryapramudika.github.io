@@ -5,7 +5,6 @@
 
 Saya sedang belajar tentang debian server, terutama debian CLI. Saya sering lupa konfigurasi awal saat installasi debian untuk itu saya membuat tulisan ini.
 
-> **permit**|**deny** [options] identity [**as** target] [**cmd** command [args ...]]
 
 ## Tujuan
 
