@@ -77,31 +77,31 @@ Disini saya menggunakan mode Install CLI, kalian bisa memilih menggunakan GUI ka
 
 ### 2. Pilih Bahasa
 
-Disini saya memilih bahasa **English**
+Disini saya memilih bahasa Inggris
 
-![installasi2](/img/p1-02installasi.png)
+![installasi2](/img/p1-02installasi.png "English")
 
 ### 3. Pilih Country/Negara
 
 Karena country Indonesia tidak ada di pilihan maka kita pilih **Other**
 
-![installasi3](/img/p1-03installasi.png)
+![installasi3](/img/p1-03installasi.png "Pilihan Other")
 
 ### 4. Pilih Continent/Region
 
 Kita pilih **Asia**
 
-![installasi4](/img/p1-04installasi.png)
+![installasi4](/img/p1-04installasi.png "Pilihan Asia")
 
 Lalu kita pilih **Indonesia**
 
-![installasi5](/img/p1-05installasi.png)
+![installasi5](/img/p1-05installasi.png "Pilihan Indonesia")
 
 ### 5. Konfigurasi Locale
 
 Kita pilih **United States**
 
-![installasi6](/img/p1-06installasi.png)
+![installasi6](/img/p1-06installasi.png "")
 
 ### 6. Konfigurasi Keymap Keyboard
 
