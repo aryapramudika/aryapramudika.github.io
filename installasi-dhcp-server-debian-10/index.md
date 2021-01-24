@@ -5,7 +5,7 @@
 
 Apa itu DHCP?
 
-> **Dynamic Host Configuration Protocol** adalah protokol yang berbasis arsitektur client/server yang dipakai untuk memudahkan pengalokasian alamat IP dalam suatu jaringan **dikutip dari wikipedia id**.
+> **Dynamic Host Configuration Protocol** adalah protokol yang berbasis arsitektur client/server yang dipakai untuk memudahkan pengalokasian alamat IP dalam suatu jaringan. *dikutip dari wikipedia id*
 
 ## Konfigurasi
 
