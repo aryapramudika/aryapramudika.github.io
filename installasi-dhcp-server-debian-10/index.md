@@ -15,9 +15,9 @@ Apa itu DHCP?
 
 > **Dynamic Host Configuration Protocol** adalah protokol yang berbasis arsitektur client/server yang dipakai untuk memudahkan pengalokasian alamat IP dalam suatu jaringan. *dikutip dari wikipedia id*
 
-## Konfigurasi
+## Konfigurasi DHCP Server
 
-Pertama lakukan installasi packet *isc-dhcp-server*
+Pertama ktia perlu melakukan installasi paket *isc-dhcp-server*
 
 ```bash
 apt -y install isc-dhcp-server

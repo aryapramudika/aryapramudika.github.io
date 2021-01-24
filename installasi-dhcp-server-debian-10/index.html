@@ -10,7 +10,7 @@
 Tujuan Agar tetap ingat karena menurut pemula seperti saya konfigurasi ini cukup rumit.
 Sekilas tentang DHCP Apa itu DHCP?
  Dynamic Host Configuration Protocol adalah protokol yang berbasis arsitektur client/server yang dipakai untuk memudahkan pengalokasian alamat IP dalam suatu jaringan. dikutip dari wikipedia id
- Konfigurasi Pertama lakukan installasi packet isc-dhcp-server
+ Konfigurasi DHCP Server Pertama ktia perlu melakukan installasi paket isc-dhcp-server
 1  apt -y install isc-dhcp-server    Jika muncul peringatan failed setelah install itu terjadi karena ip kita tidak sesuai dengan IP Address pada konfigurasi isc-dhcp-server, untuk itu abaikan saja." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://aryapramudika.github.io/installasi-dhcp-server-debian-10/" />
@@ -25,12 +25,12 @@ Sekilas tentang DHCP Apa itu DHCP?
 Tujuan Agar tetap ingat karena menurut pemula seperti saya konfigurasi ini cukup rumit.
 Sekilas tentang DHCP Apa itu DHCP?
  Dynamic Host Configuration Protocol adalah protokol yang berbasis arsitektur client/server yang dipakai untuk memudahkan pengalokasian alamat IP dalam suatu jaringan. dikutip dari wikipedia id
- Konfigurasi Pertama lakukan installasi packet isc-dhcp-server
+ Konfigurasi DHCP Server Pertama ktia perlu melakukan installasi paket isc-dhcp-server
 1  apt -y install isc-dhcp-server    Jika muncul peringatan failed setelah install itu terjadi karena ip kita tidak sesuai dengan IP Address pada konfigurasi isc-dhcp-server, untuk itu abaikan saja."/>
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://aryapramudika.github.io/installasi-dhcp-server-debian-10/" /><link rel="prev" href="https://aryapramudika.github.io/installasi-debian10-minimal-server/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://aryapramudika.github.io/installasi-dhcp-server-debian-10/" /><link rel="prev" href="https://aryapramudika.github.io/installasi-debian10-minimal-server/" /><link rel="next" href="https://aryapramudika.github.io/setup-nfs-server-debian-10/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
     {
         "@context": "http://schema.org",
         "@type": "BlogPosting",
@@ -39,7 +39,7 @@ Sekilas tentang DHCP Apa itu DHCP?
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/aryapramudika.github.io\/installasi-dhcp-server-debian-10\/"
-        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  367 ,
+        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  371 ,
         "url": "https:\/\/aryapramudika.github.io\/installasi-dhcp-server-debian-10\/","datePublished": "2021-01-24T07:39:56+07:00","dateModified": "2021-01-24T07:39:56+07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/aryapramudika.github.io\/images\/avatar.png"},"author": {
@@ -116,7 +116,7 @@ Sekilas tentang DHCP Apa itu DHCP?
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Installasi DHCP Server Debian 10</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Arya Pramudika</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-24">2021-01-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;367 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-24">2021-01-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;371 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -128,7 +128,7 @@ Sekilas tentang DHCP Apa itu DHCP?
     <li><a href="#latar-belakang">Latar Belakang</a></li>
     <li><a href="#tujuan">Tujuan</a></li>
     <li><a href="#sekilas-tentang-dhcp">Sekilas tentang DHCP</a></li>
-    <li><a href="#konfigurasi">Konfigurasi</a></li>
+    <li><a href="#konfigurasi-dhcp-server">Konfigurasi DHCP Server</a></li>
     <li><a href="#selesai-">Selesai !</a></li>
     <li><a href="#referensi">Referensi</a></li>
   </ul>
@@ -142,8 +142,8 @@ Sekilas tentang DHCP Apa itu DHCP?
 <blockquote>
 <p><strong>Dynamic Host Configuration Protocol</strong> adalah protokol yang berbasis arsitektur client/server yang dipakai untuk memudahkan pengalokasian alamat IP dalam suatu jaringan. <em>dikutip dari wikipedia id</em></p>
 </blockquote>
-<h2 id="konfigurasi">Konfigurasi</h2>
-<p>Pertama lakukan installasi packet <em>isc-dhcp-server</em></p>
+<h2 id="konfigurasi-dhcp-server">Konfigurasi DHCP Server</h2>
+<p>Pertama ktia perlu melakukan installasi paket <em>isc-dhcp-server</em></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -325,7 +325,8 @@ subnet 10.10.10.0 netmask 255.255.255.0 <span class="o">{</span>
         </section>
     </div>
 
-    <div class="post-nav"><a href="/installasi-debian10-minimal-server/" class="prev" rel="prev" title="Installasi Debian 10 Minimal Server"><i class="fas fa-angle-left fa-fw"></i>Installasi Debian 10 Minimal Server</a></div>
+    <div class="post-nav"><a href="/installasi-debian10-minimal-server/" class="prev" rel="prev" title="Installasi Debian 10 Minimal Server"><i class="fas fa-angle-left fa-fw"></i>Installasi Debian 10 Minimal Server</a>
+            <a href="/setup-nfs-server-debian-10/" class="next" rel="next" title="Setup NFS Server Debian 10">Setup NFS Server Debian 10<i class="fas fa-angle-right fa-fw"></i></a></div>
 </div>
 <div id="comments"><div id="disqus_thread" class="comment"></div><noscript>
                 Please enable JavaScript to view the comments powered by <a href="https://disqus.com/?ref_noscript">Disqus</a>.
