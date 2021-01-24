@@ -168,7 +168,11 @@ Write Change to Disk? kita pilih **yes**
 
 **Scan another CD or DVD?**
 
-Jika kalian menggunakan iso DVD kalian bisa memasukkan DVD yang lain, karena saya menggunakan iso netinstaller maka saya pilih **No**
+Pilih **No**
+
+{{< admonition >}}
+Jika kalian menggunakan iso DVD maka masukkan DVD yang lain misal: DVD 2 dan DVD 3
+{{< /admonition >}}
 
 ![installasi19](/img/p1-19installasi.png)
 
