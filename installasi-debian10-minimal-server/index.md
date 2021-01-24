@@ -7,8 +7,6 @@ Saya sedang belajar tentang debian server, terutama debian CLI. Saya sering lupa
 
 ## Tujuan
 
-{{< admonition note "Why not support earlier versions of Hugo?" >}}
-
 Tujuan saya menulis ini yaitu sebagai catatan belajar, jika saya lupa sesuatu maka saya bisa membaca tulisan ini.
 
 ## Persyaratan
@@ -56,6 +54,10 @@ Terakhir klik **Flash**, lalu tunggu sampai selesai
 Pembuatan bootable berhasil
 
 ![balenaEtcher](/img/p1-6bootable.png)
+
+{{< admonition tip >}}
+Kalian bisa membuat bootable menggunakan aplikasi lain misal, [rufus](https://rufus.ie).
+{{< /admonition >}}
 
 
 ## Installasi
