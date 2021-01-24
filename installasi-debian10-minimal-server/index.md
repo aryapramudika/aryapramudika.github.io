@@ -101,69 +101,69 @@ Lalu kita pilih **Indonesia**
 
 Kita pilih **United States**
 
-![installasi6](/img/p1-06installasi.png "")
+![installasi6](/img/p1-06installasi.png "Locale US")
 
 ### 6. Konfigurasi Keymap Keyboard
 
 Kita pilih **American English**
 
-![installasi7](/img/p1-07installasi.png)
+![installasi7](/img/p1-07installasi.png "Pilihan American English")
 
 ### 7. Konfigurasi Hostname
 
 Silahkan isi sesuai keinginan
 
-![installasi8](/img/p1-08installasi.png)
+![installasi8](/img/p1-08installasi.png "Hostname debsvr")
 
 ### 8. Konfigurasi Password Root
 
 Isi password sesuai keinginan
 
-![installasi9](/img/p1-09installasi.png)
+![installasi9](/img/p1-09installasi.png "Root Password")
 
 ### 9. Konfigurasi User Baru
 
 Isi sesuai keinginan
 
-![installasi10](/img/p1-10installasi.png)
+![installasi10](/img/p1-10installasi.png "Membuat user baru")
 
 ### 10. Konfigurasi Password untuk User Baru
 
 Isi password sesuai keinginan
 
-![installasi11](/img/p1-11installasi.png)
+![installasi11](/img/p1-11installasi.png "Password user baru")
 
 Masukkan password ulang
 
-![installasi12](/img/p1-12installasi.png)
+![installasi12](/img/p1-12installasi.png "Ulang Password user baru")
 
 ### 11.Konfigurasi Waktu
 
 Sesuaikan dengan waktu wilayah masing-masing, karena saya WIB maka saya memilih **Western(Sumatra, Jakarta, Java, West and Central Kalimantan)**
 
-![installasi13](/img/p1-13installasi.png)
+![installasi13](/img/p1-13installasi.png "WIB")
 
 ### 12. Konfigurasi Partisi
 
 Pilih **Guided Entire Disk**
 
-![installasi14](/img/p1-14installasi.png)
+![installasi14](/img/p1-14installasi.png "Guided")
 
 Setelah itu pilih penyimpanan
 
-![installasi15](/img/p1-15installasi.png)
+![installasi15](/img/p1-15installasi.png "penyimpanan")
 
 Lalu pada Partitioning Scheme kita pilih, **All files in one partition**
 
-![installasi16](/img/p1-16installasi.png)
+![installasi16](/img/p1-16installasi.png "Semua file di satu partisi")
 
 Write Change to Disk? kita pilih **yes**
 
-![installasi17](/img/p1-17installasi.png)
+![installasi17](/img/p1-17installasi.png "Yes")
 
 ### 13. Menunggu Installasi Base System
 
-![installasi18](/img/p1-18installasi.png)
+![installasi18](/img/p1-18installasi.png "Base system")
 
 ### 14. Konfigurasi Packet Manager
 
