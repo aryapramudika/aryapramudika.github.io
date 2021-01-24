@@ -1,6 +1,14 @@
 # Installasi DHCP Server Debian 10
 
 
+## Latar Belakang
+
+Saya sedang belajar tentang DHCP Server pada Debian dan ingin mencatatnya disini.
+
+## Tujuan
+
+Agar tetap ingat karena menurut pemula seperti saya konfigurasi ini cukup rumit.
+
 ## Sekilas tentang DHCP
 
 Apa itu DHCP?
@@ -93,4 +101,14 @@ Konfigurasikan sesuai dengan keinginan, di **Interface ens33** ip saya yaitu 10.
 
 **broadcast-address** batas maksimal ip dari subnet
 {{< /admonition >}}
+
+## Selesai !
+
+**Selamat mencoba**
+
+## Referensi
+
+* https://dantonkoto.web.id/asj/praktikum-dhcp-server/
+
+* https://id.wikipedia.org/wiki/Protokol_Konfigurasi_Hos_Dinamik
 
