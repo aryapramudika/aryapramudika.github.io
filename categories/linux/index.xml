@@ -10,7 +10,9 @@
     <pubDate>Tue, 19 Jan 2021 11:26:22 &#43;0700</pubDate>
     <author>Author</author>
     <guid>https://aryapramudika.github.io/installasi-debian10-minimal-server/</guid>
-    <description><![CDATA[haha
+    <description><![CDATA[<div class="featured-image">
+                <img src="/img/thumb/debian.png" referrerpolicy="no-referrer">
+            </div>haha
 Latar Belakang Masalah Saya sedang belajar tentang debian server, terutama debian CLI. Saya sering lupa konfigurasi awal saat installasi debian untuk itu saya membuat tulisan ini.
 Tujuan Tujuan saya menulis ini yaitu sebagai catatan belajar, jika saya lupa sesuatu maka saya bisa membaca tulisan ini.
 Persyaratan Untuk persyaratan installasi yaitu:
