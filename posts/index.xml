@@ -20,9 +20,9 @@
     <author>Author</author>
     <guid>https://aryapramudika.github.io/installasi-debian10-minimal-server/</guid>
     <description><![CDATA[Latar Belakang Masalah Saya sedang belajar tentang debian server, terutama debian CLI. Saya sering lupa konfigurasi awal saat installasi debian untuk itu saya membuat tulisan ini.
-Tujuan Tujuan saya menulis ini yaitu sebagai catatan belajar, jika saya lupa sesuatu maka saya bisa membaca tulisan ini.
+ permit|deny [options] identity [as target] [cmd command [args &hellip;]]
+ Tujuan Tujuan saya menulis ini yaitu sebagai catatan belajar, jika saya lupa sesuatu maka saya bisa membaca tulisan ini.
 Persyaratan Untuk persyaratan installasi yaitu:
-  Mempunyai koneksi Internet untuk mendownload iso CD/DVD Debian Buster.
-  Perangkat Laptop/PC bisa juga Virtual seperti VirtualBox/VMWare]]></description>
+  Mempunyai koneksi Internet untuk mendownload iso CD/DVD Debian Buster.]]></description>
 </item></channel>
 </rss>
