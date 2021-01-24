@@ -33,7 +33,7 @@ Sekilas tentang NFS  Network File Sharing adalah sebuah kumpulan protokol yang d
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/aryapramudika.github.io\/setup-nfs-server-debian-10\/"
-        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  281 ,
+        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  436 ,
         "url": "https:\/\/aryapramudika.github.io\/setup-nfs-server-debian-10\/","datePublished": "2021-01-24T12:25:14+07:00","dateModified": "2021-01-24T12:25:14+07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/aryapramudika.github.io\/images\/avatar.png"},"author": {
@@ -110,8 +110,8 @@ Sekilas tentang NFS  Network File Sharing adalah sebuah kumpulan protokol yang d
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Setup NFS Server Debian 10</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Arya Pramudika</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-24">2021-01-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;281 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-24">2021-01-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;436 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -123,6 +123,14 @@ Sekilas tentang NFS  Network File Sharing adalah sebuah kumpulan protokol yang d
     <li><a href="#tujuan">Tujuan</a></li>
     <li><a href="#sekilas-tentang-nfs">Sekilas tentang NFS</a></li>
     <li><a href="#konfigurasi-nfs">Konfigurasi NFS</a></li>
+    <li><a href="#konfigurasi-pada-klien">Konfigurasi pada Klien</a>
+      <ul>
+        <li><a href="#1-mounting-manual-dari-terminal">1. Mounting Manual dari Terminal</a></li>
+        <li><a href="#2-mounting-permanen">2. Mounting permanen</a></li>
+      </ul>
+    </li>
+    <li><a href="#selesai-">Selesai !</a></li>
+    <li><a href="#referensi">Referensi</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h2 id="latar-belakang">Latar Belakang</h2>
@@ -238,6 +246,94 @@ Sekilas tentang NFS  Network File Sharing adalah sebuah kumpulan protokol yang d
 </div>
         </div>
     </div>
+<h2 id="konfigurasi-pada-klien">Konfigurasi pada Klien</h2>
+<p>Pertama kita perlu melakukan intallasi paket <em>nfs-common</em></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">apt -y install nfs-common
+</code></pre></td></tr></table>
+</div>
+</div><p>Untuk melihat folder yang di share</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">showmount -e 10.10.10.2
+</code></pre></td></tr></table>
+</div>
+</div><p>Untuk mengakses NFS Server terdapat dua cara yaitu:</p>
+<h3 id="1-mounting-manual-dari-terminal">1. Mounting Manual dari Terminal</h3>
+<p>Buat folder untuk mounting</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">mkdir /home/arya/sharing
+</code></pre></td></tr></table>
+</div>
+</div><p>Lalu kita lakukan perintah</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">mount 10.10.10.2:/nfs3   /home/arya/sharing
+</code></pre></td></tr></table>
+</div>
+</div><div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw"></i>Penjelasan<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><em>10.10.10.2</em> adalah IP server
+<em>:/nfs3</em> adalah folder yang di share
+<em>/home/arya/sharing</em> adalah folder yang kita mount ke server</div>
+        </div>
+    </div>
+<p>Mounting manual selesai, kekurangan dari metode ini adalah tidak permanen, setelah kita reboot maka kita wajib melakukan mounting ulang.</p>
+<h3 id="2-mounting-permanen">2. Mounting permanen</h3>
+<p>Edit file <em>/etc/fstab</em></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">nano /etc/fstab
+</code></pre></td></tr></table>
+</div>
+</div><p>Lalu tambahkan di baris paling bawah</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">10.10.10.2:/nfs3      /home/arya/Sharing      nfs     netdev     
+</code></pre></td></tr></table>
+</div>
+</div><div class="details admonition note open">
+        <div class="details-summary admonition-title">
+            <i class="icon fas fa-pencil-alt fa-fw"></i>Penjelasan<i class="details-icon fas fa-angle-right fa-fw"></i>
+        </div>
+        <div class="details-content">
+            <div class="admonition-content"><em>10.10.10.2</em> adalah IP server
+<em>:/nfs3</em> adalah folder yang di share
+<em>/home/arya/sharing</em> adalah folder yang kita mount ke server
+<em>nfs</em> adalah tipe file/folder
+<em>netdev</em>* adalah mounting nfs server ke folder akan berjalan jika internet menyala</div>
+        </div>
+    </div>
+<h2 id="selesai-">Selesai !</h2>
+<p>Konfigurasi NFS Berhasil dilakukan</p>
+<h2 id="referensi">Referensi</h2>
+<ul>
+<li><a href="https://linuxconfig.org/how-to-set-up-a-nfs-server-on-debian-10-buster">https://linuxconfig.org/how-to-set-up-a-nfs-server-on-debian-10-buster</a></li>
+<li><a href="https://www.golinuxcloud.com/show-nfs-shares-list-nfs-client-mount-points/">https://www.golinuxcloud.com/show-nfs-shares-list-nfs-client-mount-points/</a></li>
+</ul>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
