@@ -4,17 +4,23 @@
         <link>https://aryapramudika.github.io/</link>
         <description>About LoveIt Theme</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>aryapramudika1@gmail.com (Arya Pramudika)</managingEditor>
-            <webMaster>aryapramudika1@gmail.com (Arya Pramudika)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 19 Jan 2021 11:26:22 &#43;0700</lastBuildDate>
+            <webMaster>aryapramudika1@gmail.com (Arya Pramudika)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Sun, 24 Jan 2021 07:39:56 &#43;0700</lastBuildDate>
             <atom:link href="https://aryapramudika.github.io/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Installasi Dhcp Server Debian 10</title>
+    <link>https://aryapramudika.github.io/installasi-dhcp-server-debian-10/</link>
+    <pubDate>Sun, 24 Jan 2021 07:39:56 &#43;0700</pubDate>
+    <author>Author</author>
+    <guid>https://aryapramudika.github.io/installasi-dhcp-server-debian-10/</guid>
+    <description><![CDATA[Installasi DHCP Server Debian 10 Apa itu DHCP? saya kutip dari wikipedia
+Dynamic Host Configuration Protocol adalah protokol yang berbasis arsitektur client/server yang dipakai untuk memudahkan pengalokasian alamat IP dalam satu jaringan.]]></description>
+</item><item>
     <title>Installasi Debian 10 Minimal Server</title>
     <link>https://aryapramudika.github.io/installasi-debian10-minimal-server/</link>
     <pubDate>Tue, 19 Jan 2021 11:26:22 &#43;0700</pubDate>
     <author>Author</author>
     <guid>https://aryapramudika.github.io/installasi-debian10-minimal-server/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/img/thumb/debian.png" referrerpolicy="no-referrer">
-            </div>Latar Belakang Masalah Saya sedang belajar tentang debian server, terutama debian CLI. Saya sering lupa konfigurasi awal saat installasi debian untuk itu saya membuat tulisan ini.
+    <description><![CDATA[Latar Belakang Masalah Saya sedang belajar tentang debian server, terutama debian CLI. Saya sering lupa konfigurasi awal saat installasi debian untuk itu saya membuat tulisan ini.
 Tujuan Tujuan saya menulis ini yaitu sebagai catatan belajar, jika saya lupa sesuatu maka saya bisa membaca tulisan ini.
 Persyaratan Untuk persyaratan installasi yaitu:
   Mempunyai koneksi Internet untuk mendownload iso CD/DVD Debian Buster.
