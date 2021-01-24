@@ -3,9 +3,9 @@
 
 ## Sekilas tentang DHCP
 
-Apa itu DHCP? saya kutip dari wikipedia
+Apa itu DHCP?
 
-> **Dynamic Host Configuration Protocol** adalah protokol yang berbasis arsitektur client/server yang dipakai untuk memudahkan pengalokasian alamat IP dalam satu jaringan.
+> **Dynamic Host Configuration Protocol** adalah protokol yang berbasis arsitektur client/server yang dipakai untuk memudahkan pengalokasian alamat IP dalam suatu jaringan **dikutip dari wikipedia id**.
 
 ## Konfigurasi
 
