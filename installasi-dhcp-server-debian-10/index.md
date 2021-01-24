@@ -82,10 +82,15 @@ subnet 10.10.10.0 netmask 255.255.255.0 {
 ```
 {{< admonition note "Catatan">}}
 Konfigurasikan sesuai dengan keinginan, di **Interface ens33** ip saya yaitu 10.10.10.1
+
 **range** yaitu batas awal dan terakhir yang akan di berikan
+
 **domain-name-servers** bisa di isi 8.8.8.8 atau **IP Interface**
+
 **domain-name** bisa di custom
+
 **routers** di isi **IP Interface**
+
 **broadcast-address** batas maksimal ip dari subnet
 {{< /admonition >}}
 
