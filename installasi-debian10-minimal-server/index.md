@@ -7,6 +7,8 @@ Saya sedang belajar tentang debian server, terutama debian CLI. Saya sering lupa
 
 ## Tujuan
 
+{{< admonition note "Why not support earlier versions of Hugo?" >}}
+
 Tujuan saya menulis ini yaitu sebagai catatan belajar, jika saya lupa sesuatu maka saya bisa membaca tulisan ini.
 
 ## Persyaratan
