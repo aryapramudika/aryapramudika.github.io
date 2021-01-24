@@ -73,7 +73,7 @@ Langsung saja..
 
 Disini saya menggunakan mode Install CLI, kalian bisa memilih menggunakan GUI kalau dirasa menggunakan CLI kurang nyaman.
 
-![installasi](/img/p1-01installasi.png)
+![installasi](/img/p1-01installasi.png "Install / CLI")
 
 ### 2. Pilih Bahasa
 
