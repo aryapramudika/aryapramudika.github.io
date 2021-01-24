@@ -163,7 +163,7 @@ Write Change to Disk? kita pilih **yes**
 
 ### 13. Menunggu Installasi Base System
 
-![installasi18](/img/p1-18installasi.png "Base system")
+![installasi18](/img/p1-18installasi.png "Menunggu installasi base system")
 
 ### 14. Konfigurasi Packet Manager
 
@@ -175,49 +175,49 @@ Pilih **No**
 Jika kalian menggunakan iso DVD maka masukkan DVD yang lain misal: DVD 2 dan DVD 3
 {{< /admonition >}}
 
-![installasi19](/img/p1-19installasi.png)
+![installasi19](/img/p1-19installasi.png "Pilihan No")
 
 Untuk konfigurasi mirrorlist pilih **Indonesia**
 
-![installasi20](/img/p1-20installasi.png)
+![installasi20](/img/p1-20installasi.png "Mirrorlist Indonesia")
 
 Lalu kita pilih salah satu, misal **kartolo.sby.datautama.net.id**
 
-![installasi21](/img/p1-21installasi.png)
+![installasi21](/img/p1-21installasi.png "Memilih Mirrorlist")
 
 Pada HTTP Proxy kita kosongkan
 
-![installasi22](/img/p1-22installasi.png)
+![installasi22](/img/p1-22installasi.png "HTTP Proxy dikosongkan")
 
 ### 15. Konfigurasi Popularity Contest
 
 **Participate in package usage survey?**, kita pilih **No**
 
-![installasi23](/img/p1-23installasi.png)
+![installasi23](/img/p1-23installasi.png "No")
 
 ### 16. Konfigurasi software
 
 Pada menu **Choose Software to Install** hanya kita centang pada **SSH Server** dan **standard system utilities**
 
-![installasi24](/img/p1-24installasi.png)
+![installasi24](/img/p1-24installasi.png "Centang SSH dan standard system utilities")
 
 Lalu kita tunggu installasi software selesai
 
-![installasi25](/img/p1-25installasi.png)
+![installasi25](/img/p1-25installasi.png "Installasi Software Selesai")
 
 ### 17. Konfigurasi Boot-loader
 
 **Install the GRUB boot loader to the master boot record?** kita pilih **Yes**
 
-![installasi26](/img/p1-26installasi.png)
+![installasi26](/img/p1-26installasi.png "Yes")
 
 Lalu kita pilih partisi yang kita buat tadi
 
-![installasi27](/img/p1-27installasi.png)
+![installasi27](/img/p1-27installasi.png "Pilih partisi")
 
 Lalu kita tunggu dan installasi selesai..
 
-![installasi28](/img/p1-29installasi.png)
+![installasi28](/img/p1-29installasi.png "Berhasil")
 
 Semoga membantu!!
 
