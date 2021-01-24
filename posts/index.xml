@@ -13,7 +13,7 @@
     <description><![CDATA[Sekilas tentang DHCP Apa itu DHCP? saya kutip dari wikipedia
  Dynamic Host Configuration Protocol adalah protokol yang berbasis arsitektur client/server yang dipakai untuk memudahkan pengalokasian alamat IP dalam satu jaringan.
  Konfigurasi Pertama lakukan installasi packet isc-dhcp-server
-1  apt -y install isc-dhcp-server   ]]></description>
+1  apt -y install isc-dhcp-server    Jika muncul peringatan failed setelah install itu terjadi karena ip kita tidak sesuai dengan IP Address pada konfigurasi isc-dhcp-server, untuk itu abaikan saja.]]></description>
 </item><item>
     <title>Installasi Debian 10 Minimal Server</title>
     <link>https://aryapramudika.github.io/installasi-debian10-minimal-server/</link>
