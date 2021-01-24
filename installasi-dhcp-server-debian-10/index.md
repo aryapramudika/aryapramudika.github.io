@@ -104,7 +104,7 @@ Konfigurasikan sesuai dengan keinginan, di **Interface ens33** ip saya yaitu 10.
 
 ## Selesai !
 
-**Selamat mencoba**
+Selamat mencoba
 
 ## Referensi
 
