@@ -170,7 +170,7 @@ Write Change to Disk? kita pilih **yes**
 
 Pilih **No**
 
-{{< admonition >}}
+{{< admonition note "Catatan">}}
 Jika kalian menggunakan iso DVD maka masukkan DVD yang lain misal: DVD 2 dan DVD 3
 {{< /admonition >}}
 
