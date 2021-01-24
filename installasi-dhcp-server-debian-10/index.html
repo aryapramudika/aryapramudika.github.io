@@ -152,7 +152,7 @@
 <pre class="chroma"><code class="language-bash" data-lang="bash">nano /etc/default/isc-dhcp-server
 </code></pre></td></tr></table>
 </div>
-</div><p>Tambahkan nama interface di InterfaceV4, lalu beri tanda <strong>#</strong> pada InterfaceV6</p>
+</div><p>Tambahkan nama interface di INTERFACESv4, lalu beri tanda <strong>#</strong> pada INTERFACESv6</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -175,24 +175,24 @@
 </span><span class="lnt">18
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback"># Defaults for isc-dhcp-server (sourced by /etc/init.d/isc-dhcp-server)
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># Defaults for isc-dhcp-server (sourced by /etc/init.d/isc-dhcp-server)</span>
 
-# Path to dhcpd&#39;s config file (default: /etc/dhcp/dhcpd.conf).
-#DHCPDv4_CONF=/etc/dhcp/dhcpd.conf
-#DHCPDv6_CONF=/etc/dhcp/dhcpd6.conf
+<span class="c1"># Path to dhcpd&#39;s config file (default: /etc/dhcp/dhcpd.conf).</span>
+<span class="c1">#DHCPDv4_CONF=/etc/dhcp/dhcpd.conf</span>
+<span class="c1">#DHCPDv6_CONF=/etc/dhcp/dhcpd6.conf</span>
 
-# Path to dhcpd&#39;s PID file (default: /var/run/dhcpd.pid).
-#DHCPDv4_PID=/var/run/dhcpd.pid
-#DHCPDv6_PID=/var/run/dhcpd6.pid
+<span class="c1"># Path to dhcpd&#39;s PID file (default: /var/run/dhcpd.pid).</span>
+<span class="c1">#DHCPDv4_PID=/var/run/dhcpd.pid</span>
+<span class="c1">#DHCPDv6_PID=/var/run/dhcpd6.pid</span>
 
-# Additional options to start dhcpd with.
-#	Don&#39;t use options -cf or -pf here; use DHCPD_CONF/ DHCPD_PID instead
-#OPTIONS=&#34;&#34;
+<span class="c1"># Additional options to start dhcpd with.</span>
+<span class="c1">#	Don&#39;t use options -cf or -pf here; use DHCPD_CONF/ DHCPD_PID instead</span>
+<span class="c1">#OPTIONS=&#34;&#34;</span>
 
-# On what interfaces should the DHCP server (dhcpd) serve DHCP requests?
-#	Separate multiple interfaces with spaces, e.g. &#34;eth0 eth1&#34;.
-INTERFACESv4=&#34;ens33&#34; #isi nama interface disini
-#INTERFACESv6=&#34;&#34;
+<span class="c1"># On what interfaces should the DHCP server (dhcpd) serve DHCP requests?</span>
+<span class="c1">#	Separate multiple interfaces with spaces, e.g. &#34;eth0 eth1&#34;.</span>
+<span class="nv">INTERFACESv4</span><span class="o">=</span><span class="s2">&#34;ens33&#34;</span> <span class="c1">#isi nama interface disini</span>
+<span class="c1">#INTERFACESv6=&#34;&#34;</span>
 </code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">

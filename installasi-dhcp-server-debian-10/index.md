@@ -21,9 +21,9 @@ Lalu lakukan konfigurasi interface yang akan dijadikan DHCP Server
 ```bash
 nano /etc/default/isc-dhcp-server
 ```
-Tambahkan nama interface di InterfaceV4, lalu beri tanda **#** pada InterfaceV6
+Tambahkan nama interface di INTERFACESv4, lalu beri tanda **#** pada INTERFACESv6
 
-```isc-dhcp-Server
+```bash
 # Defaults for isc-dhcp-server (sourced by /etc/init.d/isc-dhcp-server)
 
 # Path to dhcpd's config file (default: /etc/dhcp/dhcpd.conf).
