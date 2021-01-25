@@ -108,8 +108,11 @@ mount 10.10.10.2:/nfs3   /home/arya/sharing
 ```
 {{< admonition note "Penjelasan">}}
 *10.10.10.2* adalah IP server
+
 *:/nfs3* adalah folder yang di share
+
 */home/arya/sharing* adalah folder yang kita mount ke server
+
 {{< /admonition >}}
 
 Mounting manual selesai, kekurangan dari metode ini adalah tidak permanen, setelah kita reboot maka kita wajib melakukan mounting ulang.
@@ -129,11 +132,18 @@ Lalu tambahkan di baris paling bawah
 ```
 
 {{< admonition note "Penjelasan">}}
+
 *10.10.10.2* adalah IP server
+
 *:/nfs3* adalah folder yang di share
+
 */home/arya/sharing* adalah folder yang kita mount ke server
+
 *nfs* adalah tipe file/folder
-*netdev** adalah mounting nfs server ke folder akan berjalan jika internet menyala
+
+*netdev** adalah mounting nfs server ke folder akan 
+berjalan jika internet menyala
+
 {{< /admonition >}}
 
 ## Selesai !
