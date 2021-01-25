@@ -136,5 +136,6 @@ Lalu tambahkan di baris paling bawah
 *nfs* adalah tipe file/folder.
 
 *netdev* adalah mounting akan berjalan jika kita terhubung ke jaringan.
+
 {{< /admonition >}}
 
