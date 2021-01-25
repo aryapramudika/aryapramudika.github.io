@@ -168,7 +168,7 @@ UUID=B6CD-AEA1  /boot/efi       vfat    umask=0077      0       1
 #10.10.10.2:/nfs2	/home/arya/nfs2		nfs4	rw
 
 # Samba
-//192.168.1.233/Share\ Film   /home/arya/film   cifs    netdev
+//192.168.1.233/Share\ Film   /home/arya/film   cifs    password="",_netdev
 ```
 
 ## Selesai
