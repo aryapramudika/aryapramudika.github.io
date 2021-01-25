@@ -23,11 +23,11 @@ Sekilas tentang Samba  Samba adalah program yang bersifat open source yang menye
 Tujuan Agar tetap ingat konfigurasi tentang NFS Server.
 Sekilas tentang NFS  Network File Sharing adalah sebuah kumpulan protokol yang digunakan untuk mengakses beberapa sistem berkas melalui jaringan. NFS umumnya hanya bisa bekerja di UNIX Sistem, untuk di Windows tidak menggunakan NFS melainkan SMB (Server Message Block) sehingga tidak kompatibel dengan sistem NFS. Untuk SMB kita akan bahas di artikel berikutnya.]]></description>
 </item><item>
-    <title>Installasi DHCP Server Debian 10</title>
-    <link>https://aryapramudika.github.io/installasi-dhcp-server-debian-10/</link>
+    <title>Setup DHCP Server Debian 10</title>
+    <link>https://aryapramudika.github.io/setup-dhcp-server-debian-10/</link>
     <pubDate>Sun, 24 Jan 2021 07:39:56 &#43;0700</pubDate>
     <author>Author</author>
-    <guid>https://aryapramudika.github.io/installasi-dhcp-server-debian-10/</guid>
+    <guid>https://aryapramudika.github.io/setup-dhcp-server-debian-10/</guid>
     <description><![CDATA[Latar Belakang Saya sedang belajar tentang DHCP Server pada Debian dan ingin mencatatnya disini.
 Tujuan Agar tetap ingat karena menurut pemula seperti saya konfigurasi ini cukup rumit.
 Sekilas tentang DHCP Apa itu DHCP?
