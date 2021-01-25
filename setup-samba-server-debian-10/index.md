@@ -77,30 +77,30 @@ untuk mengakses Samba Server terdapat 2 cara yaitu:
 
 Buka File Manager
 
-![File Manager](/img/smb01.png)
+![File Manager](/img/smb01.png "Buka File Manager")
 
 lalu tekan *Ctrl+L*
 
-![CTRL+L](/img/smb02.png)
+![CTRL+L](/img/smb02.png "tekan CTRL + L")
 
 setelah itu masukkan
 
 ```bash
 smb://ipserver
 ```
-![IP Server](/img/smb03.png)
+![IP Server](/img/smb03.png "Memasukkan IP Server")
 
 Lalu tekan enter, dan muncul folder dari Samba Server kita pilih folder Share Film
 
-![Muncul](/img/smb04.png)
+![Muncul](/img/smb04.png "Muncul list folder")
 
 Lalu *connect as Anonymous* dan klik **Connect**
 
-![Connect](/img/smb05.png)
+![Connect](/img/smb05.png "Connect dengan guest")
 
-dan berhasil
+Dan berhasil
 
-![Berhasil](/img/smb06.png)
+![Berhasil](/img/smb06.png "Berhasil")
 
 ### 2 Mengakses dengan Terminal
 
@@ -119,7 +119,9 @@ smbclient -L 192.168.1.233
 ```
 dan tekan enter
 
-![melihat samba sever](smbc01.png)
+![melihat samba sever](/img/smbc01.png "Kosongi tekan enter")
+
+![melihat samba server](/img/smbc02.png "List Samba Sever")
 
 Lalu mount nama Samba Server ke folder */home/arya/film*
 
@@ -127,6 +129,14 @@ Lalu mount nama Samba Server ke folder */home/arya/film*
 sudo mount //192.168.1.233/ /home/arya/film
 ```
 dan tekan enter
+
+![mount samba server](/img/smbc03.png "Memasukkan perintah")
+
+![mount samba server](/img/smbc04.png "Kosongi tekan enter")
+
+Dan berhasil
+
+![berhasil mount](/img/smbc05.ong "Berhasil")
 
 * Mounting Permanen
 
