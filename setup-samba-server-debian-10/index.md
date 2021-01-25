@@ -136,7 +136,7 @@ dan tekan enter
 
 Dan berhasil
 
-![berhasil mount](/img/smbc05.ong "Berhasil")
+![berhasil mount](/img/smbc05.png "Berhasil")
 
 * Mounting Permanen
 
