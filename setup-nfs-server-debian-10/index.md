@@ -139,3 +139,9 @@ Lalu tambahkan di baris paling bawah
 
 {{< /admonition >}}
 
+## Selesai!
+
+Konfigurasi NFS Server di Debian 10 berhasil!!
+
+Selamat mencoba !!
+
