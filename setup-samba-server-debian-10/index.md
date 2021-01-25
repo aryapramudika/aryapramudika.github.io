@@ -64,7 +64,14 @@ Konfigurasi Samba Server selesai, lanjut ke Samba Client
 
 ## Konfigurasi Klien
 
-di sini saya menggunakan OS Ubuntu 20.04, untuk mengakses Samba Server terdapat 2 cara yaitu:
+di sini klien saya menggunakan OS Ubuntu 20.04,
+
+Pertama lakukan installasi paket *samba-client* & *cifs-utils*
+
+```bash
+sudo apt -y install samba-client cifs-utils
+```
+untuk mengakses Samba Server terdapat 2 cara yaitu:
 
 ### 1. Mengakses dengan File Manager
 
@@ -95,10 +102,76 @@ dan berhasil
 
 ![Berhasil](/img/smb06.png)
 
+### 2 Mengakses dengan Terminal
 
+* Mounting Sementara
 
+Pertama buat folder untuk Mounting
+
+```bash
+mkdir /home/arya/film
+```
+
+Lalu lihat list Samba Server menggunakan perintah
+
+```bash
+smbclient -L 192.168.1.233
+```
+dan tekan enter
+
+![melihat samba sever](smbc01.png)
+
+Lalu mount nama Samba Server ke folder */home/arya/film*
+
+```bash
+sudo mount //192.168.1.233/ /home/arya/film
+```
+dan tekan enter
+
+* Mounting Permanen
+
+Edit file */etc/fstab*
+
+```bash
+sudo nano /etc/fstab
+```
+Lalu tambahkan konfigurasinya setelah baris paling bawah
+
+```bash
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+# / was on /dev/sda5 during installation
+UUID=13001d90-f605-4673-b8d2-faa228380464 /               ext4    errors=remount-ro 0       1
+# /boot/efi was on /dev/sda1 during installation
+UUID=B6CD-AEA1  /boot/efi       vfat    umask=0077      0       1
+/swapfile                                 none            swap    sw              0       0
+/dev/fd0        /media/floppy0  auto    rw,user,noauto,exec,utf8 0       0
+#mount ke DIR
+#10.10.10.2:/test	/home/arya/DIR		nfs4	netdev
+
+#mount ke nfs2
+#10.10.10.2:/nfs2	/home/arya/nfs2		nfs4	rw
+
+# Samba
+//192.168.1.233/Share\ Film   /home/arya/film   cifs    netdev
+```
 
 ## Selesai
 
-Konfigurasi Samba kita berhasil dilakukan
+Konfigurasi Samba berhasil dilakukan
+
+Selamat Mencoba !!
+
+## Referensi
+
+* https://linuxconfig.org/how-to-set-up-a-samba-server-on-debian-10-buster#h4-configure-a-new-share
+
+* https://help.ubuntu.com/community/Samba/SambaClientGuide
+
+* https://askubuntu.com/questions/1050460/how-to-mount-smb-share-on-ubuntu-18-04
 

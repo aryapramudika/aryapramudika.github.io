@@ -33,7 +33,7 @@ Sekilas tentang Samba  Samba adalah program yang bersifat open source yang menye
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/aryapramudika.github.io\/setup-samba-server-debian-10\/"
-        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  327 ,
+        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  544 ,
         "url": "https:\/\/aryapramudika.github.io\/setup-samba-server-debian-10\/","datePublished": "2021-01-25T10:12:46+07:00","dateModified": "2021-01-25T10:12:46+07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/aryapramudika.github.io\/images\/avatar.png"},"author": {
@@ -110,8 +110,8 @@ Sekilas tentang Samba  Samba adalah program yang bersifat open source yang menye
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Setup Samba Server Debian 10</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Arya Pramudika</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-25">2021-01-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;327 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-25">2021-01-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;544 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -126,9 +126,11 @@ Sekilas tentang Samba  Samba adalah program yang bersifat open source yang menye
     <li><a href="#konfigurasi-klien">Konfigurasi Klien</a>
       <ul>
         <li><a href="#1-mengakses-dengan-file-manager">1. Mengakses dengan File Manager</a></li>
+        <li><a href="#2-mengakses-dengan-terminal">2 Mengakses dengan Terminal</a></li>
       </ul>
     </li>
     <li><a href="#selesai">Selesai</a></li>
+    <li><a href="#referensi">Referensi</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h2 id="latar-belakang">Latar Belakang</h2>
@@ -203,7 +205,17 @@ Sekilas tentang Samba  Samba adalah program yang bersifat open source yang menye
 </div>
 </div><p>Konfigurasi Samba Server selesai, lanjut ke Samba Client</p>
 <h2 id="konfigurasi-klien">Konfigurasi Klien</h2>
-<p>di sini saya menggunakan OS Ubuntu 20.04, untuk mengakses Samba Server terdapat 2 cara yaitu:</p>
+<p>di sini klien saya menggunakan OS Ubuntu 20.04,</p>
+<p>Pertama lakukan installasi paket <em>samba-client</em> &amp; <em>cifs-utils</em></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">sudo apt -y install samba-client cifs-utils
+</code></pre></td></tr></table>
+</div>
+</div><p>untuk mengakses Samba Server terdapat 2 cara yaitu:</p>
 <h3 id="1-mengakses-dengan-file-manager">1. Mengakses dengan File Manager</h3>
 <p>Buka File Manager</p>
 <p><img
@@ -267,8 +279,123 @@ Sekilas tentang Samba  Samba adalah program yang bersifat open source yang menye
         data-sizes="auto"
         alt="/img/smb06.png"
         title="Berhasil" /></p>
-<h2 id="selesai">Selesai</h2>
-<p>Konfigurasi Samba kita berhasil dilakukan</p>
+<h3 id="2-mengakses-dengan-terminal">2 Mengakses dengan Terminal</h3>
+<ul>
+<li>Mounting Sementara</li>
+</ul>
+<p>Pertama buat folder untuk Mounting</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">mkdir /home/arya/film
+</code></pre></td></tr></table>
+</div>
+</div><p>Lalu lihat list Samba Server menggunakan perintah</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">smbclient -L 192.168.1.233
+</code></pre></td></tr></table>
+</div>
+</div><p>dan tekan enter</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="smbc01.png"
+        data-srcset="smbc01.png, smbc01.png 1.5x, smbc01.png 2x"
+        data-sizes="auto"
+        alt="smbc01.png"
+        title="melihat samba sever" /></p>
+<p>Lalu mount nama Samba Server ke folder <em>/home/arya/film</em></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">sudo mount //192.168.1.233/ /home/arya/film
+</code></pre></td></tr></table>
+</div>
+</div><p>dan tekan enter</p>
+<ul>
+<li>Mounting Permanen</li>
+</ul>
+<p>Edit file <em>/etc/fstab</em></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">sudo nano /etc/fstab
+</code></pre></td></tr></table>
+</div>
+</div><p>Lalu tambahkan konfigurasinya setelah baris paling bawah</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># /etc/fstab: static file system information.</span>
+<span class="c1">#</span>
+<span class="c1"># Use &#39;blkid&#39; to print the universally unique identifier for a</span>
+<span class="c1"># device; this may be used with UUID= as a more robust way to name devices</span>
+<span class="c1"># that works even if disks are added and removed. See fstab(5).</span>
+<span class="c1">#</span>
+<span class="c1"># &lt;file system&gt; &lt;mount point&gt;   &lt;type&gt;  &lt;options&gt;       &lt;dump&gt;  &lt;pass&gt;</span>
+<span class="c1"># / was on /dev/sda5 during installation</span>
+<span class="nv">UUID</span><span class="o">=</span>13001d90-f605-4673-b8d2-faa228380464 /               ext4    <span class="nv">errors</span><span class="o">=</span>remount-ro <span class="m">0</span>       <span class="m">1</span>
+<span class="c1"># /boot/efi was on /dev/sda1 during installation</span>
+<span class="nv">UUID</span><span class="o">=</span>B6CD-AEA1  /boot/efi       vfat    <span class="nv">umask</span><span class="o">=</span><span class="m">0077</span>      <span class="m">0</span>       <span class="m">1</span>
+/swapfile                                 none            swap    sw              <span class="m">0</span>       <span class="m">0</span>
+/dev/fd0        /media/floppy0  auto    rw,user,noauto,exec,utf8 <span class="m">0</span>       <span class="m">0</span>
+<span class="c1">#mount ke DIR</span>
+<span class="c1">#10.10.10.2:/test	/home/arya/DIR		nfs4	netdev</span>
+
+<span class="c1">#mount ke nfs2</span>
+<span class="c1">#10.10.10.2:/nfs2	/home/arya/nfs2		nfs4	rw</span>
+
+<span class="c1"># Samba</span>
+//192.168.1.233/Share<span class="se">\ </span>Film   /home/arya/film   cifs    netdev
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="selesai">Selesai</h2>
+<p>Konfigurasi Samba berhasil dilakukan</p>
+<p>Selamat Mencoba !!</p>
+<h2 id="referensi">Referensi</h2>
+<ul>
+<li>
+<p><a href="https://linuxconfig.org/how-to-set-up-a-samba-server-on-debian-10-buster#h4-configure-a-new-share">https://linuxconfig.org/how-to-set-up-a-samba-server-on-debian-10-buster#h4-configure-a-new-share</a></p>
+</li>
+<li>
+<p><a href="https://help.ubuntu.com/community/Samba/SambaClientGuide">https://help.ubuntu.com/community/Samba/SambaClientGuide</a></p>
+</li>
+<li>
+<p><a href="https://askubuntu.com/questions/1050460/how-to-mount-smb-share-on-ubuntu-18-04">https://askubuntu.com/questions/1050460/how-to-mount-smb-share-on-ubuntu-18-04</a></p>
+</li>
+</ul>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
