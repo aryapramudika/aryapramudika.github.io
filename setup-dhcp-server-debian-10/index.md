@@ -22,6 +22,8 @@ Pertama ktia perlu melakukan installasi paket *isc-dhcp-server*
 ```bash
 apt -y install isc-dhcp-server
 ```
+![Install ISC-DHCP-Server](/img/iscd.png)
+
 > Jika muncul peringatan failed setelah install itu terjadi karena ip kita tidak sesuai dengan IP Address pada konfigurasi isc-dhcp-server, untuk itu **abaikan** saja.
 
 Lalu lakukan konfigurasi interface yang akan dijadikan DHCP Server
@@ -29,7 +31,11 @@ Lalu lakukan konfigurasi interface yang akan dijadikan DHCP Server
 ```bash
 nano /etc/default/isc-dhcp-server
 ```
+![edit default isc-dhcp-server](/img/nanoiscd.png)
+
 Tambahkan nama interface di INTERFACESv4, lalu beri tanda **#** pada INTERFACESv6
+
+![edit interfaces](/img/iscdf.png)
 
 ```bash
 # Defaults for isc-dhcp-server (sourced by /etc/init.d/isc-dhcp-server)

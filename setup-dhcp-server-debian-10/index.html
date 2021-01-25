@@ -149,7 +149,15 @@
 <pre class="chroma"><code class="language-bash" data-lang="bash">apt -y install isc-dhcp-server
 </code></pre></td></tr></table>
 </div>
-</div><blockquote>
+</div><p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/iscd.png"
+        data-srcset="/img/iscd.png, /img/iscd.png 1.5x, /img/iscd.png 2x"
+        data-sizes="auto"
+        alt="/img/iscd.png"
+        title="Install ISC-DHCP-Server" /></p>
+<blockquote>
 <p>Jika muncul peringatan failed setelah install itu terjadi karena ip kita tidak sesuai dengan IP Address pada konfigurasi isc-dhcp-server, untuk itu <strong>abaikan</strong> saja.</p>
 </blockquote>
 <p>Lalu lakukan konfigurasi interface yang akan dijadikan DHCP Server</p>
@@ -161,7 +169,23 @@
 <pre class="chroma"><code class="language-bash" data-lang="bash">nano /etc/default/isc-dhcp-server
 </code></pre></td></tr></table>
 </div>
-</div><p>Tambahkan nama interface di INTERFACESv4, lalu beri tanda <strong>#</strong> pada INTERFACESv6</p>
+</div><p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/nanoiscd.png"
+        data-srcset="/img/nanoiscd.png, /img/nanoiscd.png 1.5x, /img/nanoiscd.png 2x"
+        data-sizes="auto"
+        alt="/img/nanoiscd.png"
+        title="edit default isc-dhcp-server" /></p>
+<p>Tambahkan nama interface di INTERFACESv4, lalu beri tanda <strong>#</strong> pada INTERFACESv6</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/iscdf.png"
+        data-srcset="/img/iscdf.png, /img/iscdf.png 1.5x, /img/iscdf.png 2x"
+        data-sizes="auto"
+        alt="/img/iscdf.png"
+        title="edit interfaces" /></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
