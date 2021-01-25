@@ -22,7 +22,7 @@ Pertama ktia perlu melakukan installasi paket *isc-dhcp-server*
 ```bash
 apt -y install isc-dhcp-server
 ```
-![Install ISC-DHCP-Server](/img/iscd.png)
+![Install ISC-DHCP-Server](/img/iscd.png 'Menginstall ISC-DHCP-Server')
 
 > Jika muncul peringatan failed setelah install itu terjadi karena ip kita tidak sesuai dengan IP Address pada konfigurasi isc-dhcp-server, untuk itu **abaikan** saja.
 
