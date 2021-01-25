@@ -1,4 +1,7 @@
-# About
+# Tentang Saya
 
-Saya adalah pelajar SMK
+
+![saya](/img/arya.png)
+
+Saya adalah pelajar SMK yang tertarik dengan bidang Jaringan dan Komputer.
 
