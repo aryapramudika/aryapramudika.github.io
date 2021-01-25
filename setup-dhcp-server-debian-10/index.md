@@ -31,11 +31,11 @@ Lalu lakukan konfigurasi interface yang akan dijadikan DHCP Server
 ```bash
 nano /etc/default/isc-dhcp-server
 ```
-![edit default isc-dhcp-server](/img/nanoiscd.png)
+![edit default isc-dhcp-server](/img/nanoiscd.png 'Edit Nama Interface')
 
 Tambahkan nama interface di INTERFACESv4, lalu beri tanda **#** pada INTERFACESv6
 
-![edit interfaces](/img/iscdf.png)
+![edit interfaces](/img/iscdf.png 'Selesai menambahkan Interface')
 
 ```bash
 # Defaults for isc-dhcp-server (sourced by /etc/init.d/isc-dhcp-server)
