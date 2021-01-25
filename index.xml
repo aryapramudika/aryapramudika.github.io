@@ -12,7 +12,9 @@
     <pubDate>Mon, 25 Jan 2021 10:12:46 &#43;0700</pubDate>
     <author>Author</author>
     <guid>https://aryapramudika.github.io/setup-samba-server-debian-10/</guid>
-    <description><![CDATA[Latar Belakang Saya sedang belajar tentang Samba Server dan ingin mencatatnya disini.
+    <description><![CDATA[<div class="featured-image">
+                <img src="/img/thumb/debian-samba.png" referrerpolicy="no-referrer">
+            </div>Latar Belakang Saya sedang belajar tentang Samba Server dan ingin mencatatnya disini.
 Tujuan Agar saya lebih mahir dan paham tentang konfigurasi Samba Server
 Sekilas tentang Samba  Samba adalah program yang bersifat open source yang menyediakan layanan berbagi berkas (file service) dan berbagi alat pencetak (print service), resolusi nama NetBIOS, dan pengumuman layanan (NetBIOS service announcement/browsing). Sebagai sebuah aplikasi file server, Samba mengizinkan berkas, alat pencetak, dan beberapa sumber daya lainnya agar dapat digunakan oleh banyak pengguna dalam keluarga sistem operasi UNIX, dan mengizinkan interoperabilitas dengan sistem operasi Windows.]]></description>
 </item><item>
@@ -21,7 +23,9 @@ Sekilas tentang Samba  Samba adalah program yang bersifat open source yang menye
     <pubDate>Sun, 24 Jan 2021 12:25:14 &#43;0700</pubDate>
     <author>Author</author>
     <guid>https://aryapramudika.github.io/setup-nfs-server-debian-10/</guid>
-    <description><![CDATA[Latar Belakang Saya sedang belajar tentang NFS Server pada Debian dan ingin mencatatnya disini.
+    <description><![CDATA[<div class="featured-image">
+                <img src="/img/thumb/debian-nfs.png" referrerpolicy="no-referrer">
+            </div>Latar Belakang Saya sedang belajar tentang NFS Server pada Debian dan ingin mencatatnya disini.
 Tujuan Agar tetap ingat konfigurasi tentang NFS Server.
 Sekilas tentang NFS  Network File Sharing adalah sebuah kumpulan protokol yang digunakan untuk mengakses beberapa sistem berkas melalui jaringan. NFS umumnya hanya bisa bekerja di UNIX Sistem, untuk di Windows tidak menggunakan NFS melainkan SMB (Server Message Block) sehingga tidak kompatibel dengan sistem NFS. Untuk SMB kita akan bahas di artikel berikutnya.]]></description>
 </item><item>

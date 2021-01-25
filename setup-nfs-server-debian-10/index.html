@@ -5,22 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>Setup NFS Server Debian 10 - Arya Lab</title><meta name="Description" content="About LoveIt Theme"><meta property="og:title" content="Setup NFS Server Debian 10" />
-<meta property="og:description" content="Latar Belakang Saya sedang belajar tentang NFS Server pada Debian dan ingin mencatatnya disini.
-Tujuan Agar tetap ingat konfigurasi tentang NFS Server.
-Sekilas tentang NFS  Network File Sharing adalah sebuah kumpulan protokol yang digunakan untuk mengakses beberapa sistem berkas melalui jaringan. NFS umumnya hanya bisa bekerja di UNIX Sistem, untuk di Windows tidak menggunakan NFS melainkan SMB (Server Message Block) sehingga tidak kompatibel dengan sistem NFS. Untuk SMB kita akan bahas di artikel berikutnya." />
+        <title>Setup NFS Server Debian 10 - Arya Lab</title><meta name="Description" content="Belajar Setup NFS Server Debian 10"><meta property="og:title" content="Setup NFS Server Debian 10" />
+<meta property="og:description" content="Belajar Setup NFS Server Debian 10" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://aryapramudika.github.io/setup-nfs-server-debian-10/" />
-<meta property="og:image" content="https://aryapramudika.github.io/logo.png"/>
+<meta property="og:image" content="https://aryapramudika.github.io/img/thumb/debian-nfs.png" />
 <meta property="article:published_time" content="2021-01-24T12:25:14+07:00" />
 <meta property="article:modified_time" content="2021-01-24T12:25:14+07:00" />
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://aryapramudika.github.io/logo.png"/>
+<meta name="twitter:image" content="https://aryapramudika.github.io/img/thumb/debian-nfs.png"/>
 
 <meta name="twitter:title" content="Setup NFS Server Debian 10"/>
-<meta name="twitter:description" content="Latar Belakang Saya sedang belajar tentang NFS Server pada Debian dan ingin mencatatnya disini.
-Tujuan Agar tetap ingat konfigurasi tentang NFS Server.
-Sekilas tentang NFS  Network File Sharing adalah sebuah kumpulan protokol yang digunakan untuk mengakses beberapa sistem berkas melalui jaringan. NFS umumnya hanya bisa bekerja di UNIX Sistem, untuk di Windows tidak menggunakan NFS melainkan SMB (Server Message Block) sehingga tidak kompatibel dengan sistem NFS. Untuk SMB kita akan bahas di artikel berikutnya."/>
+<meta name="twitter:description" content="Belajar Setup NFS Server Debian 10"/>
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -39,7 +35,7 @@ Sekilas tentang NFS  Network File Sharing adalah sebuah kumpulan protokol yang d
             "name": "xxxx","logo": "https:\/\/aryapramudika.github.io\/images\/avatar.png"},"author": {
                 "@type": "Person",
                 "name": "Arya Pramudika"
-            },"description": ""
+            },"description": "Belajar Setup NFS Server Debian 10"
     }
     </script></head>
     <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
@@ -112,7 +108,14 @@ Sekilas tentang NFS  Network File Sharing adalah sebuah kumpulan protokol yang d
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Arya Pramudika</a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-24">2021-01-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;426 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
-        </div><div class="details toc" id="toc-static"  kept="">
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/thumb/debian-nfs.png"
+        data-srcset="/img/thumb/debian-nfs.png, /img/thumb/debian-nfs.png 1.5x, /img/thumb/debian-nfs.png 2x"
+        data-sizes="auto"
+        alt="/img/thumb/debian-nfs.png"
+        title="Belajar Setup NFS Server Debian 10" /></div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
                     <span><i class="details-icon fas fa-angle-right"></i></span>

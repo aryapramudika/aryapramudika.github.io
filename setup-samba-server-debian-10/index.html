@@ -5,22 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <title>Setup Samba Server Debian 10 - Arya Lab</title><meta name="Description" content="About LoveIt Theme"><meta property="og:title" content="Setup Samba Server Debian 10" />
-<meta property="og:description" content="Latar Belakang Saya sedang belajar tentang Samba Server dan ingin mencatatnya disini.
-Tujuan Agar saya lebih mahir dan paham tentang konfigurasi Samba Server
-Sekilas tentang Samba  Samba adalah program yang bersifat open source yang menyediakan layanan berbagi berkas (file service) dan berbagi alat pencetak (print service), resolusi nama NetBIOS, dan pengumuman layanan (NetBIOS service announcement/browsing). Sebagai sebuah aplikasi file server, Samba mengizinkan berkas, alat pencetak, dan beberapa sumber daya lainnya agar dapat digunakan oleh banyak pengguna dalam keluarga sistem operasi UNIX, dan mengizinkan interoperabilitas dengan sistem operasi Windows." />
+        <title>Setup Samba Server Debian 10 - Arya Lab</title><meta name="Description" content="Belajar Setup Samba Server Debian 10"><meta property="og:title" content="Setup Samba Server Debian 10" />
+<meta property="og:description" content="Belajar Setup Samba Server Debian 10" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://aryapramudika.github.io/setup-samba-server-debian-10/" />
-<meta property="og:image" content="https://aryapramudika.github.io/logo.png"/>
+<meta property="og:image" content="https://aryapramudika.github.io/img/thumb/debian-samba.png" />
 <meta property="article:published_time" content="2021-01-25T10:12:46+07:00" />
 <meta property="article:modified_time" content="2021-01-25T10:12:46+07:00" />
 <meta name="twitter:card" content="summary_large_image"/>
-<meta name="twitter:image" content="https://aryapramudika.github.io/logo.png"/>
+<meta name="twitter:image" content="https://aryapramudika.github.io/img/thumb/debian-samba.png"/>
 
 <meta name="twitter:title" content="Setup Samba Server Debian 10"/>
-<meta name="twitter:description" content="Latar Belakang Saya sedang belajar tentang Samba Server dan ingin mencatatnya disini.
-Tujuan Agar saya lebih mahir dan paham tentang konfigurasi Samba Server
-Sekilas tentang Samba  Samba adalah program yang bersifat open source yang menyediakan layanan berbagi berkas (file service) dan berbagi alat pencetak (print service), resolusi nama NetBIOS, dan pengumuman layanan (NetBIOS service announcement/browsing). Sebagai sebuah aplikasi file server, Samba mengizinkan berkas, alat pencetak, dan beberapa sumber daya lainnya agar dapat digunakan oleh banyak pengguna dalam keluarga sistem operasi UNIX, dan mengizinkan interoperabilitas dengan sistem operasi Windows."/>
+<meta name="twitter:description" content="Belajar Setup Samba Server Debian 10"/>
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -39,7 +35,7 @@ Sekilas tentang Samba  Samba adalah program yang bersifat open source yang menye
             "name": "xxxx","logo": "https:\/\/aryapramudika.github.io\/images\/avatar.png"},"author": {
                 "@type": "Person",
                 "name": "Arya Pramudika"
-            },"description": ""
+            },"description": "Belajar Setup Samba Server Debian 10"
     }
     </script></head>
     <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
@@ -112,7 +108,14 @@ Sekilas tentang Samba  Samba adalah program yang bersifat open source yang menye
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Arya Pramudika</a></span></div>
             <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-25">2021-01-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;626 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
-        </div><div class="details toc" id="toc-static"  kept="">
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/thumb/debian-samba.png"
+        data-srcset="/img/thumb/debian-samba.png, /img/thumb/debian-samba.png 1.5x, /img/thumb/debian-samba.png 2x"
+        data-sizes="auto"
+        alt="/img/thumb/debian-samba.png"
+        title="Belajar Setup Samba Server Debian 10" /></div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
                     <span><i class="details-icon fas fa-angle-right"></i></span>
