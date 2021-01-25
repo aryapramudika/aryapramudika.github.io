@@ -14,7 +14,7 @@ Tujuan saya menulis ini yaitu sebagai catatan belajar, jika saya lupa sesuatu ma
 
 Untuk persyaratan installasi yaitu:
 
-1. Mempunyai koneksi Internet untuk mendownload iso CD/DVD Debian Buster.
+1. Mempunyai koneksi Internet untuk mendownload iso CD/DVD Debian 10.
 
 2. Perangkat Laptop/PC bisa juga Virtual seperti VirtualBox/VMWare
 
