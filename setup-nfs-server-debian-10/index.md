@@ -85,12 +85,6 @@ Pertama kita perlu melakukan intallasi paket *nfs-common*
 apt -y install nfs-common
 ```
 
-Untuk melihat folder yang di share
-
-```bash
-showmount -e 10.10.10.2
-```
-
 Untuk mengakses NFS Server terdapat dua cara yaitu:
 
 ### 1. Mounting Manual dari Terminal
@@ -107,11 +101,12 @@ Lalu kita lakukan perintah
 mount 10.10.10.2:/nfs3   /home/arya/sharing
 ```
 {{< admonition note "Penjelasan">}}
-*10.10.10.2* adalah IP server
+
+*10.10.10.2* adalah IP Interface
 
 *:/nfs3* adalah folder yang di share
 
-*/home/arya/sharing* adalah folder yang kita mount ke server
+*/home/arya/sharing* adalah folder yang kita mount ke server.
 
 {{< /admonition >}}
 
@@ -130,28 +125,16 @@ Lalu tambahkan di baris paling bawah
 ```bash
 10.10.10.2:/nfs3      /home/arya/Sharing      nfs     netdev     
 ```
-
 {{< admonition note "Penjelasan">}}
 
 *10.10.10.2* adalah IP server
 
-*:/nfs3* adalah folder yang di share
+*:/nfs3* adalah folder yang di share.
 
-*/home/arya/sharing* adalah folder yang kita mount ke server
+*/home/arya/sharing* adalah folder yang kita mount ke server.
 
-*nfs* adalah tipe file/folder
+*nfs* adalah tipe file/folder.
 
-*netdev** adalah mounting nfs server ke folder akan 
-berjalan jika internet menyala
-
+*netdev* adalah mounting akan berjalan jika kita terhubung ke jaringan.
 {{< /admonition >}}
-
-## Selesai !
-
-Konfigurasi NFS Berhasil dilakukan
-
-## Referensi
-
-* https://linuxconfig.org/how-to-set-up-a-nfs-server-on-debian-10-buster
-* https://www.golinuxcloud.com/show-nfs-shares-list-nfs-client-mount-points/
 
