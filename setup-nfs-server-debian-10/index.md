@@ -123,7 +123,7 @@ nano /etc/fstab
 Lalu tambahkan di baris paling bawah
 
 ```bash
-10.10.10.2:/nfs3      /home/arya/Sharing      nfs     netdev     
+10.10.10.2:/nfs3      /home/arya/Sharing      nfs     _netdev     
 ```
 {{< admonition note "Penjelasan">}}
 
@@ -135,7 +135,7 @@ Lalu tambahkan di baris paling bawah
 
 *nfs* adalah tipe file/folder.
 
-*netdev* adalah mounting akan berjalan jika kita terhubung ke jaringan.
+*_netdev* adalah mounting akan berjalan jika kita terhubung ke jaringan.
 
 {{< /admonition >}}
 
