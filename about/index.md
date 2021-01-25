@@ -1,7 +1,7 @@
-# Tentang Saya
+# About
 
 
-![saya](/img/arya.png)
+Web ini dibuat sebagai catatan belajar saya selama belajar di SMK dan belajar secara otodidak.
 
-Saya adalah pelajar SMK yang tertarik dengan bidang Jaringan dan Komputer.
+Web ini dibuat dengan SSG(Static Site Generator), [Hugo](https://gohugo.io)
 
