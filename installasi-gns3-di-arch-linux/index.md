@@ -1,4 +1,4 @@
-# Installasi GNS3 Di Arch Linux Based
+# Installasi GNS3 Di Arch Linux/Based
 
 
 ## Sekilas Tentang GNS3
