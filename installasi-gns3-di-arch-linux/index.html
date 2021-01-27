@@ -33,7 +33,7 @@ Persiapan Pastikan sudah menginstall Yay AUR-Helper:
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/aryapramudika.github.io\/installasi-gns3-di-arch-linux\/"
-        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  322 ,
+        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  399 ,
         "url": "https:\/\/aryapramudika.github.io\/installasi-gns3-di-arch-linux\/","datePublished": "2021-01-27T15:18:22+07:00","dateModified": "2021-01-27T15:18:22+07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/aryapramudika.github.io\/images\/avatar.png"},"author": {
@@ -110,7 +110,7 @@ Persiapan Pastikan sudah menginstall Yay AUR-Helper:
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Installasi GNS3 Di Arch Linux Based</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Arya Pramudika</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-27">2021-01-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;322 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-27">2021-01-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;399 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -133,6 +133,7 @@ Persiapan Pastikan sudah menginstall Yay AUR-Helper:
         <li><a href="#8-gns3">8. GNS3</a></li>
       </ul>
     </li>
+    <li><a href="#membuat-launcher-gns3">Membuat Launcher GNS3</a></li>
     <li><a href="#selesai">Selesai</a></li>
     <li><a href="#sumber--referensi">Sumber &amp; Referensi</a></li>
   </ul>
@@ -323,6 +324,39 @@ rc-service docker restart
 <td class="lntd">
 <pre class="chroma"><code class="language-bash" data-lang="bash">systemctl <span class="nb">enable</span> gns3-server
 systemctl start gns3-server
+</code></pre></td></tr></table>
+</div>
+</div><p>Untuk init sistem lain seperti OpenRC yang saya gunakan gns3-serve akan aktif sendiri ketika kita menjalankan GNS3</p>
+<h2 id="membuat-launcher-gns3">Membuat Launcher GNS3</h2>
+<p>Jika launcher GNS3 belum muncul di Desktop Environment setelah installasi, maka buat launcher secara manual</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">sudo tee -a /usr/share/applications/gns3.desktop &gt; /dev/null <span class="s">&lt;&lt; EOL
+</span><span class="s">sudo tee -a /usr/share/applications/gns3.desktop &gt; /dev/null &lt;&lt; EOL</span>
+<span class="o">[</span>Desktop Entry<span class="o">]</span>
+<span class="nv">Type</span><span class="o">=</span>Application
+<span class="nv">Encoding</span><span class="o">=</span>UTF-8
+<span class="nv">Name</span><span class="o">=</span>GNS3
+<span class="nv">Comment</span><span class="o">=</span>Graphical Network Simulator <span class="m">3</span>
+<span class="nv">Exec</span><span class="o">=</span>/usr/bin/gns3
+<span class="nv">Icon</span><span class="o">=</span>gns3
+<span class="nv">Terminal</span><span class="o">=</span><span class="nb">false</span>
+<span class="nv">Categories</span><span class="o">=</span>Application<span class="p">;</span>Network<span class="p">;</span>Qt<span class="p">;</span>
+EOL
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="selesai">Selesai</h2>

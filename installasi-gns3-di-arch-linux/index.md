@@ -125,6 +125,26 @@ Menjalankan GNS3-Server :
 systemctl enable gns3-server
 systemctl start gns3-server
 ```
+Untuk init sistem lain seperti OpenRC yang saya gunakan gns3-serve akan aktif sendiri ketika kita menjalankan GNS3
+
+## Membuat Launcher GNS3
+
+Jika launcher GNS3 belum muncul di Desktop Environment setelah installasi, maka buat launcher secara manual
+
+```bash
+sudo tee -a /usr/share/applications/gns3.desktop > /dev/null << EOL
+sudo tee -a /usr/share/applications/gns3.desktop > /dev/null << EOL
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=GNS3
+Comment=Graphical Network Simulator 3
+Exec=/usr/bin/gns3
+Icon=gns3
+Terminal=false
+Categories=Application;Network;Qt;
+EOL
+```
 
 ## Selesai
 
