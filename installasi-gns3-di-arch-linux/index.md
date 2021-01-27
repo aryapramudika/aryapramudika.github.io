@@ -47,9 +47,7 @@ sudo sysctl net.unix.max_dgram_qlen=10000
 Konfigurasi Permanen
 
 ```bash
-sudo tee -a /etc/sysctl.d/99-sysctl.conf > /dev/null << EOL
-net.unix.max_dgram_qlen=10000
-EOL
+sudo echo "net.unix.max_dgram_qlen=10000" > /etc/sysctl.d/99-sysctl.conf
 ```
 ### 4. uBridge
 
