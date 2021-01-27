@@ -33,7 +33,7 @@ Persiapan Pastikan sudah menginstall Yay AUR-Helper:
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/aryapramudika.github.io\/installasi-gns3-di-arch-linux\/"
-        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  350 ,
+        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  337 ,
         "url": "https:\/\/aryapramudika.github.io\/installasi-gns3-di-arch-linux\/","datePublished": "2021-01-27T15:18:22+07:00","dateModified": "2021-01-27T15:18:22+07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/aryapramudika.github.io\/images\/avatar.png"},"author": {
@@ -110,7 +110,7 @@ Persiapan Pastikan sudah menginstall Yay AUR-Helper:
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Installasi GNS3 Di Arch Linux Based</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Arya Pramudika</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-27">2021-01-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;350 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-27">2021-01-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;337 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -121,16 +121,16 @@ Persiapan Pastikan sudah menginstall Yay AUR-Helper:
   <ul>
     <li><a href="#sekilas-tentang-gns3">Sekilas Tentang GNS3</a></li>
     <li><a href="#persiapan">Persiapan</a></li>
-    <li><a href="#installasi">Installasi</a>
+    <li><a href="#installasi--konfigurasi">Installasi &amp; Konfigurasi</a>
       <ul>
-        <li><a href="#1-install-dynamips-serta-package-yang-dibutuhkan">1. Install Dynamips Serta Package Yang Dibutuhkan</a></li>
-        <li><a href="#2-installasi-vpcs">2. Installasi VPCS</a></li>
-        <li><a href="#3-installasi-iol-untuk-simulasi-cisco">3. Installasi IOL Untuk Simulasi Cisco</a></li>
-        <li><a href="#4-installasi-ubridge">4. Installasi uBridge</a></li>
-        <li><a href="#5-installasi-qemu">5. Installasi Qemu</a></li>
-        <li><a href="#6-installasi-docker">6. Installasi Docker</a></li>
-        <li><a href="#7-installasi-wireshark">7. Installasi Wireshark</a></li>
-        <li><a href="#8-installasi-gns3-serta-package-yang-dibutuhkan">8. Installasi GNS3 Serta Package Yang Dibutuhkan</a></li>
+        <li><a href="#1-dynamips">1. Dynamips</a></li>
+        <li><a href="#2-vpcs">2. VPCS</a></li>
+        <li><a href="#3-iol-untuk-simulasi-cisco">3. IOL Untuk Simulasi Cisco</a></li>
+        <li><a href="#4-ubridge">4. uBridge</a></li>
+        <li><a href="#5-qemu">5. Qemu</a></li>
+        <li><a href="#6-docker">6. Docker</a></li>
+        <li><a href="#7-wireshark">7. Wireshark</a></li>
+        <li><a href="#8-gns3">8. GNS3</a></li>
       </ul>
     </li>
     <li><a href="#selesai">Selesai</a></li>
@@ -150,9 +150,9 @@ Persiapan Pastikan sudah menginstall Yay AUR-Helper:
 </code></pre></td></tr></table>
 </div>
 </div><p>Selanjutnya ke tahap Installasi</p>
-<h2 id="installasi">Installasi</h2>
+<h2 id="installasi--konfigurasi">Installasi &amp; Konfigurasi</h2>
 <p>Untuk installasi kita perlu menginstall package satu persatu</p>
-<h3 id="1-install-dynamips-serta-package-yang-dibutuhkan">1. Install Dynamips Serta Package Yang Dibutuhkan</h3>
+<h3 id="1-dynamips">1. Dynamips</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -161,7 +161,7 @@ Persiapan Pastikan sudah menginstall Yay AUR-Helper:
 <pre class="chroma"><code class="language-bash" data-lang="bash">sudo pacman -S libelf libpcap cmake <span class="o">&amp;&amp;</span> yay -S dynamips --noconfirm <span class="o">&amp;&amp;</span> sudo setcap cap_net_admin,cap_net_raw<span class="o">=</span>ep <span class="k">$(</span>which dynamips<span class="k">)</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="2-installasi-vpcs">2. Installasi VPCS</h3>
+</div><h3 id="2-vpcs">2. VPCS</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -170,7 +170,7 @@ Persiapan Pastikan sudah menginstall Yay AUR-Helper:
 <pre class="chroma"><code class="language-bash" data-lang="bash">yay -S vpcs --noconfirm
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="3-installasi-iol-untuk-simulasi-cisco">3. Installasi IOL Untuk Simulasi Cisco</h3>
+</div><h3 id="3-iol-untuk-simulasi-cisco">3. IOL Untuk Simulasi Cisco</h3>
 <p>Pastikan sudah mengaktifkan repo lib32 di <em>/etc/pacman.conf</em></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -206,7 +206,7 @@ Persiapan Pastikan sudah menginstall Yay AUR-Helper:
 </span><span class="s">EOL</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="4-installasi-ubridge">4. Installasi uBridge</h3>
+</div><h3 id="4-ubridge">4. uBridge</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -215,7 +215,7 @@ Persiapan Pastikan sudah menginstall Yay AUR-Helper:
 <pre class="chroma"><code class="language-bash" data-lang="bash">yay -S ubridge --noconfirm
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="5-installasi-qemu">5. Installasi Qemu</h3>
+</div><h3 id="5-qemu">5. Qemu</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -224,7 +224,7 @@ Persiapan Pastikan sudah menginstall Yay AUR-Helper:
 <pre class="chroma"><code class="language-bash" data-lang="bash">sudo pacman -S qemu
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="6-installasi-docker">6. Installasi Docker</h3>
+</div><h3 id="6-docker">6. Docker</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -275,7 +275,7 @@ rc-service docker restart
 <pre class="chroma"><code class="language-bash" data-lang="bash">sudo usermod -aG docker <span class="nv">$USER</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="7-installasi-wireshark">7. Installasi Wireshark</h3>
+</div><h3 id="7-wireshark">7. Wireshark</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -293,7 +293,7 @@ rc-service docker restart
 <pre class="chroma"><code class="language-bash" data-lang="bash">sudo usermod -aG wireshark <span class="nv">$USER</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="8-installasi-gns3-serta-package-yang-dibutuhkan">8. Installasi GNS3 Serta Package Yang Dibutuhkan</h3>
+</div><h3 id="8-gns3">8. GNS3</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -341,6 +341,9 @@ systemctl start gns3-server
 </li>
 <li>
 <p><a href="https://lms.onnocenter.or.id/wiki/index.php/Gns3">https://lms.onnocenter.or.id/wiki/index.php/Gns3</a></p>
+</li>
+<li>
+<p><a href="https://bandithijo.github.io/blog/gns3-arch-linux">https://bandithijo.github.io/blog/gns3-arch-linux</a></p>
 </li>
 </ul>
 </div><div class="post-footer" id="post-footer">

@@ -14,23 +14,23 @@ cd ~ && sudo pacman -Sy git && sudo pacman -S base-devel && git clone https://au
 ```
 Selanjutnya ke tahap Installasi
 
-## Installasi
+## Installasi & Konfigurasi
 
 Untuk installasi kita perlu menginstall package satu persatu
 
-### 1. Install Dynamips Serta Package Yang Dibutuhkan
+### 1. Dynamips
 
 ```bash
 sudo pacman -S libelf libpcap cmake && yay -S dynamips --noconfirm && sudo setcap cap_net_admin,cap_net_raw=ep $(which dynamips)
 ```
 
-### 2. Installasi VPCS
+### 2. VPCS
 
 ```bash
 yay -S vpcs --noconfirm
 ```
 
-### 3. Installasi IOL Untuk Simulasi Cisco
+### 3. IOL Untuk Simulasi Cisco
 
 Pastikan sudah mengaktifkan repo lib32 di */etc/pacman.conf*
 
@@ -51,19 +51,19 @@ net.unix.max_dgram_qlen=10000
 dan tutup dengan perintah
 EOL
 ```
-### 4. Installasi uBridge
+### 4. uBridge
 
 ```bash
 yay -S ubridge --noconfirm
 ```
 
-### 5. Installasi Qemu
+### 5. Qemu
 
 ```bash
 sudo pacman -S qemu
 ```
 
-### 6. Installasi Docker
+### 6. Docker
 
 ```bash
 sudo pacman -S docker
@@ -96,7 +96,7 @@ Menambahkan user ke group docker:
 sudo usermod -aG docker $USER
 ```
 
-### 7. Installasi Wireshark
+### 7. Wireshark
 
 ```bash
 sudo pacman -S wireshark-qt
@@ -107,7 +107,7 @@ Menambahkan user ke group wireshark:
 sudo usermod -aG wireshark $USER
 ```
 
-### 8. Installasi GNS3 Serta Package Yang Dibutuhkan
+### 8. GNS3
 
 ```bash
 sudo pacman -S qt5-svg qt5-websockets python-pip python-pyqt5 python-sip
@@ -143,4 +143,6 @@ Mohon maaf jika ada kesalahan, jika masih bingung silahkan diskusi di komentar
 * https://medium.com/@Ninja/install-gns3-on-arch-manjaro-linux-the-right-way-c5a3c4fa337d
 
 * https://lms.onnocenter.or.id/wiki/index.php/Gns3
+
+* https://bandithijo.github.io/blog/gns3-arch-linux
 
