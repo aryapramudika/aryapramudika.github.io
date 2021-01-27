@@ -37,3 +37,22 @@ cd ~ && sudo pacman -Sy && sudo pacman -S git && sudo pacman -S base-devel && gi
 
 {{< /admonition >}}
 
+selanjutnya ke tahap Installasi
+
+## Installasi
+
+### 1. Install Dynamips serta package yang dibutuhkan
+
+```bash
+sudo pacman -S libelf libpcap cmake && yay -S dynamips --nodiffmenu --noeditmenu --nocleanmenu && sudo setcap cap_net_admin,cap_net_raw=ep $(which dynamips)
+```
+
+Memastikan Dynamips sudah terinstall
+
+```bash
+cd ~ && dynamips 2> /dev/null | grep version
+```
+
+> Hasil Perintah:
+Cisco Router Simulation Platform (version 0.2.21-amd64/Linux stable)
+
