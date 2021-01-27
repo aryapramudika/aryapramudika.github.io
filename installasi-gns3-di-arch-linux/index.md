@@ -21,19 +21,19 @@ cd ~ && sudo pacman -Sy && sudo pacman -S git && sudo pacman -S base-devel && gi
 
 {{< admonition note "Penjelasan Perintah">}}
 
-*cd ~* pindah direktori ke home
+**cd ~** pindah direktori ke home
 
-*sudo pacman -Sy* melakukan update repository
+**sudo pacman -Sy** melakukan update repository
 
-*sudo pacman -S git* installasi git
+**sudo pacman -S git** installasi git
 
-*sudo pacman -S base-devel* installasi base-devel
+**sudo pacman -S base-devel** installasi base-devel
 
-*git clone https://aur.archlinux.org/yay.git* clone package yay dari AUR
+**git clone https://aur.archlinux.org/yay.git** clone package yay dari AUR
 
-*cd yay* pindah ke direktori yay
+**cd yay** pindah ke direktori yay
 
-*makepkg -si* melakukan installasi yay
+**makepkg -si** melakukan installasi yay
 
 {{< /admonition >}}
 
