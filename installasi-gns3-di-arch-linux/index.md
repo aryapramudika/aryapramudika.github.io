@@ -41,7 +41,9 @@ selanjutnya ke tahap Installasi
 
 ## Installasi
 
-### 1. Install Dynamips serta package yang dibutuhkan
+Untuk installasi kita perlu menginstall package satu persatu
+
+### 1. Install Dynamips Serta Package Yang Dibutuhkan
 
 ```bash
 sudo pacman -S libelf libpcap cmake && yay -S dynamips --noconfirm && sudo setcap cap_net_admin,cap_net_raw=ep $(which dynamips)
@@ -53,7 +55,7 @@ sudo pacman -S libelf libpcap cmake && yay -S dynamips --noconfirm && sudo setca
 yay -S vpcs --noconfirm
 ```
 
-### 3. Installasi IOL untuk Simulasi Cisco
+### 3. Installasi IOL Untuk Simulasi Cisco
 
 Pastikan sudah mengaktifkan repo lib32 di */etc/pacman.conf*
 
