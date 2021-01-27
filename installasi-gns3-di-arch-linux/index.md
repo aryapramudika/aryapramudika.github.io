@@ -3,7 +3,7 @@
 
 ## Sekilas Tentang GNS3
 
-GNS3 adalah simulator jaringan grafis yang memungkinkan anda untuk merancang topologi jaringan yang kompleks. Anda dapat menjalankan simulasi atau mengkonfigurasi perangkat mulai dari workstation sederhana hingga router yang powerfull seperti Cisco. Hal ini didasarkan pada Dynamips, Pemu/Qemu dan Dynagen.
+GNS3 adalah simulator jaringan grafis yang memungkinkan digunakan untuk merancang topologi jaringan yang kompleks. GNS3 dapat menjalankan simulasi atau mengkonfigurasi perangkat mulai dari workstation sederhana hingga router yang powerfull seperti Cisco.
 
 ## Persiapan
 
