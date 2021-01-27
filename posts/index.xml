@@ -14,7 +14,7 @@
 Tujuan Agar memudahkan pengguna Arch Linux untuk Installasi Gns3
 Persiapan Pastikan sudah terinstall AUR Helper, disini saya menggunakan yay.
 Berikut cara installasi yay
-1  cd ~ &amp;&amp; sudo pacman -Sy &amp;&amp; sudo pacman -S git &amp;&amp; sudo pacman -S base-devel &amp;&amp; git clone https://aur.archlinux.org/yay.git &amp;&amp; cd yay &amp;&amp; makepkg -si   Penjelasan Perintah  cd ~ pindah direktori ke home]]></description>
+1  cd ~ &amp;&amp; sudo pacman -Sy git &amp;&amp; sudo pacman -S base-devel &amp;&amp; git clone https://aur.archlinux.org/yay.git &amp;&amp; cd yay &amp;&amp; makepkg -si   Penjelasan Perintah  cd ~ pindah direktori ke home]]></description>
 </item><item>
     <title>Setup Samba Server Debian 10</title>
     <link>https://aryapramudika.github.io/setup-samba-server-debian-10/</link>

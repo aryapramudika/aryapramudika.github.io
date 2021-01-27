@@ -16,7 +16,7 @@ Pastikan sudah terinstall AUR Helper, disini saya menggunakan yay.
 Berikut cara installasi yay
 
 ```bash
-cd ~ && sudo pacman -Sy && sudo pacman -S git && sudo pacman -S base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
+cd ~ && sudo pacman -Sy git && sudo pacman -S base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 ```
 
 {{< admonition note "Penjelasan Perintah">}}
