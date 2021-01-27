@@ -46,6 +46,7 @@ Konfigurasi Permanen
 
 ```bash
 sudo tee -a /etc/sysctl.d/99-sysctl.conf > /dev/null << EOL
+EOL
 ```
 
 ### 4. Installasi uBridge
@@ -72,7 +73,7 @@ Enable Docker service:
 ```bash
 sudo systemctl enable docker.service && sudo systemctl start docker.service
 ```
-dengan menggunakan perintah systemctl *enable* docker otomatis akan aktif setelah booting, jika ingin mengaktifkan docker ketika dibutuhkan saja maka lakukan perintah systemctl *start*   
+dengan menggunakan perintah systemctl *enable* docker otomatis akan aktif setelah booting, jika ingin mengaktifkan docker ketika dibutuhkan saja maka gunakan perintah systemctl *start*   
 
 Installasi Untuk OpenRC
 
