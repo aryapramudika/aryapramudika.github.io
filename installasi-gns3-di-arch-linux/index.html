@@ -6,9 +6,9 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>Installasi GNS3 Di Arch Linux Based - Arya Lab</title><meta name="Description" content="About LoveIt Theme"><meta property="og:title" content="Installasi GNS3 Di Arch Linux Based" />
-<meta property="og:description" content="Latar Belakang Saya ingin menginstall GNS3 di Arch Linux Based tapi belum ada artikel bahasa Indonesia yang membahas jadi saya tulis saja disini.
-Tujuan Agar memudahkan pengguna Arch Linux Based untuk Installasi GNS3
-Sekilas Tentang gns3 GNS3 (Graphic Network Simulator) adalah software simulasi jaringan komputer berbasis GUI yang mirip dengan Cisco Packet Tracer. Namun pada GNS3 memungkinkan simulasi jaringan yang komplek, karena menggunakan operating system asli dari perangkat jaringan seperti cisco dan juniper." />
+<meta property="og:description" content="Latar Belakang Karena saya belum menemukan artikel cara installasi gns3 arch linux versi bahasa Indonesia, jadi saya membuatnya sendiri
+Tujuan Agar memudahkan pengguna distro Arch Based dalam melakukan Installasi GNS3
+Sekilas Tentang gns3 GNS3 (Graphic Network Simulator) adalah software simulasi jaringan komputer berbasis GUI yang mirip dengan Cisco Packet Tracer. Namun pada GNS3 memungkinkan simulasi jaringan yang komplek, karena menggunakan operating system asli dari perangkat jaringan seperti cisco dan juniper. Sehingga kita berada kondisi lebih nyata dalam mengkonfigurasi router langsung daripada di Cisco Packet Tracer." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://aryapramudika.github.io/installasi-gns3-di-arch-linux/" />
 <meta property="og:image" content="https://aryapramudika.github.io/logo.png"/>
@@ -18,9 +18,9 @@ Sekilas Tentang gns3 GNS3 (Graphic Network Simulator) adalah software simulasi j
 <meta name="twitter:image" content="https://aryapramudika.github.io/logo.png"/>
 
 <meta name="twitter:title" content="Installasi GNS3 Di Arch Linux Based"/>
-<meta name="twitter:description" content="Latar Belakang Saya ingin menginstall GNS3 di Arch Linux Based tapi belum ada artikel bahasa Indonesia yang membahas jadi saya tulis saja disini.
-Tujuan Agar memudahkan pengguna Arch Linux Based untuk Installasi GNS3
-Sekilas Tentang gns3 GNS3 (Graphic Network Simulator) adalah software simulasi jaringan komputer berbasis GUI yang mirip dengan Cisco Packet Tracer. Namun pada GNS3 memungkinkan simulasi jaringan yang komplek, karena menggunakan operating system asli dari perangkat jaringan seperti cisco dan juniper."/>
+<meta name="twitter:description" content="Latar Belakang Karena saya belum menemukan artikel cara installasi gns3 arch linux versi bahasa Indonesia, jadi saya membuatnya sendiri
+Tujuan Agar memudahkan pengguna distro Arch Based dalam melakukan Installasi GNS3
+Sekilas Tentang gns3 GNS3 (Graphic Network Simulator) adalah software simulasi jaringan komputer berbasis GUI yang mirip dengan Cisco Packet Tracer. Namun pada GNS3 memungkinkan simulasi jaringan yang komplek, karena menggunakan operating system asli dari perangkat jaringan seperti cisco dan juniper. Sehingga kita berada kondisi lebih nyata dalam mengkonfigurasi router langsung daripada di Cisco Packet Tracer."/>
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -33,7 +33,7 @@ Sekilas Tentang gns3 GNS3 (Graphic Network Simulator) adalah software simulasi j
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/aryapramudika.github.io\/installasi-gns3-di-arch-linux\/"
-        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  460 ,
+        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  403 ,
         "url": "https:\/\/aryapramudika.github.io\/installasi-gns3-di-arch-linux\/","datePublished": "2021-01-27T15:18:22+07:00","dateModified": "2021-01-27T15:18:22+07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/aryapramudika.github.io\/images\/avatar.png"},"author": {
@@ -110,8 +110,8 @@ Sekilas Tentang gns3 GNS3 (Graphic Network Simulator) adalah software simulasi j
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Installasi GNS3 Di Arch Linux Based</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Arya Pramudika</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-27">2021-01-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;460 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-27">2021-01-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;403 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -140,15 +140,13 @@ Sekilas Tentang gns3 GNS3 (Graphic Network Simulator) adalah software simulasi j
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h2 id="latar-belakang">Latar Belakang</h2>
-<p>Saya ingin menginstall GNS3 di Arch Linux Based tapi belum ada artikel bahasa Indonesia yang membahas jadi saya tulis saja disini.</p>
+<p>Karena saya belum menemukan artikel cara installasi gns3 arch linux versi bahasa Indonesia, jadi saya membuatnya sendiri</p>
 <h2 id="tujuan">Tujuan</h2>
-<p>Agar memudahkan pengguna Arch Linux Based untuk Installasi GNS3</p>
+<p>Agar memudahkan pengguna distro Arch Based dalam melakukan Installasi GNS3</p>
 <h2 id="sekilas-tentang-gns3">Sekilas Tentang gns3</h2>
 <p>GNS3 (Graphic Network Simulator) adalah software simulasi jaringan komputer berbasis GUI yang mirip dengan Cisco Packet Tracer. Namun pada GNS3 memungkinkan simulasi jaringan yang komplek, karena menggunakan operating system asli dari perangkat jaringan seperti cisco dan juniper. Sehingga kita berada kondisi lebih nyata dalam mengkonfigurasi router langsung daripada di Cisco Packet Tracer. GNS3 adalah alat pelengkap yang sangat baik untuk laboratorium nyata bagi network engineer, administrator dan orang-orang yang ingin belajar untuk sertifikasi seperti Cisco CCNA, CCNP, CCIP dan CCIE serta Juniper JNCIA, JNCIS dan JNCIE.</p>
 <h2 id="persiapan">Persiapan</h2>
-<p>Pastikan sudah terinstall AUR Helper, disini saya menggunakan yay.
-net.unix.max-dgram_qlen
-Berikut cara installasi yay</p>
+<p>Pastikan sudah menginstall Yay AUR-Helper:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -157,22 +155,7 @@ Berikut cara installasi yay</p>
 <pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> ~ <span class="o">&amp;&amp;</span> sudo pacman -Sy git <span class="o">&amp;&amp;</span> sudo pacman -S base-devel <span class="o">&amp;&amp;</span> git clone https://aur.archlinux.org/yay.git <span class="o">&amp;&amp;</span> <span class="nb">cd</span> yay <span class="o">&amp;&amp;</span> makepkg -si
 </code></pre></td></tr></table>
 </div>
-</div><div class="details admonition note open">
-        <div class="details-summary admonition-title">
-            <i class="icon fas fa-pencil-alt fa-fw"></i>Penjelasan Perintah<i class="details-icon fas fa-angle-right fa-fw"></i>
-        </div>
-        <div class="details-content">
-            <div class="admonition-content"><p><strong>cd ~</strong> pindah direktori ke home</p>
-<p><strong>sudo pacman -Sy</strong> melakukan update repository</p>
-<p><strong>sudo pacman -S git</strong> installasi git</p>
-<p><strong>sudo pacman -S base-devel</strong> installasi base-devel</p>
-<p><strong>git clone <a href="https://aur.archlinux.org/yay.git">https://aur.archlinux.org/yay.git</a></strong> clone package yay dari AUR</p>
-<p><strong>cd yay</strong> pindah ke direktori yay</p>
-<p><strong>makepkg -si</strong> melakukan installasi yay</p>
-</div>
-        </div>
-    </div>
-<p>selanjutnya ke tahap Installasi</p>
+</div><p>Selanjutnya ke tahap Installasi</p>
 <h2 id="installasi">Installasi</h2>
 <p>Untuk installasi kita perlu menginstall package satu persatu</p>
 <h3 id="1-install-dynamips-serta-package-yang-dibutuhkan">1. Install Dynamips Serta Package Yang Dibutuhkan</h3>

@@ -3,11 +3,11 @@
 
 ## Latar Belakang
 
-Saya ingin menginstall GNS3 di Arch Linux Based tapi belum ada artikel bahasa Indonesia yang membahas jadi saya tulis saja disini.
+Karena saya belum menemukan artikel cara installasi gns3 arch linux versi bahasa Indonesia, jadi saya membuatnya sendiri
 
 ## Tujuan
 
-Agar memudahkan pengguna Arch Linux Based untuk Installasi GNS3
+Agar memudahkan pengguna distro Arch Based dalam melakukan Installasi GNS3
 
 
 ## Sekilas Tentang gns3
@@ -16,33 +16,12 @@ GNS3 (Graphic Network Simulator) adalah software simulasi jaringan komputer berb
 
 ## Persiapan
 
-Pastikan sudah terinstall AUR Helper, disini saya menggunakan yay.
-net.unix.max-dgram_qlen
-Berikut cara installasi yay
+Pastikan sudah menginstall Yay AUR-Helper:
 
 ```bash
 cd ~ && sudo pacman -Sy git && sudo pacman -S base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 ```
-
-{{< admonition note "Penjelasan Perintah">}}
-
-**cd ~** pindah direktori ke home
-
-**sudo pacman -Sy** melakukan update repository
-
-**sudo pacman -S git** installasi git
-
-**sudo pacman -S base-devel** installasi base-devel
-
-**git clone https://aur.archlinux.org/yay.git** clone package yay dari AUR
-
-**cd yay** pindah ke direktori yay
-
-**makepkg -si** melakukan installasi yay
-
-{{< /admonition >}}
-
-selanjutnya ke tahap Installasi
+Selanjutnya ke tahap Installasi
 
 ## Installasi
 
