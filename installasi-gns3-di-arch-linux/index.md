@@ -103,3 +103,15 @@ EOL
 ```
 > setelah perintah pertama lalu masukkan > net.unix.max-dgram_qlen & > EOL
 
+Memastikan konfigurasi IOL
+
+```bash
+sysctl net.unix.max_dgram_qlen
+```
+> Output Perintah: net.unix.max_dgram_qlen = 10000
+
+```bash
+tail -2 /etc/sysctl.d/99-sysctl.conf
+```
+> Output Perintah: net.unix.max_dgram_qlen=10000
+
