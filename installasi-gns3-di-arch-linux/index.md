@@ -55,3 +55,9 @@ cd ~ && dynamips 2> /dev/null | grep version
 
 > Output : Cisco Router Simulation Platform (version 0.2.21-amd64/Linux stable)
 
+```bash
+getcap $(which dynamips)
+```
+
+> Output : /usr/bin/dynamips cap_net_admin,cap_net_raw=ep
+
