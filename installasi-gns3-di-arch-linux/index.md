@@ -34,7 +34,7 @@ yay -S vpcs --noconfirm
 
 Pastikan sudah mengaktifkan repo lib32 di */etc/pacman.conf*
 
-![lib32](/img/lib32.png 'Mengaktifkan Repository 32 Bit')
+![lib32](/img/lib32.png 'Mengaktifkan Repository 32 Bit' =250x250)
 
 ```bash
 sudo pacman -Sy lib32-openssl lib32-gcc-libs && sudo ln -s /usr/lib32/libcrypto.so.1.0.0 /usr/lib32/libcrypto.so.4
@@ -108,10 +108,6 @@ sudo usermod -aG wireshark $USER
 ```
 
 ### 8. GNS3
-
-```bash
-sudo pacman -S qt5-svg qt5-websockets python-pip python-pyqt5 python-sip
-```
 
 **GNS3 GUI:**
 
