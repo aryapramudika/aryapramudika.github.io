@@ -125,7 +125,7 @@ Menjalankan GNS3-Server :
 systemctl enable gns3-server
 systemctl start gns3-server
 ```
-Untuk init sistem lain seperti OpenRC yang saya gunakan gns3-serve akan aktif sendiri ketika kita menjalankan GNS3
+Untuk init sistem lain seperti OpenRC yang saya gunakan, gns3-server akan aktif sendiri ketika kita menjalankan GNS3
 
 ## Membuat Launcher GNS3
 
