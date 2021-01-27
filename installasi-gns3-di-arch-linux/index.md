@@ -105,7 +105,7 @@ Menambahkan user ke group wireshark:
 sudo usermod -aG wireshark $USER
 ```
 
-> Setelah konfigurasi Docker dan Wireshark pastikan kita **LogOut** dan **Login** kembali agar user kita berhasil ditambahkan ke dalam docker & wireshark **group**
+> Setelah konfigurasi Docker dan Wireshark pastikan kita **Logout** dan **Login** kembali agar user kita berhasil ditambahkan ke dalam docker & wireshark group
 
 Setelah Logout dan Login pastikan dengan perintah ini.
 
