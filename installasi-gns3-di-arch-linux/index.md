@@ -57,6 +57,8 @@ cd ~ && dynamips 2> /dev/null | grep version
 
 ```bash
 getcap $(which dynamips)
+
+Output : /usr/bin/dynamips cap_net_admin,cap_net_raw=ep
 ```
 
 > Output : /usr/bin/dynamips cap_net_admin,cap_net_raw=ep
