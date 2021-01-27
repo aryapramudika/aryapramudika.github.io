@@ -53,6 +53,5 @@ Memastikan Dynamips sudah terinstall
 cd ~ && dynamips 2> /dev/null | grep version
 ```
 
-> Hasil Perintah:
-Cisco Router Simulation Platform (version 0.2.21-amd64/Linux stable)
+> Output : Cisco Router Simulation Platform (version 0.2.21-amd64/Linux stable)
 
