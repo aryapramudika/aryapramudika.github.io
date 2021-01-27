@@ -3,7 +3,7 @@
 
 ## Sekilas Tentang GNS3
 
-GNS3 (Graphic Network Simulator) adalah software simulasi jaringan komputer berbasis GUI yang mirip dengan Cisco Packet Tracer. Namun pada GNS3 memungkinkan simulasi jaringan yang komplek, karena menggunakan operating system asli dari perangkat jaringan seperti cisco dan juniper. Sehingga kita berada kondisi lebih nyata dalam mengkonfigurasi router langsung daripada di Cisco Packet Tracer. GNS3 adalah alat pelengkap yang sangat baik untuk laboratorium nyata bagi network engineer, administrator dan orang-orang yang ingin belajar untuk sertifikasi seperti Cisco CCNA, CCNP, CCIP dan CCIE serta Juniper JNCIA, JNCIS dan JNCIE.
+GNS3 adalah simulator jaringan grafis yang memungkinkan anda untuk merancang topologi jaringan yang kompleks. Anda dapat menjalankan simulasi atau mengkonfigurasi perangkat mulai dari workstation sederhana hingga router yang powerfull seperti Cisco. Hal ini didasarkan pada Dynamips, Pemu/Qemu dan Dynagen.
 
 ## Persiapan
 
@@ -46,8 +46,11 @@ Konfigurasi Permanen
 
 ```bash
 sudo tee -a /etc/sysctl.d/99-sysctl.conf > /dev/null << EOL
+Lalu masukkan
+net.unix.max_dgram_qlen=10000
+dan tutup dengan perintah
+EOL
 ```
-
 ### 4. Installasi uBridge
 
 ```bash
@@ -75,20 +78,17 @@ sudo systemctl start docker.service
 ```
 dengan menggunakan perintah systemctl *enable* docker otomatis akan aktif setelah booting, jika ingin mengaktifkan docker ketika dibutuhkan saja maka gunakan perintah systemctl *start*   
 
-Installasi Untuk OpenRC
+**OpenRC**
 
 ```bash
 sudo pacman -S docker-openrc
 ```
 
-Untuk init sistem lain silahkan disesuaikan.
-
-**OpenRC**
-
 ```bash
 rc-update add docker default
 rc-service docker restart
 ```
+Untuk init sistem lain silahkan disesuaikan.
 
 Menambahkan user ke group docker:
 
@@ -142,5 +142,5 @@ Mohon maaf jika ada kesalahan, jika masih bingung silahkan diskusi di komentar
 
 * https://medium.com/@Ninja/install-gns3-on-arch-manjaro-linux-the-right-way-c5a3c4fa337d
 
-* https://kelasinong.blogspot.com/2019/10/c.html
+* https://lms.onnocenter.or.id/wiki/index.php/Gns3
 

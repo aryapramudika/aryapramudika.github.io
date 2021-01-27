@@ -6,7 +6,9 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>Installasi GNS3 Di Arch Linux Based - Arya Lab</title><meta name="Description" content="About LoveIt Theme"><meta property="og:title" content="Installasi GNS3 Di Arch Linux Based" />
-<meta property="og:description" content="Sekilas Tentang GNS3 GNS3 (Graphic Network Simulator) adalah software simulasi jaringan komputer berbasis GUI yang mirip dengan Cisco Packet Tracer. Namun pada GNS3 memungkinkan simulasi jaringan yang komplek, karena menggunakan operating system asli dari perangkat jaringan seperti cisco dan juniper. Sehingga kita berada kondisi lebih nyata dalam mengkonfigurasi router langsung daripada di Cisco Packet Tracer. GNS3 adalah alat pelengkap yang sangat baik untuk laboratorium nyata bagi network engineer, administrator dan orang-orang yang ingin belajar untuk sertifikasi seperti Cisco CCNA, CCNP, CCIP dan CCIE serta Juniper JNCIA, JNCIS dan JNCIE." />
+<meta property="og:description" content="Sekilas Tentang GNS3 GNS3 adalah simulator jaringan grafis yang memungkinkan anda untuk merancang topologi jaringan yang kompleks. Anda dapat menjalankan simulasi atau mengkonfigurasi perangkat mulai dari workstation sederhana hingga router yang powerfull seperti Cisco. Hal ini didasarkan pada Dynamips, Pemu/Qemu dan Dynagen.
+Persiapan Pastikan sudah menginstall Yay AUR-Helper:
+1  cd ~ &amp;&amp; sudo pacman -Sy git &amp;&amp; sudo pacman -S base-devel &amp;&amp; git clone https://aur.archlinux.org/yay.git &amp;&amp; cd yay &amp;&amp; makepkg -si   Selanjutnya ke tahap Installasi" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://aryapramudika.github.io/installasi-gns3-di-arch-linux/" />
 <meta property="og:image" content="https://aryapramudika.github.io/logo.png"/>
@@ -16,7 +18,9 @@
 <meta name="twitter:image" content="https://aryapramudika.github.io/logo.png"/>
 
 <meta name="twitter:title" content="Installasi GNS3 Di Arch Linux Based"/>
-<meta name="twitter:description" content="Sekilas Tentang GNS3 GNS3 (Graphic Network Simulator) adalah software simulasi jaringan komputer berbasis GUI yang mirip dengan Cisco Packet Tracer. Namun pada GNS3 memungkinkan simulasi jaringan yang komplek, karena menggunakan operating system asli dari perangkat jaringan seperti cisco dan juniper. Sehingga kita berada kondisi lebih nyata dalam mengkonfigurasi router langsung daripada di Cisco Packet Tracer. GNS3 adalah alat pelengkap yang sangat baik untuk laboratorium nyata bagi network engineer, administrator dan orang-orang yang ingin belajar untuk sertifikasi seperti Cisco CCNA, CCNP, CCIP dan CCIE serta Juniper JNCIA, JNCIS dan JNCIE."/>
+<meta name="twitter:description" content="Sekilas Tentang GNS3 GNS3 adalah simulator jaringan grafis yang memungkinkan anda untuk merancang topologi jaringan yang kompleks. Anda dapat menjalankan simulasi atau mengkonfigurasi perangkat mulai dari workstation sederhana hingga router yang powerfull seperti Cisco. Hal ini didasarkan pada Dynamips, Pemu/Qemu dan Dynagen.
+Persiapan Pastikan sudah menginstall Yay AUR-Helper:
+1  cd ~ &amp;&amp; sudo pacman -Sy git &amp;&amp; sudo pacman -S base-devel &amp;&amp; git clone https://aur.archlinux.org/yay.git &amp;&amp; cd yay &amp;&amp; makepkg -si   Selanjutnya ke tahap Installasi"/>
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -29,7 +33,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/aryapramudika.github.io\/installasi-gns3-di-arch-linux\/"
-        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  388 ,
+        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  350 ,
         "url": "https:\/\/aryapramudika.github.io\/installasi-gns3-di-arch-linux\/","datePublished": "2021-01-27T15:18:22+07:00","dateModified": "2021-01-27T15:18:22+07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/aryapramudika.github.io\/images\/avatar.png"},"author": {
@@ -106,7 +110,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Installasi GNS3 Di Arch Linux Based</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Arya Pramudika</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-27">2021-01-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;388 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-27">2021-01-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;350 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -134,7 +138,7 @@
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h2 id="sekilas-tentang-gns3">Sekilas Tentang GNS3</h2>
-<p>GNS3 (Graphic Network Simulator) adalah software simulasi jaringan komputer berbasis GUI yang mirip dengan Cisco Packet Tracer. Namun pada GNS3 memungkinkan simulasi jaringan yang komplek, karena menggunakan operating system asli dari perangkat jaringan seperti cisco dan juniper. Sehingga kita berada kondisi lebih nyata dalam mengkonfigurasi router langsung daripada di Cisco Packet Tracer. GNS3 adalah alat pelengkap yang sangat baik untuk laboratorium nyata bagi network engineer, administrator dan orang-orang yang ingin belajar untuk sertifikasi seperti Cisco CCNA, CCNP, CCIP dan CCIE serta Juniper JNCIA, JNCIS dan JNCIE.</p>
+<p>GNS3 adalah simulator jaringan grafis yang memungkinkan anda untuk merancang topologi jaringan yang kompleks. Anda dapat menjalankan simulasi atau mengkonfigurasi perangkat mulai dari workstation sederhana hingga router yang powerfull seperti Cisco. Hal ini didasarkan pada Dynamips, Pemu/Qemu dan Dynagen.</p>
 <h2 id="persiapan">Persiapan</h2>
 <p>Pastikan sudah menginstall Yay AUR-Helper:</p>
 <div class="highlight"><div class="chroma">
@@ -189,9 +193,17 @@
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-bash" data-lang="bash">sudo tee -a /etc/sysctl.d/99-sysctl.conf &gt; /dev/null &lt;&lt; EOL
+<pre class="chroma"><code class="language-bash" data-lang="bash">sudo tee -a /etc/sysctl.d/99-sysctl.conf &gt; /dev/null <span class="s">&lt;&lt; EOL
+</span><span class="s">Lalu masukkan
+</span><span class="s">net.unix.max_dgram_qlen=10000
+</span><span class="s">dan tutup dengan perintah
+</span><span class="s">EOL</span>
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="4-installasi-ubridge">4. Installasi uBridge</h3>
@@ -234,7 +246,7 @@ sudo systemctl start docker.service
 </code></pre></td></tr></table>
 </div>
 </div><p>dengan menggunakan perintah systemctl <em>enable</em> docker otomatis akan aktif setelah booting, jika ingin mengaktifkan docker ketika dibutuhkan saja maka gunakan perintah systemctl <em>start</em></p>
-<p>Installasi Untuk OpenRC</p>
+<p><strong>OpenRC</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -243,9 +255,7 @@ sudo systemctl start docker.service
 <pre class="chroma"><code class="language-bash" data-lang="bash">sudo pacman -S docker-openrc
 </code></pre></td></tr></table>
 </div>
-</div><p>Untuk init sistem lain silahkan disesuaikan.</p>
-<p><strong>OpenRC</strong></p>
-<div class="highlight"><div class="chroma">
+</div><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -255,7 +265,8 @@ sudo systemctl start docker.service
 rc-service docker restart
 </code></pre></td></tr></table>
 </div>
-</div><p>Menambahkan user ke group docker:</p>
+</div><p>Untuk init sistem lain silahkan disesuaikan.</p>
+<p>Menambahkan user ke group docker:</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -329,7 +340,7 @@ systemctl start gns3-server
 <p><a href="https://medium.com/@Ninja/install-gns3-on-arch-manjaro-linux-the-right-way-c5a3c4fa337d">https://medium.com/@Ninja/install-gns3-on-arch-manjaro-linux-the-right-way-c5a3c4fa337d</a></p>
 </li>
 <li>
-<p><a href="https://kelasinong.blogspot.com/2019/10/c.html">https://kelasinong.blogspot.com/2019/10/c.html</a></p>
+<p><a href="https://lms.onnocenter.or.id/wiki/index.php/Gns3">https://lms.onnocenter.or.id/wiki/index.php/Gns3</a></p>
 </li>
 </ul>
 </div><div class="post-footer" id="post-footer">

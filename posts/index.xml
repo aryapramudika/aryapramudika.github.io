@@ -10,7 +10,9 @@
     <pubDate>Wed, 27 Jan 2021 15:18:22 &#43;0700</pubDate>
     <author>Author</author>
     <guid>https://aryapramudika.github.io/installasi-gns3-di-arch-linux/</guid>
-    <description><![CDATA[Sekilas Tentang GNS3 GNS3 (Graphic Network Simulator) adalah software simulasi jaringan komputer berbasis GUI yang mirip dengan Cisco Packet Tracer. Namun pada GNS3 memungkinkan simulasi jaringan yang komplek, karena menggunakan operating system asli dari perangkat jaringan seperti cisco dan juniper. Sehingga kita berada kondisi lebih nyata dalam mengkonfigurasi router langsung daripada di Cisco Packet Tracer. GNS3 adalah alat pelengkap yang sangat baik untuk laboratorium nyata bagi network engineer, administrator dan orang-orang yang ingin belajar untuk sertifikasi seperti Cisco CCNA, CCNP, CCIP dan CCIE serta Juniper JNCIA, JNCIS dan JNCIE.]]></description>
+    <description><![CDATA[Sekilas Tentang GNS3 GNS3 adalah simulator jaringan grafis yang memungkinkan anda untuk merancang topologi jaringan yang kompleks. Anda dapat menjalankan simulasi atau mengkonfigurasi perangkat mulai dari workstation sederhana hingga router yang powerfull seperti Cisco. Hal ini didasarkan pada Dynamips, Pemu/Qemu dan Dynagen.
+Persiapan Pastikan sudah menginstall Yay AUR-Helper:
+1  cd ~ &amp;&amp; sudo pacman -Sy git &amp;&amp; sudo pacman -S base-devel &amp;&amp; git clone https://aur.archlinux.org/yay.git &amp;&amp; cd yay &amp;&amp; makepkg -si   Selanjutnya ke tahap Installasi]]></description>
 </item><item>
     <title>Setup Samba Server Debian 10</title>
     <link>https://aryapramudika.github.io/setup-samba-server-debian-10/</link>
