@@ -78,4 +78,5 @@ Memastikan VPCS terinstall
 ```bash
 vpcs -v | grep version
 ```
+> Output perintah: Welcome to Virtual PC Simulator, version 0.8 beta
 
