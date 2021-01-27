@@ -57,9 +57,25 @@ cd ~ && dynamips 2> /dev/null | grep version
 
 ```bash
 getcap $(which dynamips)
-
-Output : /usr/bin/dynamips cap_net_admin,cap_net_raw=ep
 ```
 
-> Output : /usr/bin/dynamips cap_net_admin,cap_net_raw=ep
+> Output Perintah : /usr/bin/dynamips cap_net_admin,cap_net_raw=ep
+
+### 2. Installasi VPCS
+
+```bash
+yay -S vpcs --nodiffmenu --noeditmenu --nocleanmenu
+```
+
+Memastikan VPCS terinstall
+
+```bash
+ cd ~ && type vpcs
+```
+
+> Output perintah: vpcs is /usr/bin/vpcs
+
+```bash
+vpcs -v | grep version
+```
 

@@ -37,7 +37,7 @@ Berikut cara installasi yay
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/aryapramudika.github.io\/installasi-gns3-di-arch-linux\/"
-        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  186 ,
+        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  211 ,
         "url": "https:\/\/aryapramudika.github.io\/installasi-gns3-di-arch-linux\/","datePublished": "2021-01-27T15:18:22+07:00","dateModified": "2021-01-27T15:18:22+07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/aryapramudika.github.io\/images\/avatar.png"},"author": {
@@ -114,7 +114,7 @@ Berikut cara installasi yay
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Installasi Gns3 Di Arch Linux</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Arya Pramudika</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-27">2021-01-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;186 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-27">2021-01-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;211 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -129,6 +129,7 @@ Berikut cara installasi yay
     <li><a href="#installasi">Installasi</a>
       <ul>
         <li><a href="#1-install-dynamips-serta-package-yang-dibutuhkan">1. Install Dynamips serta package yang dibutuhkan</a></li>
+        <li><a href="#2-installasi-vpcs">2. Installasi VPCS</a></li>
       </ul>
     </li>
   </ul>
@@ -189,19 +190,44 @@ Berikut cara installasi yay
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-bash" data-lang="bash">getcap <span class="k">$(</span>which dynamips<span class="k">)</span>
-
-Output : /usr/bin/dynamips cap_net_admin,cap_net_raw<span class="o">=</span>ep
 </code></pre></td></tr></table>
 </div>
 </div><blockquote>
-<p>Output : /usr/bin/dynamips cap_net_admin,cap_net_raw=ep</p>
+<p>Output Perintah : /usr/bin/dynamips cap_net_admin,cap_net_raw=ep</p>
 </blockquote>
-</div><div class="post-footer" id="post-footer">
+<h3 id="2-installasi-vpcs">2. Installasi VPCS</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">yay -S vpcs --nodiffmenu --noeditmenu --nocleanmenu
+</code></pre></td></tr></table>
+</div>
+</div><p>Memastikan VPCS terinstall</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"> <span class="nb">cd</span> ~ <span class="o">&amp;&amp;</span> <span class="nb">type</span> vpcs
+</code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>Output perintah: vpcs is /usr/bin/vpcs</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">vpcs -v <span class="p">|</span> grep version
+</code></pre></td></tr></table>
+</div>
+</div></div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">
             <div class="post-info-mod">
