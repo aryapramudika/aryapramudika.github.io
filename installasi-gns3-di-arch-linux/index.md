@@ -105,6 +105,18 @@ Menambahkan user ke group wireshark:
 sudo usermod -aG wireshark $USER
 ```
 
+> Setelah konfigurasi Docker dan Wireshark pastikan kita **LogOut** dan **Login** kembali agar user kita berhasil ditambahkan ke dalam docker & wireshark **group**
+
+Setelah Logout dan Login pastikan dengan perintah ini.
+
+```bash
+id -Gn
+```
+Output perintah:
+
+> user wireshark docker libvirt video wheel
+
+Perhatikan pada output terdapat tambahan **wireshark** dan **docker**
 ### 8. GNS3
 
 **GNS3 GUI:**

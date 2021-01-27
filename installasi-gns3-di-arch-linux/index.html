@@ -35,7 +35,7 @@ Installasi &amp; Konfigurasi Untuk installasi kita perlu menginstall package sat
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/aryapramudika.github.io\/installasi-gns3-di-arch-linux\/"
-        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  378 ,
+        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","wordcount":  427 ,
         "url": "https:\/\/aryapramudika.github.io\/installasi-gns3-di-arch-linux\/","datePublished": "2021-01-27T15:18:22+07:00","dateModified": "2021-01-27T15:18:22+07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/aryapramudika.github.io\/images\/avatar.png"},"author": {
@@ -112,8 +112,8 @@ Installasi &amp; Konfigurasi Untuk installasi kita perlu menginstall package sat
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Installasi GNS3 Di Arch Linux Based</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Arya Pramudika</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-27">2021-01-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;378 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-27">2021-01-27</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;427 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -298,7 +298,24 @@ rc-service docker restart
 <pre class="chroma"><code class="language-bash" data-lang="bash">sudo usermod -aG wireshark <span class="nv">$USER</span>
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="8-gns3">8. GNS3</h3>
+</div><blockquote>
+<p>Setelah konfigurasi Docker dan Wireshark pastikan kita <strong>LogOut</strong> dan <strong>Login</strong> kembali agar user kita berhasil ditambahkan ke dalam docker &amp; wireshark <strong>group</strong></p>
+</blockquote>
+<p>Setelah Logout dan Login pastikan dengan perintah ini.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">id -Gn
+</code></pre></td></tr></table>
+</div>
+</div><p>Output perintah:</p>
+<blockquote>
+<p>user wireshark docker libvirt video wheel</p>
+</blockquote>
+<p>Perhatikan pada output terdapat tambahan <strong>wireshark</strong> dan <strong>docker</strong></p>
+<h3 id="8-gns3">8. GNS3</h3>
 <p><strong>GNS3 GUI:</strong></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
