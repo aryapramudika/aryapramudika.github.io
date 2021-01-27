@@ -156,6 +156,8 @@ systemctl enable gns3-server && systemctl start gns3-server
 
 Selamat Mencoba !!
 
+Mohon maaf jika ada kesalahan, jika masih bingung silahkan diskusi di komentar
+
 ##  Sumber & Referensi
 
 * https://medium.com/@Ninja/install-gns3-on-arch-manjaro-linux-the-right-way-c5a3c4fa337d
