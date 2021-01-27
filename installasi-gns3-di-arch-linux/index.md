@@ -101,7 +101,7 @@ net.unix.max_dgram_qlen=10000
 
 EOL
 ```
-> setelah perintah pertama lalu masukkan manual net.unix.max-dgram_qlen setelah itu EOL
+> Setelah perintah pertama lalu masukkan manual net.unix.max-dgram_qlen setelah itu EOL
 
 Memastikan konfigurasi IOL
 
