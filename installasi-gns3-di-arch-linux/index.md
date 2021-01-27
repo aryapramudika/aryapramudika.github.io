@@ -130,7 +130,7 @@ Menambahkan user ke group wireshark:
 sudo usermod -aG wireshark $USER
 ```
 
-### 8. Installasi GNS3 serta package yang dibutuhkan
+### 8. Installasi GNS3 Serta Package Yang Dibutuhkan
 
 ```bash
 sudo pacman -S qt5-svg qt5-websockets python-pip python-pyqt5 python-sip
