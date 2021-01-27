@@ -1,18 +1,23 @@
-# Installasi Gns3 Di Arch Linux
+# Installasi GNS3 Di Arch Linux Based
 
 
 ## Latar Belakang
 
-Saya ingin menginstall GNS3 di Arch Linux tapi belum ada artikel bahasa Indonesia yang membahas jadi saya tulis saja disini.
+Saya ingin menginstall GNS3 di Arch Linux Based tapi belum ada artikel bahasa Indonesia yang membahas jadi saya tulis saja disini.
 
 ## Tujuan
 
-Agar memudahkan pengguna Arch Linux untuk Installasi Gns3
+Agar memudahkan pengguna Arch Linux Based untuk Installasi GNS3
+
+
+## Sekilas Tentang gns3
+
+GNS3 (Graphic Network Simulator) adalah software simulasi jaringan komputer berbasis GUI yang mirip dengan Cisco Packet Tracer. Namun pada GNS3 memungkinkan simulasi jaringan yang komplek, karena menggunakan operating system asli dari perangkat jaringan seperti cisco dan juniper. Sehingga kita berada kondisi lebih nyata dalam mengkonfigurasi router langsung daripada di Cisco Packet Tracer. GNS3 adalah alat pelengkap yang sangat baik untuk laboratorium nyata bagi network engineer, administrator dan orang-orang yang ingin belajar untuk sertifikasi seperti Cisco CCNA, CCNP, CCIP dan CCIE serta Juniper JNCIA, JNCIS dan JNCIE.
 
 ## Persiapan
 
 Pastikan sudah terinstall AUR Helper, disini saya menggunakan yay.
-
+net.unix.max-dgram_qlen
 Berikut cara installasi yay
 
 ```bash
@@ -163,4 +168,6 @@ Mohon maaf jika ada kesalahan, jika masih bingung silahkan diskusi di komentar
 ##  Sumber & Referensi
 
 * https://medium.com/@Ninja/install-gns3-on-arch-manjaro-linux-the-right-way-c5a3c4fa337d
+
+* https://kelasinong.blogspot.com/2019/10/c.html
 
