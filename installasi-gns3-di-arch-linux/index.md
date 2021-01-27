@@ -74,7 +74,7 @@ sudo tee -a /etc/sysctl.d/99-sysctl.conf > /dev/null << EOL
 net.unix.max_dgram_qlen=10000
 EOL
 ```
-> Setelah perintah pertama lalu masukkan manual net.unix.max-dgram_qlen setelah itu EOL
+> Setelah perintah pertama lalu masukkan manual net.unix.max_dgram_qlen=10000 setelah itu EOL
 
 ### 4. Installasi uBridge
 
