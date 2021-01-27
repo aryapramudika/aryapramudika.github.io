@@ -44,41 +44,14 @@ selanjutnya ke tahap Installasi
 ### 1. Install Dynamips serta package yang dibutuhkan
 
 ```bash
-sudo pacman -S libelf libpcap cmake && yay -S dynamips --nodiffmenu --noeditmenu --nocleanmenu && sudo setcap cap_net_admin,cap_net_raw=ep $(which dynamips)
+sudo pacman -S libelf libpcap cmake && yay -S dynamips --noconfirm && sudo setcap cap_net_admin,cap_net_raw=ep $(which dynamips)
 ```
-
-Memastikan Dynamips sudah terinstall
-
-```bash
-cd ~ && dynamips 2> /dev/null | grep version
-```
-
-> Output Perintah : Cisco Router Simulation Platform (version 0.2.21-amd64/Linux stable)
-
-```bash
-getcap $(which dynamips)
-```
-
-> Output Perintah : /usr/bin/dynamips cap_net_admin,cap_net_raw=ep
 
 ### 2. Installasi VPCS
 
 ```bash
-yay -S vpcs --nodiffmenu --noeditmenu --nocleanmenu
+yay -S vpcs --noconfirm
 ```
-
-Memastikan VPCS terinstall
-
-```bash
- cd ~ && type vpcs
-```
-
-> Output Perintah: vpcs is /usr/bin/vpcs
-
-```bash
-vpcs -v | grep version
-```
-> Output Perintah: Welcome to Virtual PC Simulator, version 0.8 beta
 
 ### 3. Installasi IOL untuk Simulasi Cisco
 
@@ -96,22 +69,94 @@ Konfigurasi Permanen
 
 ```bash
 sudo tee -a /etc/sysctl.d/99-sysctl.conf > /dev/null << EOL
-
 net.unix.max_dgram_qlen=10000
-
 EOL
 ```
 > Setelah perintah pertama lalu masukkan manual net.unix.max-dgram_qlen setelah itu EOL
 
-Memastikan konfigurasi IOL
+### 4. Installasi uBridge
 
 ```bash
-sysctl net.unix.max_dgram_qlen
+yay -S ubridge --noconfirm
 ```
-> Output Perintah: net.unix.max_dgram_qlen = 10000
+
+### 5. Installasi Qemu
 
 ```bash
-tail -2 /etc/sysctl.d/99-sysctl.conf
+sudo pacman -S qemu
 ```
-> Output Perintah: net.unix.max_dgram_qlen=10000
+
+### 6. Installasi Docker
+
+```bash
+sudo pacman -S docker
+```
+Enable Docker service:
+
+**SystemD:**
+
+```bash
+sudo systemctl enable docker.service && sudo systemctl restart docker.service
+```
+
+Installasi Untuk OpenRC
+
+```bash
+sudo pacman -S docker-openrc
+```
+
+**OpenRC**
+
+```bash
+rc-update add docker default && rc-service docker restart
+```
+
+Menambahkan user ke group docker:
+
+```bash
+sudo usermod -aG docker $USER
+```
+
+### 7. Installasi Wireshark
+
+```bash
+sudo pacman -S wireshark-qt
+```
+Menambahkan user ke group wireshark:
+
+```bash
+sudo usermod -aG wireshark $USER
+```
+
+### 8. Installasi GNS3 serta package yang dibutuhkan
+
+```bash
+sudo pacman -S qt5-svg qt5-websockets python-pip python-pyqt5 python-sip
+```
+
+**GNS3 GUI:**
+
+```bash
+yay -S gns3-gui --noconfirm
+```
+
+**GNS3 Server:**
+
+```bash
+yay -S gns3-server --noconfirm
+```
+
+Enable GNS3-Server :
+
+```bash
+systemctl enable gns3-server && systemctl start gns3-server
+```
+
+## Selesai
+
+Selamat Mencoba !!
+
+##  Sumber & Referensi
+
+* https://medium.com/@Ninja/install-gns3-on-arch-manjaro-linux-the-right-way-c5a3c4fa337d
 
