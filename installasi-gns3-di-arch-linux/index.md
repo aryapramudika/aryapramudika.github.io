@@ -10,7 +10,7 @@ GNS3 adalah simulator jaringan grafis yang memungkinkan digunakan untuk merancan
 Pastikan sudah menginstall Yay AUR-Helper:
 
 ```bash
-cd ~ && sudo pacman -Sy git && sudo pacman -S base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
+cd ~ && sudo pacman -Sy git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
 ```
 Selanjutnya ke tahap Installasi
 
