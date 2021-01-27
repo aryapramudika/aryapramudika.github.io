@@ -48,9 +48,7 @@ Konfigurasi Permanen
 
 ```bash
 sudo tee -a /etc/sysctl.d/99-sysctl.conf > /dev/null << EOL
-Lalu masukkan
 net.unix.max_dgram_qlen=10000
-dan tutup dengan perintah
 EOL
 ```
 ### 4. uBridge
