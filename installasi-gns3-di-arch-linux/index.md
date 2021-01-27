@@ -53,7 +53,7 @@ Memastikan Dynamips sudah terinstall
 cd ~ && dynamips 2> /dev/null | grep version
 ```
 
-> Output : Cisco Router Simulation Platform (version 0.2.21-amd64/Linux stable)
+> Output Perintah : Cisco Router Simulation Platform (version 0.2.21-amd64/Linux stable)
 
 ```bash
 getcap $(which dynamips)
@@ -73,10 +73,33 @@ Memastikan VPCS terinstall
  cd ~ && type vpcs
 ```
 
-> Output perintah: vpcs is /usr/bin/vpcs
+> Output Perintah: vpcs is /usr/bin/vpcs
 
 ```bash
 vpcs -v | grep version
 ```
-> Output perintah: Welcome to Virtual PC Simulator, version 0.8 beta
+> Output Perintah: Welcome to Virtual PC Simulator, version 0.8 beta
+
+### 3. Installasi IOL untuk Simulasi Cisco
+
+Pastikan sudah mengaktifkan repo lib32 di */etc/pacman.conf*
+
+```bash
+sudo pacman -Sy lib32-openssl lib32-gcc-libs && sudo ln -s /usr/lib32/libcrypto.so.1.0.0 /usr/lib32/libcrypto.so.4
+```
+Mencegah jika nanti terjadi error di EXCESSCOLL
+
+```bash
+sudo sysctl net.unix.max_dgram_qlen=10000
+```
+Konfigurasi Permanen
+
+```bash
+sudo tee -a /etc/sysctl.d/99-sysctl.conf > /dev/null << EOL
+
+net.unix.max_dgram_qlen=10000
+
+EOL
+```
+> setelah perintah pertama lalu masukkan > net.unix.max-dgram_qlen & > EOL
 
