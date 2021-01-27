@@ -1,0 +1,20 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Arch - Tag - Arya Lab</title>
+        <link>https://aryapramudika.github.io/tags/arch/</link>
+        <description>Arch - Tag - Arya Lab</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>aryapramudika1@gmail.com (Arya Pramudika)</managingEditor>
+            <webMaster>aryapramudika1@gmail.com (Arya Pramudika)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 27 Jan 2021 15:18:22 &#43;0700</lastBuildDate><atom:link href="https://aryapramudika.github.io/tags/arch/" rel="self" type="application/rss+xml" /><item>
+    <title>Installasi GNS3 Di Arch Linux/Based</title>
+    <link>https://aryapramudika.github.io/installasi-gns3-di-arch-linux/</link>
+    <pubDate>Wed, 27 Jan 2021 15:18:22 &#43;0700</pubDate>
+    <author>Author</author>
+    <guid>https://aryapramudika.github.io/installasi-gns3-di-arch-linux/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/img/thumb/gns3-arch.png" referrerpolicy="no-referrer">
+            </div>Sekilas Tentang GNS3 GNS3 adalah simulator jaringan grafis yang memungkinkan digunakan untuk merancang topologi jaringan yang kompleks. GNS3 dapat menjalankan simulasi atau mengkonfigurasi perangkat mulai dari workstation sederhana hingga router yang powerfull seperti Cisco.
+Persiapan Pastikan sudah menginstall Yay AUR-Helper:
+1  cd ~ &amp;&amp; sudo pacman -Sy git base-devel &amp;&amp; git clone https://aur.archlinux.org/yay.git &amp;&amp; cd yay &amp;&amp; makepkg -si   Selanjutnya ke tahap Installasi
+Installasi &amp; Konfigurasi Untuk installasi kita perlu menginstall package satu persatu]]></description>
+</item></channel>
+</rss>
