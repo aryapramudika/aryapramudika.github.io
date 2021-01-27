@@ -1,16 +1,7 @@
 # Installasi GNS3 Di Arch Linux Based
 
 
-## Latar Belakang
-
-Karena saya belum menemukan artikel cara installasi gns3 arch linux versi bahasa Indonesia, jadi saya membuatnya sendiri
-
-## Tujuan
-
-Agar memudahkan pengguna distro Arch Based dalam melakukan Installasi GNS3
-
-
-## Sekilas Tentang gns3
+## Sekilas Tentang GNS3
 
 GNS3 (Graphic Network Simulator) adalah software simulasi jaringan komputer berbasis GUI yang mirip dengan Cisco Packet Tracer. Namun pada GNS3 memungkinkan simulasi jaringan yang komplek, karena menggunakan operating system asli dari perangkat jaringan seperti cisco dan juniper. Sehingga kita berada kondisi lebih nyata dalam mengkonfigurasi router langsung daripada di Cisco Packet Tracer. GNS3 adalah alat pelengkap yang sangat baik untuk laboratorium nyata bagi network engineer, administrator dan orang-orang yang ingin belajar untuk sertifikasi seperti Cisco CCNA, CCNP, CCIP dan CCIE serta Juniper JNCIA, JNCIS dan JNCIE.
 
@@ -55,10 +46,7 @@ Konfigurasi Permanen
 
 ```bash
 sudo tee -a /etc/sysctl.d/99-sysctl.conf > /dev/null << EOL
-net.unix.max_dgram_qlen=10000
-EOL
 ```
-> Setelah perintah pertama lalu masukkan manual net.unix.max_dgram_qlen=10000 setelah itu EOL
 
 ### 4. Installasi uBridge
 
@@ -82,8 +70,9 @@ Enable Docker service:
 **SystemD:**
 
 ```bash
-sudo systemctl enable docker.service && sudo systemctl restart docker.service
+sudo systemctl enable docker.service && sudo systemctl start docker.service
 ```
+dengan menggunakan perintah systemctl *enable* docker otomatis akan aktif setelah booting, jika ingin mengaktifkan docker ketika dibutuhkan saja maka lakukan perintah systemctl *start*   
 
 Installasi Untuk OpenRC
 
