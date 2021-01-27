@@ -46,7 +46,6 @@ Konfigurasi Permanen
 
 ```bash
 sudo tee -a /etc/sysctl.d/99-sysctl.conf > /dev/null << EOL
-EOL
 ```
 
 ### 4. Installasi uBridge
@@ -71,7 +70,8 @@ Enable Docker service:
 **SystemD:**
 
 ```bash
-sudo systemctl enable docker.service && sudo systemctl start docker.service
+sudo systemctl enable docker.service
+sudo systemctl start docker.service
 ```
 dengan menggunakan perintah systemctl *enable* docker otomatis akan aktif setelah booting, jika ingin mengaktifkan docker ketika dibutuhkan saja maka gunakan perintah systemctl *start*   
 
@@ -81,10 +81,13 @@ Installasi Untuk OpenRC
 sudo pacman -S docker-openrc
 ```
 
+Untuk init sistem lain silahkan disesuaikan.
+
 **OpenRC**
 
 ```bash
-rc-update add docker default && rc-service docker restart
+rc-update add docker default
+rc-service docker restart
 ```
 
 Menambahkan user ke group docker:
@@ -122,10 +125,11 @@ yay -S gns3-gui --noconfirm
 yay -S gns3-server --noconfirm
 ```
 
-Enable GNS3-Server :
+Menjalankan GNS3-Server :
 
 ```bash
-systemctl enable gns3-server && systemctl start gns3-server
+systemctl enable gns3-server
+systemctl start gns3-server
 ```
 
 ## Selesai
