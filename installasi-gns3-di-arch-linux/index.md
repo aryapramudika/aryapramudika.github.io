@@ -133,7 +133,6 @@ Jika launcher GNS3 belum muncul di Desktop Environment setelah installasi, maka 
 
 ```bash
 sudo tee -a /usr/share/applications/gns3.desktop > /dev/null << EOL
-sudo tee -a /usr/share/applications/gns3.desktop > /dev/null << EOL
 [Desktop Entry]
 Type=Application
 Encoding=UTF-8
