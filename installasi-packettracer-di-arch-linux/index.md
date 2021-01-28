@@ -20,7 +20,7 @@ Clone PKGBuild dari AUR
 cd ~
 git clone https://aur.archlinux.org/packettracer.git
 ```
-Lalu download PacketTracer berformat .deb di website NetAcad
+Lalu download PacketTracer berformat .deb di website [Netacad](https://www.netacad.com/portal/resources/packet-tracer) pastikan sudah membuat akun netacad.
 
 ![packettracer1](/img/packettracer0.png 'Download Packettracer Versi Linux')
 
