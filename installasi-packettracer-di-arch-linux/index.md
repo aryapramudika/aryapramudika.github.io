@@ -47,9 +47,7 @@ Installasi Berhasil!
 
 ## Selesai
 
-Selamat mencoba!
-
-jika ada error atau masalah silakan diskusikan di bawah
+Selamat mencoba! , jika ada error atau masalah silakan diskusikan di bawah
 
 ## Referensi
 
