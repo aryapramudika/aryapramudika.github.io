@@ -37,10 +37,17 @@ dan jalankan perintah
 ```bash
 makepkg -si
 ```
+Lalu tunggu sampai installasi berhasil
+
+![packettracer4](/img/packettracer3.png 'Menunggu installasi selesai')
+
+Installasi Berhasil!
+
+![packettracer5](/img/packettracer4.png 'Installasi Berhasil!')
 
 ## Selesai
 
-Semoga bermanfaat
+Selamat mencoba! , jika ada error atau masalah silakan diskusikan di bawah
 
 ## Referensi
 
