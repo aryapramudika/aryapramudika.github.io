@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Jaringan - Tag - Arya Lab</title>
+        <link>https://aryapramudika.github.io/tags/jaringan/</link>
+        <description>Jaringan - Tag - Arya Lab</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>aryapramudika1@gmail.com (Arya Pramudika)</managingEditor>
+            <webMaster>aryapramudika1@gmail.com (Arya Pramudika)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 29 Jan 2021 19:12:18 &#43;0700</lastBuildDate><atom:link href="https://aryapramudika.github.io/tags/jaringan/" rel="self" type="application/rss+xml" /><item>
+    <title>Konfigurasi Mikrotik Dasar 1</title>
+    <link>https://aryapramudika.github.io/konfigurasi-mikrotik-dasar-1/</link>
+    <pubDate>Fri, 29 Jan 2021 19:12:18 &#43;0700</pubDate>
+    <author>Author</author>
+    <guid>https://aryapramudika.github.io/konfigurasi-mikrotik-dasar-1/</guid>
+    <description><![CDATA[Sekilas Tentang Mikrotik Mikrotik merupakan sistem operasi Linux base yang diperuntukkan sebagai network router. Didesain untuk memberikan kemudahan bagi penggunanya. Administrasinya bisa dilakukan melalui Windows application (WinBox). Selain itu instalasi dapat dilakukan pada standard computer PC. PC yang akan dijadikan router mikrotik-pun tidak memerlukan resource yang cukup besar untuk penggunaan standard, misalnya hanya sebagai gateway. Untuk keperluan beban yang besar ( network yang kompleks, routing yang rumit dll) disarankan untuk mempertimbangkan pemilihan resource PC yang memadai.]]></description>
+</item></channel>
+</rss>
