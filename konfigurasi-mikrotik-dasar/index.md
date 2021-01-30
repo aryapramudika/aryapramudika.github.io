@@ -71,7 +71,7 @@ Disini saya menambahkan konfigurasi IP Address seperti di topologi yaitu di ethe
 ```
 /ip address add address=172.16.1.1/24 interface=ether2
 ```
-![Menambahkan IP](/img/mikrotik-ip.png 'Menambahkan IP di Ether 2')
+![Menambahkan IP](/img/mikrotik-ip1.png 'Menambahkan IP di Ether 2')
 
 Kita gunakan perintah
 ```
@@ -79,7 +79,7 @@ Kita gunakan perintah
 ```
 Untuk melihat list IP Address yang ada di Router
 
-![IP Berhasil Di Tambahkan](/img/mikrotik-ip1.png 'Berhasil menambahkan IP di Ether 2')
+![IP Berhasil Di Tambahkan](/img/mikrotik-ip.png 'Berhasil menambahkan IP di Ether 2')
 
 Menambahkan IP Address Berhasil!
 
