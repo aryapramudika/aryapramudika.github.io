@@ -88,7 +88,7 @@ Menambahkan IP Address Berhasil!
 Agar PC 1 kita bisa terhubung ke internet kita menggunakan fitur NAT Masquerade, untuk mengelabuhi internet agar bisa tersambung ke semua ether melalui ether 1
 
 ```
-/ip firewall nat add chain=srcnat out-interface=ether1 action=masquareade
+/ip firewall nat add chain=srcnat out-interface=ether1 action=masquerade
 ```
 ![Menambahkan IP Firewall](/img/mikrotik-nat11.png 'Memasukkan Perintah')
 
