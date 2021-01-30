@@ -90,7 +90,7 @@ Agar PC 1 kita bisa terhubung ke internet kita menggunakan fitur NAT Masquerade,
 ```
 /ip firewall nat add chain=srcnat out-interface=ether1 action=masquareade
 ```
-![IP Firewall](/img/mikrotik-nat.png 'Memasukkan Perintah')
+![IP Firewall](/img/mikrotik-nat11.png 'Memasukkan Perintah')
 
 Perlu diperhatikan **out-interface** adalah interface yang terhubung ke internet.
 
