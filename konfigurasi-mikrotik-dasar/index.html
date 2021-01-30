@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/aryapramudika.github.io\/konfigurasi-mikrotik-dasar\/"
-        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Mikrotik, Jaringan, Prakerin","wordcount":  310 ,
+        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Mikrotik, Jaringan, Prakerin","wordcount":  454 ,
         "url": "https:\/\/aryapramudika.github.io\/konfigurasi-mikrotik-dasar\/","datePublished": "2021-01-29T19:12:18+07:00","dateModified": "2021-01-29T19:12:18+07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/aryapramudika.github.io\/images\/avatar.png"},"author": {
@@ -106,8 +106,8 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Konfigurasi Mikrotik Dasar</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Arya Pramudika</a></span>&nbsp;<span class="post-category">included in <a href="/categories/jaringan/"><i class="far fa-folder fa-fw"></i>jaringan</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-29">2021-01-29</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;310 words&nbsp;
-                <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-29">2021-01-29</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;454 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -126,6 +126,7 @@
         <li><a href="#1-mengubah-nama-router-mikrotik">1. Mengubah Nama Router Mikrotik</a></li>
         <li><a href="#2-reset-konfigurasi-mikrotik">2. Reset Konfigurasi Mikrotik</a></li>
         <li><a href="#konfigurasi-ip-address">Konfigurasi IP Address</a></li>
+        <li><a href="#3-konfigurasi-nat">3. Konfigurasi NAT</a></li>
       </ul>
     </li>
   </ul>
@@ -237,8 +238,89 @@
 <li>Tunggu beberapa saat</li>
 <li>Lalu cek dengan winbox/console.</li>
 </ol>
-<p>Reset di Mikrotik Berhasil Dilakukan</p>
+<p>Reset di Mikrotik Berhasil!</p>
 <h3 id="konfigurasi-ip-address">Konfigurasi IP Address</h3>
+<p>Disini saya menambahkan konfigurasi IP Address seperti di topologi yaitu di ether2</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">/ip address add address=172.16.1.1/24 interface=ether2
+</code></pre></td></tr></table>
+</div>
+</div><p><figure><a class="lightgallery" href="/img/mikrotik-ip.png" title="Menambahkan IP" data-thumbnail="/img/mikrotik-ip.png" data-sub-html="<h2>Menambahkan IP di Ether 2</h2><p>Menambahkan IP</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/mikrotik-ip.png"
+            data-srcset="/img/mikrotik-ip.png, /img/mikrotik-ip.png 1.5x, /img/mikrotik-ip.png 2x"
+            data-sizes="auto"
+            alt="/img/mikrotik-ip.png" />
+    </a><figcaption class="image-caption">Menambahkan IP di Ether 2</figcaption>
+    </figure></p>
+<p>Kita gunakan perintah</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">/ip address print
+</code></pre></td></tr></table>
+</div>
+</div><p>Untuk melihat list IP Address yang ada di Router</p>
+<p><figure><a class="lightgallery" href="/img/mikrotik-ip1.png" title="IP Berhasil Di Tambahkan" data-thumbnail="/img/mikrotik-ip1.png" data-sub-html="<h2>Berhasil menambahkan IP di Ether 2</h2><p>IP Berhasil Di Tambahkan</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/mikrotik-ip1.png"
+            data-srcset="/img/mikrotik-ip1.png, /img/mikrotik-ip1.png 1.5x, /img/mikrotik-ip1.png 2x"
+            data-sizes="auto"
+            alt="/img/mikrotik-ip1.png" />
+    </a><figcaption class="image-caption">Berhasil menambahkan IP di Ether 2</figcaption>
+    </figure></p>
+<p>Menambahkan IP Address Berhasil!</p>
+<h3 id="3-konfigurasi-nat">3. Konfigurasi NAT</h3>
+<p>Agar PC 1 kita bisa terhubung ke internet kita menggunakan fitur NAT Masquerade, untuk mengelabuhi internet agar bisa tersambung ke semua ether melalui ether 1</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">/ip firewall nat add chain=srcnat out-interface=ether1 action=masquareade
+</code></pre></td></tr></table>
+</div>
+</div><p><figure><a class="lightgallery" href="/img/mikrotik-nat.png" title="IP Firewall" data-thumbnail="/img/mikrotik-nat.png" data-sub-html="<h2>Memasukkan Perintah</h2><p>IP Firewall</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/mikrotik-nat.png"
+            data-srcset="/img/mikrotik-nat.png, /img/mikrotik-nat.png 1.5x, /img/mikrotik-nat.png 2x"
+            data-sizes="auto"
+            alt="/img/mikrotik-nat.png" />
+    </a><figcaption class="image-caption">Memasukkan Perintah</figcaption>
+    </figure></p>
+<p>Perlu diperhatikan <strong>out-interface</strong> adalah interface yang terhubung ke internet.</p>
+<p><figure><a class="lightgallery" href="/img/mikrotik-nat1.png" title="IP Firewall" data-thumbnail="/img/mikrotik-nat1.png" data-sub-html="<h2>NAT Masquerade berhasil dilakukan</h2><p>IP Firewall</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/mikrotik-nat1.png"
+            data-srcset="/img/mikrotik-nat1.png, /img/mikrotik-nat1.png 1.5x, /img/mikrotik-nat1.png 2x"
+            data-sizes="auto"
+            alt="/img/mikrotik-nat1.png" />
+    </a><figcaption class="image-caption">NAT Masquerade berhasil dilakukan</figcaption>
+    </figure></p>
+<p>Untuk melihat NAT Masquerade berhasil ditambahkan yaitu dengan perintah</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">/ip firewall nat print
+</code></pre></td></tr></table>
+</div>
+</div><p>Konfigurasi NAT Masquerade Berhasil!</p>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">

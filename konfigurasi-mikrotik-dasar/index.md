@@ -63,8 +63,44 @@ Caranya,
 4. Tunggu beberapa saat
 5. Lalu cek dengan winbox/console.
 
-Reset di Mikrotik Berhasil Dilakukan
+Reset di Mikrotik Berhasil!
 
 ### Konfigurasi IP Address
+Disini saya menambahkan konfigurasi IP Address seperti di topologi yaitu di ether2
 
+```
+/ip address add address=172.16.1.1/24 interface=ether2
+```
+![Menambahkan IP](/img/mikrotik-ip.png 'Menambahkan IP di Ether 2')
+
+Kita gunakan perintah
+```
+/ip address print
+```
+Untuk melihat list IP Address yang ada di Router
+
+![IP Berhasil Di Tambahkan](/img/mikrotik-ip1.png 'Berhasil menambahkan IP di Ether 2')
+
+Menambahkan IP Address Berhasil!
+
+### 3. Konfigurasi NAT
+
+Agar PC 1 kita bisa terhubung ke internet kita menggunakan fitur NAT Masquerade, untuk mengelabuhi internet agar bisa tersambung ke semua ether melalui ether 1
+
+```
+/ip firewall nat add chain=srcnat out-interface=ether1 action=masquareade
+```
+![IP Firewall](/img/mikrotik-nat.png 'Memasukkan Perintah')
+
+Perlu diperhatikan **out-interface** adalah interface yang terhubung ke internet.
+
+![IP Firewall](/img/mikrotik-nat1.png 'NAT Masquerade berhasil dilakukan')
+
+Untuk melihat NAT Masquerade berhasil ditambahkan yaitu dengan perintah
+
+```
+/ip firewall nat print
+```
+
+Konfigurasi NAT Masquerade Berhasil!
 
