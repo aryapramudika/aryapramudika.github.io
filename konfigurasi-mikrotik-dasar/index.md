@@ -129,11 +129,11 @@ Menambahkan DNS Google ke Client
 ```
 ip dns 8.8.8.8
 ```
-![IP DNS](/img/dns.png 'Menambahkan DNS Google')
+![IP DNS](/img/ip-dns.png 'Menambahkan DNS Google')
 
 Lalu kita ping ke google.com dan berhasil
 
-![IP DNS 1](/img/dns1.png 'Berhasil ping ke google.com')
+![IP DNS 1](/img/ip-dns1.png 'Berhasil ping ke google.com')
 
 ## Selesai
 
