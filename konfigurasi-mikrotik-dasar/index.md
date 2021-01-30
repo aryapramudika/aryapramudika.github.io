@@ -65,7 +65,7 @@ Caranya,
 
 Reset di Mikrotik Berhasil!
 
-### Konfigurasi IP Address
+### 3. Konfigurasi IP Address
 Disini saya menambahkan konfigurasi IP Address seperti di topologi yaitu di ether2
 
 ```
@@ -83,7 +83,7 @@ Untuk melihat list IP Address yang ada di Router
 
 Menambahkan IP Address Berhasil!
 
-### 3. Konfigurasi NAT
+### 4. Konfigurasi NAT
 
 Agar PC 1 kita bisa terhubung ke internet kita menggunakan fitur NAT Masquerade, untuk mengelabuhi internet agar bisa tersambung ke semua ether melalui ether 1
 
