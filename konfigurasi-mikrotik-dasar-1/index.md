@@ -1,4 +1,4 @@
-# Konfigurasi Mikrotik Dasar 1
+# Konfigurasi Mikrotik Dasar
 
 
 ## Sekilas Tentang Mikrotik
