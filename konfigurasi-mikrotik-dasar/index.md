@@ -47,7 +47,9 @@ Untuk melakukan reset konfigurasi saja maka bisa menggunakan soft reset
 ```
 ![Softreset](/img/mikrotik-reset.png 'Memasukkan Perintah')
 
-![Softreset Berhasil](/img/mikrotik-reset1.png 'Soft Reset Berhasil')
+**Dangerous ! Reset anyway ?** ketik Y, lalu tunggu sampai logout dan login kembali
+
+![](/img/mikrotik-reset1.png '')
 
 Selanjutnya yaitu Hard Reset
 
