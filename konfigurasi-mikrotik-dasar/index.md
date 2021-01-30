@@ -133,7 +133,7 @@ ip dns 8.8.8.8
 
 Lalu kita ping ke google.com dan berhasil
 
-![IP DNS](/img/dns1.png 'Berhasil ping ke google.com')
+![IP DNS 1](/img/dns1.png 'Berhasil ping ke google.com')
 
 ## Selesai
 
