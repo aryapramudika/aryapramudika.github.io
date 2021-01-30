@@ -33,7 +33,34 @@ Kita dapat mengubah nama Router dengan perintah
 /system identity set name=AryaRouter
 ```
 ![Memasukkan Perintah](/img/mikrotik-name.png 'Memasukkan Perintah')
+
 disini saya mengubah nama Router **Mikrotik** menjadi **AryaRouter**
+
 ![Berhasil Mengubah Nama](/img/mikrotik-name1.png 'Nama Berhasil Diubah')
+
+### 2. Reset Konfigurasi Mikrotik
+
+Untuk melakukan reset konfigurasi saja maka bisa menggunakan soft reset
+
+```
+/system reset-configuration no-defaults=yes
+```
+![Softreset](/img/mikrotik-reset.png 'Memasukkan Perintah')
+
+![Softreset Berhasil](/img/mikrotik-reset1.png 'Soft Reset Berhasil')
+
+Selanjutnya yaitu Hard Reset
+
+Caranya,
+
+1. Lepas kabel power
+2. Lalu tekan tombol reset dengan tangan/pulpen tanpa dilepas, kemudian tancapkan kabel power dalam kondisi tombol reset masih ditekan
+3. Tunggu lampu indikator sampai berhenti berkedip
+4. Tunggu beberapa saat
+5. Lalu cek dengan winbox/console.
+
+Reset di Mikrotik Berhasil Dilakukan
+
+### Konfigurasi IP Address
 
 
