@@ -18,5 +18,22 @@ Mikrotik RouterBoard adalah pe rangkat keras yang dibuat khusus untuk menjalanka
 
 ## Konfigurasi Dasar Mikrotik
 
-Stay tune :)
+### Persiapan
+Untuk konfigurasi dasar mikrotik saya menggunakan GNS3 untuk simulasi jaringan dengan Mikrotik RouterOS.
+
+Berikut gambar topologinya:
+
+![Topologi](/img/mikrotik-topologi.png 'Topologi')
+
+Terdapat dua cara untuk konfigurasi Router Mikrotik yang pertama bisa menggunakan Console/CLI kedua bisa menggunakan aplikasi Winbox, disini saya menggunakan Console/CLI.
+
+### 1. Mengubah Nama Router Mikrotik
+Kita dapat mengubah nama Router dengan perintah
+```
+/system identity set name=AryaRouter
+```
+![Memasukkan Perintah](/img/mikrotik-name.png 'Memasukkan Perintah')
+disini saya mengubah nama Router **Mikrotik** menjadi **AryaRouter**
+![Berhasil Mengubah Nama](/img/mikrotik-name1.png 'Nama Berhasil Diubah')
+
 
