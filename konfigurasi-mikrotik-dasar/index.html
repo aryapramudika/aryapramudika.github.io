@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/aryapramudika.github.io\/konfigurasi-mikrotik-dasar\/"
-        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Mikrotik, Jaringan, Prakerin","wordcount":  456 ,
+        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Mikrotik, Jaringan, Prakerin","wordcount":  596 ,
         "url": "https:\/\/aryapramudika.github.io\/konfigurasi-mikrotik-dasar\/","datePublished": "2021-01-29T19:12:18+07:00","dateModified": "2021-01-29T19:12:18+07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/aryapramudika.github.io\/images\/avatar.png"},"author": {
@@ -106,7 +106,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Konfigurasi Mikrotik Dasar</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Arya Pramudika</a></span>&nbsp;<span class="post-category">included in <a href="/categories/jaringan/"><i class="far fa-folder fa-fw"></i>jaringan</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-29">2021-01-29</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;456 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-01-29">2021-01-29</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;596 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
@@ -127,8 +127,11 @@
         <li><a href="#2-reset-konfigurasi-mikrotik">2. Reset Konfigurasi Mikrotik</a></li>
         <li><a href="#3-konfigurasi-ip-address">3. Konfigurasi IP Address</a></li>
         <li><a href="#4-konfigurasi-nat">4. Konfigurasi NAT</a></li>
+        <li><a href="#5-konfigurasi-ip-address-client">5. Konfigurasi IP Address Client</a></li>
       </ul>
     </li>
+    <li><a href="#selesai">Selesai</a></li>
+    <li><a href="#sumber--referensi">Sumber &amp; Referensi</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h2 id="sekilas-tentang-mikrotik">Sekilas Tentang Mikrotik</h2>
@@ -321,6 +324,92 @@
 </code></pre></td></tr></table>
 </div>
 </div><p>Konfigurasi NAT Masquerade Berhasil!</p>
+<h3 id="5-konfigurasi-ip-address-client">5. Konfigurasi IP Address Client</h3>
+<p>Buka Console Client VPCS</p>
+<p>untuk menambahkan IP static yaitu dengan perintah</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">ip 172.16.1.2 /24 172.16.1.1
+</code></pre></td></tr></table>
+</div>
+</div><p>Format penulisannya yaitu ip <em>ipaddress netmask gateway</em></p>
+<p><figure><a class="lightgallery" href="/img/vpcs-ip.png" title="IP Client" data-thumbnail="/img/vpcs-ip.png" data-sub-html="<h2>Memasukkan perintah</h2><p>IP Client</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/vpcs-ip.png"
+            data-srcset="/img/vpcs-ip.png, /img/vpcs-ip.png 1.5x, /img/vpcs-ip.png 2x"
+            data-sizes="auto"
+            alt="/img/vpcs-ip.png" />
+    </a><figcaption class="image-caption">Memasukkan perintah</figcaption>
+    </figure></p>
+<p>Setelah itu kita lakukan pengujian dengan cara ping ke gateway, dan berhasil.</p>
+<p><figure><a class="lightgallery" href="/img/vpcs-ip1.png" title="IP Client 1" data-thumbnail="/img/vpcs-ip1.png" data-sub-html="<h2>Melakukan ping ke gateway</h2><p>IP Client 1</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/vpcs-ip1.png"
+            data-srcset="/img/vpcs-ip1.png, /img/vpcs-ip1.png 1.5x, /img/vpcs-ip1.png 2x"
+            data-sizes="auto"
+            alt="/img/vpcs-ip1.png" />
+    </a><figcaption class="image-caption">Melakukan ping ke gateway</figcaption>
+    </figure></p>
+<p>Lalu kita ujicoba ping ke dns google yaitu 8.8.8.8, dan sukses berarti konfigurasi NAT Masquerade di Mikrotik tadi berhasil.</p>
+<p><figure><a class="lightgallery" href="/img/vpcs-ip2.png" title="IP Client 2" data-thumbnail="/img/vpcs-ip2.png" data-sub-html="<h2>Melakukan ping ke dns google</h2><p>IP Client 2</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/vpcs-ip2.png"
+            data-srcset="/img/vpcs-ip2.png, /img/vpcs-ip2.png 1.5x, /img/vpcs-ip2.png 2x"
+            data-sizes="auto"
+            alt="/img/vpcs-ip2.png" />
+    </a><figcaption class="image-caption">Melakukan ping ke dns google</figcaption>
+    </figure></p>
+<p>Menambahkan DNS Google ke Client</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">ip dns 8.8.8.8
+</code></pre></td></tr></table>
+</div>
+</div><p><figure><a class="lightgallery" href="/img/dns.png" title="IP DNS" data-thumbnail="/img/dns.png" data-sub-html="<h2>Menambahkan DNS Google</h2><p>IP DNS</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/dns.png"
+            data-srcset="/img/dns.png, /img/dns.png 1.5x, /img/dns.png 2x"
+            data-sizes="auto"
+            alt="/img/dns.png" />
+    </a><figcaption class="image-caption">Menambahkan DNS Google</figcaption>
+    </figure></p>
+<p>Lalu kita ping ke google.com dan berhasil</p>
+<p><figure><a class="lightgallery" href="/img/dns1.png" title="IP DNS" data-thumbnail="/img/dns1.png" data-sub-html="<h2>Berhasil ping ke google.com</h2><p>IP DNS</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/dns1.png"
+            data-srcset="/img/dns1.png, /img/dns1.png 1.5x, /img/dns1.png 2x"
+            data-sizes="auto"
+            alt="/img/dns1.png" />
+    </a><figcaption class="image-caption">Berhasil ping ke google.com</figcaption>
+    </figure></p>
+<h2 id="selesai">Selesai</h2>
+<p>Oke kita berhasil melakukan konfigurasi dasar di Router Mikrotik.</p>
+<p>Selamat Mencoba!</p>
+<h2 id="sumber--referensi">Sumber &amp; Referensi</h2>
+<ul>
+<li>
+<p><a href="http://onnocenter.or.id/wiki/index.php/Mikrotik:_Reset">http://onnocenter.or.id/wiki/index.php/Mikrotik:_Reset</a></p>
+</li>
+<li>
+<p><a href="http://onnocenter.or.id/wiki/index.php/Mikrotik:_Static_Routing_Sedehana">http://onnocenter.or.id/wiki/index.php/Mikrotik:_Static_Routing_Sedehana</a></p>
+</li>
+</ul>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">
         <div class="post-info-line">

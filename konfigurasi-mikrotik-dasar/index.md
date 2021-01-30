@@ -104,3 +104,46 @@ Untuk melihat NAT Masquerade berhasil ditambahkan yaitu dengan perintah
 
 Konfigurasi NAT Masquerade Berhasil!
 
+### 5. Konfigurasi IP Address Client
+Buka Console Client VPCS
+
+untuk menambahkan IP static yaitu dengan perintah
+
+```
+ip 172.16.1.2 /24 172.16.1.1
+```
+Format penulisannya yaitu ip *ipaddress netmask gateway*
+
+![IP Client](/img/vpcs-ip.png 'Memasukkan perintah')
+
+Setelah itu kita lakukan pengujian dengan cara ping ke gateway, dan berhasil.
+
+![IP Client 1](/img/vpcs-ip1.png 'Melakukan ping ke gateway')
+
+Lalu kita ujicoba ping ke dns google yaitu 8.8.8.8, dan sukses berarti konfigurasi NAT Masquerade di Mikrotik tadi berhasil.
+
+![IP Client 2](/img/vpcs-ip2.png 'Melakukan ping ke dns google')
+
+Menambahkan DNS Google ke Client
+
+```
+ip dns 8.8.8.8
+```
+![IP DNS](/img/dns.png 'Menambahkan DNS Google')
+
+Lalu kita ping ke google.com dan berhasil
+
+![IP DNS](/img/dns1.png 'Berhasil ping ke google.com')
+
+## Selesai
+
+Oke kita berhasil melakukan konfigurasi dasar di Router Mikrotik.
+
+Selamat Mencoba!
+
+## Sumber & Referensi
+
+* http://onnocenter.or.id/wiki/index.php/Mikrotik:_Reset
+
+* http://onnocenter.or.id/wiki/index.php/Mikrotik:_Static_Routing_Sedehana
+
