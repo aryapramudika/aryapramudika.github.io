@@ -4,7 +4,16 @@
         <link>https://aryapramudika.github.io/tags/komputer/</link>
         <description>Komputer - Tag - Arya Lab</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>aryapramudika1@gmail.com (Arya Pramudika)</managingEditor>
-            <webMaster>aryapramudika1@gmail.com (Arya Pramudika)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 01 Feb 2021 09:13:02 &#43;0700</lastBuildDate><atom:link href="https://aryapramudika.github.io/tags/komputer/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>aryapramudika1@gmail.com (Arya Pramudika)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 01 Feb 2021 21:40:41 &#43;0700</lastBuildDate><atom:link href="https://aryapramudika.github.io/tags/komputer/" rel="self" type="application/rss+xml" /><item>
+    <title>Installasi Windows 10 Di VMWare Workstation</title>
+    <link>https://aryapramudika.github.io/installasi-windows10-di-vmware/</link>
+    <pubDate>Mon, 01 Feb 2021 21:40:41 &#43;0700</pubDate>
+    <author>Author</author>
+    <guid>https://aryapramudika.github.io/installasi-windows10-di-vmware/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/img/thumb/windows10.png" referrerpolicy="no-referrer">
+            </div>Sekilas tentang VMWare VMware Workstation adalah sebuah perangkat lunak mesin virtual untuk arsitektur komputer x86 dan x86-64 dari VMware, sebuah bagian dari EMC Corporation. Perangkat lunak ini digunakan untuk membuat banyak x86 dan x86-64 komputer virtual dan digunakan secara simultan dengan sistem operasi yang digunakan. Setiap mesin virtual tersebut bisa menjalankan sistem operasi yang dipilih, seperti Windows, Linux, varian BSD dan lain sebagainya. Dalam arti yang sederhana, VMware workstation bisa menjalankan banyak sistem operasi secara simulatan dengan menggunakan satu fisik mesin.]]></description>
+</item><item>
     <title>Membuat Multi Bootable Di Flashdisk</title>
     <link>https://aryapramudika.github.io/membuat-multi-bootable-di-flashdisk/</link>
     <pubDate>Mon, 01 Feb 2021 09:13:02 &#43;0700</pubDate>
