@@ -88,7 +88,7 @@ Lalu pilih Layout Keyboard **US**
 
 ![Win10-10](/img/windows10.png 'Pilih Layout Keyboard')
 
-**Want to add second keyboard layout** klik skip
+**Want to add second keyboard layout?** klik skip
 
 ![Win10-11](/img/windows10-11.png 'Klik Skip')
 
@@ -106,7 +106,7 @@ Lalu masukkan password
 
 lalu klik **Create PIN**
 
-![Win10-15](/img/windows10-15.png 'Klik Creat PIN')
+![Win10-15](/img/windows10-15.png 'Klik Create PIN')
 
 Lalu buat PIN untuk login ke user 
 
