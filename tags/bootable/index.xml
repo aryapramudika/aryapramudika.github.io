@@ -13,9 +13,13 @@
     <description><![CDATA[Persiapan Untuk membuat multi bootable disini saya menggunakan software Ventoy
 yang perlu disiapkan adalah
  Flashdisk Laptop/PC Iso OS seperti Windows/Linux  Installasi &amp; Konfigurasi Ventoy Pertama kita download dulu menggunakan link diatas tadi.
-Mendownload VentoyVentoy1
+Mendownload VentoyVentoy
 " Mendownload Ventoy 
 Disini saya menggunakan ventoy versi linux
-Extract file yang di download tadi lalu buka di terminal]]></description>
+Extract file yang di download tadi lalu buka di terminal
+Buka TerminalVentoy1
+" Buka Terminal 
+Setelah itu cek flashdisk dengan perintah
+1  sudo fdisk -l   Melihat nama flashdiskVentoy2]]></description>
 </item></channel>
 </rss>
