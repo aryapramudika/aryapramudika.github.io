@@ -19,7 +19,5 @@ Pertama kita download dulu menggunakan link diatas tadi.
 
 Disini saya menggunakan ventoy versi linux
 
-Setelah itu kita lakukan installasi
-
 Extract file yang di download tadi lalu buka di terminal 
 
