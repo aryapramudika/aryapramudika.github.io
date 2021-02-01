@@ -144,3 +144,7 @@ Tunggu sampai selesai dan berhasil
 
 Selamat Mencoba !!
 
+## Referensi
+
+* https://id.wikipedia.org/wiki/VMware_Workstation
+
