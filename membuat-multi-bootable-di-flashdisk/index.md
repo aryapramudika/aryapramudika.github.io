@@ -45,7 +45,7 @@ sudo ./Ventoy2Disk.sh -i -g /dev/sdc
 
 ![Ventoy3](/img/ventoy2.png 'Menjalankan perintah')
 
-Perlu diperhatikan */dev/sdc* partisi flashdisk saya, mungkin bisa berbeda.
+Perlu diperhatikan */dev/sdc* adalah nama partisi flashdisk saya, di pc/laptop kalian mungkin berbeda.
 
 **You will install Ventoy to /dev/sdc**
 
