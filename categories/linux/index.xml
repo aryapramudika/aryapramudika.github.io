@@ -1,10 +1,19 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>linux - Category - Arya Lab</title>
+        <title>Linux - Category - Arya Lab</title>
         <link>https://aryapramudika.github.io/categories/linux/</link>
-        <description>linux - Category - Arya Lab</description>
+        <description>Linux - Category - Arya Lab</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>aryapramudika1@gmail.com (Arya Pramudika)</managingEditor>
-            <webMaster>aryapramudika1@gmail.com (Arya Pramudika)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 27 Jan 2021 15:18:22 &#43;0700</lastBuildDate><atom:link href="https://aryapramudika.github.io/categories/linux/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>aryapramudika1@gmail.com (Arya Pramudika)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Thu, 28 Jan 2021 13:09:36 &#43;0700</lastBuildDate><atom:link href="https://aryapramudika.github.io/categories/linux/" rel="self" type="application/rss+xml" /><item>
+    <title>Installasi Packettracer Di Arch Linux/Based</title>
+    <link>https://aryapramudika.github.io/installasi-packettracer-di-arch-linux/</link>
+    <pubDate>Thu, 28 Jan 2021 13:09:36 &#43;0700</pubDate>
+    <author>Author</author>
+    <guid>https://aryapramudika.github.io/installasi-packettracer-di-arch-linux/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/img/thumb/packettracer.png" referrerpolicy="no-referrer">
+            </div>Sekilas tentang PacketTracer Packet Tracer adalah simulator alat-alat jaringan Cisco yang sering digunakan sebagai media pembelajaran dan pelatihan, dan juga dalam bidang penelitian simulasi jaringan komputer. Program ini dibuat oleh Cisco Systems dan disediakan gratis untuk fakultas, siswa dan alumni yang telah berpartisipasi di Cisco Networking Academy. Tujuan utama Packet Tracer adalah untuk menyediakan alat bagi siswa dan pengajar agar dapat memahami prinsip jaringan komputer dan juga membangun skill di bidang alat-alat jaringan Cisco.]]></description>
+</item><item>
     <title>Installasi GNS3 Di Arch Linux/Based</title>
     <link>https://aryapramudika.github.io/installasi-gns3-di-arch-linux/</link>
     <pubDate>Wed, 27 Jan 2021 15:18:22 &#43;0700</pubDate>
