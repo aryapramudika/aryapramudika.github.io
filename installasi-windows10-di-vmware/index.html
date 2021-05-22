@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Installasi Windows 10 Di VMWare Workstation - Arya Lab</title><meta name="Description" content="About LoveIt Theme"><meta property="og:title" content="Installasi Windows 10 Di VMWare Workstation" />
+<meta property="og:description" content="Sekilas tentang VMWare VMware Workstation adalah sebuah perangkat lunak mesin virtual untuk arsitektur komputer x86 dan x86-64 dari VMware, sebuah bagian dari EMC Corporation. Perangkat lunak ini digunakan untuk membuat banyak x86 dan x86-64 komputer virtual dan digunakan secara simultan dengan sistem operasi yang digunakan. Setiap mesin virtual tersebut bisa menjalankan sistem operasi yang dipilih, seperti Windows, Linux, varian BSD dan lain sebagainya. Dalam arti yang sederhana, VMware workstation bisa menjalankan banyak sistem operasi secara simulatan dengan menggunakan satu fisik mesin." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://aryapramudika.github.io/installasi-windows10-di-vmware/" />
+<meta property="og:image" content="https://aryapramudika.github.io/img/thumb/windows10.png" />
+<meta property="article:published_time" content="2021-02-01T21:40:41+07:00" />
+<meta property="article:modified_time" content="2021-02-01T21:40:41+07:00" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://aryapramudika.github.io/img/thumb/windows10.png"/>
+
+<meta name="twitter:title" content="Installasi Windows 10 Di VMWare Workstation"/>
+<meta name="twitter:description" content="Sekilas tentang VMWare VMware Workstation adalah sebuah perangkat lunak mesin virtual untuk arsitektur komputer x86 dan x86-64 dari VMware, sebuah bagian dari EMC Corporation. Perangkat lunak ini digunakan untuk membuat banyak x86 dan x86-64 komputer virtual dan digunakan secara simultan dengan sistem operasi yang digunakan. Setiap mesin virtual tersebut bisa menjalankan sistem operasi yang dipilih, seperti Windows, Linux, varian BSD dan lain sebagainya. Dalam arti yang sederhana, VMware workstation bisa menjalankan banyak sistem operasi secara simulatan dengan menggunakan satu fisik mesin."/>
+<meta name="application-name" content="LoveIt">
+<meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://aryapramudika.github.io/installasi-windows10-di-vmware/" /><link rel="prev" href="https://aryapramudika.github.io/membuat-multi-bootable-di-flashdisk/" /><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.7.2/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Installasi Windows 10 Di VMWare Workstation",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/aryapramudika.github.io\/installasi-windows10-di-vmware\/"
+        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Windows, Komputer, VMWare, VirtualBox, Prakerin","wordcount":  663 ,
+        "url": "https:\/\/aryapramudika.github.io\/installasi-windows10-di-vmware\/","datePublished": "2021-02-01T21:40:41+07:00","dateModified": "2021-02-01T21:40:41+07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
+            "@type": "Organization",
+            "name": "xxxx","logo": "https:\/\/aryapramudika.github.io\/images\/avatar.png"},"author": {
+                "@type": "Person",
+                "name": "Arya Pramudika"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="fixed" header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Arya Lab"><span id="id-1" class="typeit"></span></a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Posts </a><a class="menu-item" href="/tags/"> Tags </a><a class="menu-item" href="/categories/"> Categories </a><a class="menu-item" href="/about/"> About </a><a class="menu-item" href="https://github.com/aryapramudika" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i>  </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Arya Lab"><span id="id-2" class="typeit"></span></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="Search titles or contents..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="Search">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="Clear">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        Cancel
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">Posts</a><a class="menu-item" href="/tags/" title="">Tags</a><a class="menu-item" href="/categories/" title="">Categories</a><a class="menu-item" href="/about/" title="">About</a><a class="menu-item" href="https://github.com/aryapramudika" title="GitHub" rel="noopener noreffer" target="_blank"><i class='fab fa-github fa-fw'></i></a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Installasi Windows 10 Di VMWare Workstation</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Arya Pramudika</a></span>&nbsp;<span class="post-category">included in <a href="/categories/komputer/"><i class="far fa-folder fa-fw"></i>Komputer</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-02-01">2021-02-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;663 words&nbsp;
+                <i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/img/thumb/windows10.png"
+        data-srcset="/img/thumb/windows10.png, /img/thumb/windows10.png 1.5x, /img/thumb/windows10.png 2x"
+        data-sizes="auto"
+        alt="/img/thumb/windows10.png"
+        title="/img/thumb/windows10.png" /></div><div class="details toc" id="toc-static"  kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#sekilas-tentang-vmware">Sekilas tentang VMWare</a></li>
+    <li><a href="#konfigurasi-vm-windows-10">Konfigurasi VM Windows 10</a></li>
+    <li><a href="#installasi-windows-10">Installasi Windows 10</a></li>
+    <li><a href="#selesai">Selesai</a></li>
+    <li><a href="#referensi">Referensi</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h2 id="sekilas-tentang-vmware">Sekilas tentang VMWare</h2>
+<p>VMware Workstation adalah sebuah perangkat lunak mesin virtual untuk arsitektur komputer x86 dan x86-64 dari VMware, sebuah bagian dari EMC Corporation. Perangkat lunak ini digunakan untuk membuat banyak x86 dan x86-64 komputer virtual dan digunakan secara simultan dengan sistem operasi yang digunakan. Setiap mesin virtual tersebut bisa menjalankan sistem operasi yang dipilih, seperti Windows, Linux, varian BSD dan lain sebagainya. Dalam arti yang sederhana, VMware workstation bisa menjalankan banyak sistem operasi secara simulatan dengan menggunakan satu fisik mesin.</p>
+<h2 id="konfigurasi-vm-windows-10">Konfigurasi VM Windows 10</h2>
+<p>Pertama kita buka VMWare Workstationnya lalu klik <strong>Create Virtual Machine</strong></p>
+<p><figure><a class="lightgallery" href="/img/vmware-windows.png" title="VMWareWindows" data-thumbnail="/img/vmware-windows.png" data-sub-html="<h2>Create Virtual Machine</h2><p>VMWareWindows</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/vmware-windows.png"
+            data-srcset="/img/vmware-windows.png, /img/vmware-windows.png 1.5x, /img/vmware-windows.png 2x"
+            data-sizes="auto"
+            alt="/img/vmware-windows.png" />
+    </a><figcaption class="image-caption">Create Virtual Machine</figcaption>
+    </figure></p>
+<p>Setelah itu pada menu <strong>Virtual Machine Configuration</strong> kita pilih <strong>Typical(recommended)</strong></p>
+<p><figure><a class="lightgallery" href="/img/vmware-windows1.png" title="VMWareWindows1" data-thumbnail="/img/vmware-windows1.png" data-sub-html="<h2>Typical Recommended</h2><p>VMWareWindows1</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/vmware-windows1.png"
+            data-srcset="/img/vmware-windows1.png, /img/vmware-windows1.png 1.5x, /img/vmware-windows1.png 2x"
+            data-sizes="auto"
+            alt="/img/vmware-windows1.png" />
+    </a><figcaption class="image-caption">Typical Recommended</figcaption>
+    </figure></p>
+<p>Selanjutnya di menu <strong>Install Operating system from:</strong> kita pilih <strong>Use ISO image</strong> dan masukkan ISO Windows 10</p>
+<p><figure><a class="lightgallery" href="/img/vmware-windows2.png" title="VMWareWindows2" data-thumbnail="/img/vmware-windows2.png" data-sub-html="<h2>Pilih ISO</h2><p>VMWareWindows2</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/vmware-windows2.png"
+            data-srcset="/img/vmware-windows2.png, /img/vmware-windows2.png 1.5x, /img/vmware-windows2.png 2x"
+            data-sizes="auto"
+            alt="/img/vmware-windows2.png" />
+    </a><figcaption class="image-caption">Pilih ISO</figcaption>
+    </figure></p>
+<p><figure><a class="lightgallery" href="/img/vmware-windows3.png" title="Memasukkan ISO Windows 10" data-thumbnail="/img/vmware-windows3.png" data-sub-html="<h2>Memasukkan ISO</h2><p>Memasukkan ISO Windows 10</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/vmware-windows3.png"
+            data-srcset="/img/vmware-windows3.png, /img/vmware-windows3.png 1.5x, /img/vmware-windows3.png 2x"
+            data-sizes="auto"
+            alt="/img/vmware-windows3.png" />
+    </a><figcaption class="image-caption">Memasukkan ISO</figcaption>
+    </figure></p>
+<p>Pada menu <strong>Guest Operating System</strong> kita pilih <strong>Microsoft Windows</strong></p>
+<p><figure><a class="lightgallery" href="/img/vmware-windows4.png" title="VMWareWindows4" data-thumbnail="/img/vmware-windows4.png" data-sub-html="<h2>Pilih Microsoft Windows</h2><p>VMWareWindows4</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/vmware-windows4.png"
+            data-srcset="/img/vmware-windows4.png, /img/vmware-windows4.png 1.5x, /img/vmware-windows4.png 2x"
+            data-sizes="auto"
+            alt="/img/vmware-windows4.png" />
+    </a><figcaption class="image-caption">Pilih Microsoft Windows</figcaption>
+    </figure></p>
+<p>Selanjutnya di <strong>Virtual Machine Name</strong> biarkan default atau kita bisa custom direktori untuk penyimpanan file VM Windows 10</p>
+<p><figure><a class="lightgallery" href="/img/vmware-windows5.png" title="VMWareWindows5" data-thumbnail="/img/vmware-windows5.png" data-sub-html="<h2>Konfigurasi Default</h2><p>VMWareWindows5</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/vmware-windows5.png"
+            data-srcset="/img/vmware-windows5.png, /img/vmware-windows5.png 1.5x, /img/vmware-windows5.png 2x"
+            data-sizes="auto"
+            alt="/img/vmware-windows5.png" />
+    </a><figcaption class="image-caption">Konfigurasi Default</figcaption>
+    </figure></p>
+<p>Setelah itu kita mengatur <strong>Disk Size</strong> disini saya biarkan default yaitu 60 GB. Pilih <strong>Store virtual disk as a single file</strong> untuk membuat file VM hanya 1 file saja, jika ingin dibuat beberapa file maka pilih <strong>Split virtual disk into multiple files</strong> ini memudahkan ketika dilakukan pemindahan ke PC/Laptop lain karena filenya tidak terlalu besar.</p>
+<p><figure><a class="lightgallery" href="/img/vmware-windows6.png" title="VMWareWindows6" data-thumbnail="/img/vmware-windows6.png" data-sub-html="<h2>Mengatur Disk Size</h2><p>VMWareWindows6</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/vmware-windows6.png"
+            data-srcset="/img/vmware-windows6.png, /img/vmware-windows6.png 1.5x, /img/vmware-windows6.png 2x"
+            data-sizes="auto"
+            alt="/img/vmware-windows6.png" />
+    </a><figcaption class="image-caption">Mengatur Disk Size</figcaption>
+    </figure></p>
+<p>Setelah itu kita klik Finish</p>
+<p><figure><a class="lightgallery" href="/img/vmware-windows7.png" title="VMWareWindows7" data-thumbnail="/img/vmware-windows7.png" data-sub-html="<h2>Klik Finish</h2><p>VMWareWindows7</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/vmware-windows7.png"
+            data-srcset="/img/vmware-windows7.png, /img/vmware-windows7.png 1.5x, /img/vmware-windows7.png 2x"
+            data-sizes="auto"
+            alt="/img/vmware-windows7.png" />
+    </a><figcaption class="image-caption">Klik Finish</figcaption>
+    </figure></p>
+<blockquote>
+<p>Sebelum finish kalian bisa custom manual seperti jumlah ram,jumlah cpu, dan network adapter di pilihan <strong>Customize Hardware</strong></p>
+</blockquote>
+<p>VM Windows 10 berhasil dibuat! selanjutnya kita ke tahap installasi Windows 10</p>
+<h2 id="installasi-windows-10">Installasi Windows 10</h2>
+<p>Tidak ada perbedaan installasi Windows 10 di VMWare dan installasi Windows biasa, jadi jika kalian sudah bisa menginstall Windows 10 di PC/Laptop maka bisa melakukannya di VMWare.</p>
+<p>Pertama memilih bahasa disini saya menggunakan bahasa <strong>English(United States)</strong> kalian bisa menggunakan bahasa lain seperti bahasa Indonesia. Konfigurasi lainnya saya biarkan default</p>
+<p><figure><a class="lightgallery" href="/img/windows10.png" title="Win10" data-thumbnail="/img/windows10.png" data-sub-html="<h2>Pilih Bahasa</h2><p>Win10</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/windows10.png"
+            data-srcset="/img/windows10.png, /img/windows10.png 1.5x, /img/windows10.png 2x"
+            data-sizes="auto"
+            alt="/img/windows10.png" />
+    </a><figcaption class="image-caption">Pilih Bahasa</figcaption>
+    </figure></p>
+<p>Setelah itu kita klik <strong>Install Now</strong></p>
+<p><figure><a class="lightgallery" href="/img/windows10-1.png" title="Win10-1" data-thumbnail="/img/windows10-1.png" data-sub-html="<h2>Klik Install</h2><p>Win10-1</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/windows10-1.png"
+            data-srcset="/img/windows10-1.png, /img/windows10-1.png 1.5x, /img/windows10-1.png 2x"
+            data-sizes="auto"
+            alt="/img/windows10-1.png" />
+    </a><figcaption class="image-caption">Klik Install</figcaption>
+    </figure></p>
+<p>Selanjutnya masukkan product key jika punya, jika tidak kosongkan saja</p>
+<p><figure><a class="lightgallery" href="/img/windows10-2.png" title="Win10-2" data-thumbnail="/img/windows10-2.png" data-sub-html="<h2>Masukkan Product Key</h2><p>Win10-2</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/windows10-2.png"
+            data-srcset="/img/windows10-2.png, /img/windows10-2.png 1.5x, /img/windows10-2.png 2x"
+            data-sizes="auto"
+            alt="/img/windows10-2.png" />
+    </a><figcaption class="image-caption">Masukkan Product Key</figcaption>
+    </figure></p>
+<p>Setelah itu pilih jenis Windows yang akan di install, disini saya memilih Windows 10 Pro</p>
+<p><figure><a class="lightgallery" href="/img/windows10-3.png" title="Win10-3" data-thumbnail="/img/windows10-3.png" data-sub-html="<h2>Memilih jenis Windows</h2><p>Win10-3</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/windows10-3.png"
+            data-srcset="/img/windows10-3.png, /img/windows10-3.png 1.5x, /img/windows10-3.png 2x"
+            data-sizes="auto"
+            alt="/img/windows10-3.png" />
+    </a><figcaption class="image-caption">Memilih jenis Windows</figcaption>
+    </figure></p>
+<p>Setujui semua license term</p>
+<p><figure><a class="lightgallery" href="/img/windows10-4.png" title="Win10-4" data-thumbnail="/img/windows10-4.png" data-sub-html="<h2>Accept license term</h2><p>Win10-4</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/windows10-4.png"
+            data-srcset="/img/windows10-4.png, /img/windows10-4.png 1.5x, /img/windows10-4.png 2x"
+            data-sizes="auto"
+            alt="/img/windows10-4.png" />
+    </a><figcaption class="image-caption">Accept license term</figcaption>
+    </figure></p>
+<p>Pilih <strong>Custom: Install Windows Only</strong></p>
+<p><figure><a class="lightgallery" href="/img/windows10-5.png" title="Win10-5" data-thumbnail="/img/windows10-5.png" data-sub-html="<h2>Pilih Install Windows Only</h2><p>Win10-5</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/windows10-5.png"
+            data-srcset="/img/windows10-5.png, /img/windows10-5.png 1.5x, /img/windows10-5.png 2x"
+            data-sizes="auto"
+            alt="/img/windows10-5.png" />
+    </a><figcaption class="image-caption">Pilih Install Windows Only</figcaption>
+    </figure></p>
+<p>Lalu kita buat partisi, label <strong>Primary</strong> untuk C: dan <strong>Logical</strong> untuk partisi kedua misal D:</p>
+<p><figure><a class="lightgallery" href="/img/windows10-6.png" title="Win10-6" data-thumbnail="/img/windows10-6.png" data-sub-html="<h2>Membuat Partisi</h2><p>Win10-6</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/windows10-6.png"
+            data-srcset="/img/windows10-6.png, /img/windows10-6.png 1.5x, /img/windows10-6.png 2x"
+            data-sizes="auto"
+            alt="/img/windows10-6.png" />
+    </a><figcaption class="image-caption">Membuat Partisi</figcaption>
+    </figure></p>
+<p>Setelah itu kita tunggu</p>
+<p><figure><a class="lightgallery" href="/img/windows10-7.png" title="Win10-7" data-thumbnail="/img/windows10-7.png" data-sub-html="<h2>Menunggu</h2><p>Win10-7</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/windows10-7.png"
+            data-srcset="/img/windows10-7.png, /img/windows10-7.png 1.5x, /img/windows10-7.png 2x"
+            data-sizes="auto"
+            alt="/img/windows10-7.png" />
+    </a><figcaption class="image-caption">Menunggu</figcaption>
+    </figure></p>
+<p>Setelah sampai finishing up, maka akan restart ke windows secara otomatis</p>
+<p><figure><a class="lightgallery" href="/img/windows10-8.png" title="Win10-8" data-thumbnail="/img/windows10-8.png" data-sub-html="<h2>Restart Otomatis</h2><p>Win10-8</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/windows10-8.png"
+            data-srcset="/img/windows10-8.png, /img/windows10-8.png 1.5x, /img/windows10-8.png 2x"
+            data-sizes="auto"
+            alt="/img/windows10-8.png" />
+    </a><figcaption class="image-caption">Restart Otomatis</figcaption>
+    </figure>i</p>
+<p>Selanjutnya pilih <strong>Region Indonesia</strong></p>
+<p><figure><a class="lightgallery" href="/img/windows10-9.png" title="Win10-9" data-thumbnail="/img/windows10-9.png" data-sub-html="<h2>Pilih Region Indonesia</h2><p>Win10-9</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/windows10-9.png"
+            data-srcset="/img/windows10-9.png, /img/windows10-9.png 1.5x, /img/windows10-9.png 2x"
+            data-sizes="auto"
+            alt="/img/windows10-9.png" />
+    </a><figcaption class="image-caption">Pilih Region Indonesia</figcaption>
+    </figure></p>
+<p>Lalu pilih Layout Keyboard <strong>US</strong></p>
+<p><figure><a class="lightgallery" href="/img/windows10.png" title="Win10-10" data-thumbnail="/img/windows10.png" data-sub-html="<h2>Pilih Layout Keyboard</h2><p>Win10-10</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/windows10.png"
+            data-srcset="/img/windows10.png, /img/windows10.png 1.5x, /img/windows10.png 2x"
+            data-sizes="auto"
+            alt="/img/windows10.png" />
+    </a><figcaption class="image-caption">Pilih Layout Keyboard</figcaption>
+    </figure></p>
+<p><strong>Want to add second keyboard layout?</strong> klik skip</p>
+<p><figure><a class="lightgallery" href="/img/windows10-11.png" title="Win10-11" data-thumbnail="/img/windows10-11.png" data-sub-html="<h2>Klik Skip</h2><p>Win10-11</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/windows10-11.png"
+            data-srcset="/img/windows10-11.png, /img/windows10-11.png 1.5x, /img/windows10-11.png 2x"
+            data-sizes="auto"
+            alt="/img/windows10-11.png" />
+    </a><figcaption class="image-caption">Klik Skip</figcaption>
+    </figure></p>
+<p><strong>How would you like to set up?</strong> pilih <strong>Set up for personal use</strong></p>
+<p><figure><a class="lightgallery" href="/img/windows10-12.png" title="Win10-12" data-thumbnail="/img/windows10-12.png" data-sub-html="<h2>Pilih Setup for personal use</h2><p>Win10-12</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/windows10-12.png"
+            data-srcset="/img/windows10-12.png, /img/windows10-12.png 1.5x, /img/windows10-12.png 2x"
+            data-sizes="auto"
+            alt="/img/windows10-12.png" />
+    </a><figcaption class="image-caption">Pilih Setup for personal use</figcaption>
+    </figure></p>
+<p>Selanjutnya masukkan akun microsoft atau nama user</p>
+<p><figure><a class="lightgallery" href="/img/windows10-13.png" title="Win10-13" data-thumbnail="/img/windows10-13.png" data-sub-html="<h2>Masukkan Email/Nama</h2><p>Win10-13</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/windows10-13.png"
+            data-srcset="/img/windows10-13.png, /img/windows10-13.png 1.5x, /img/windows10-13.png 2x"
+            data-sizes="auto"
+            alt="/img/windows10-13.png" />
+    </a><figcaption class="image-caption">Masukkan Email/Nama</figcaption>
+    </figure></p>
+<p>Lalu masukkan password</p>
+<p><figure><a class="lightgallery" href="/img/windows10-14.png" title="Win-14" data-thumbnail="/img/windows10-14.png" data-sub-html="<h2>Masukkan Password</h2><p>Win-14</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/windows10-14.png"
+            data-srcset="/img/windows10-14.png, /img/windows10-14.png 1.5x, /img/windows10-14.png 2x"
+            data-sizes="auto"
+            alt="/img/windows10-14.png" />
+    </a><figcaption class="image-caption">Masukkan Password</figcaption>
+    </figure></p>
+<p>lalu klik <strong>Create PIN</strong></p>
+<p><figure><a class="lightgallery" href="/img/windows10-15.png" title="Win10-15" data-thumbnail="/img/windows10-15.png" data-sub-html="<h2>Klik Create PIN</h2><p>Win10-15</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/windows10-15.png"
+            data-srcset="/img/windows10-15.png, /img/windows10-15.png 1.5x, /img/windows10-15.png 2x"
+            data-sizes="auto"
+            alt="/img/windows10-15.png" />
+    </a><figcaption class="image-caption">Klik Create PIN</figcaption>
+    </figure></p>
+<p>Lalu buat PIN untuk login ke user</p>
+<p><figure><a class="lightgallery" href="/img/windows10-16.png" title="Win10-16" data-thumbnail="/img/windows10-16.png" data-sub-html="<h2>Buat PIN</h2><p>Win10-16</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/windows10-16.png"
+            data-srcset="/img/windows10-16.png, /img/windows10-16.png 1.5x, /img/windows10-16.png 2x"
+            data-sizes="auto"
+            alt="/img/windows10-16.png" />
+    </a><figcaption class="image-caption">Buat PIN</figcaption>
+    </figure></p>
+<p>Klik <strong>Accept</strong></p>
+<p><figure><a class="lightgallery" href="/img/windows10-17.png" title="Accept" data-thumbnail="/img/windows10-17.png" data-sub-html="<h2>Klik Accept</h2><p>Accept</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/windows10-17.png"
+            data-srcset="/img/windows10-17.png, /img/windows10-17.png 1.5x, /img/windows10-17.png 2x"
+            data-sizes="auto"
+            alt="/img/windows10-17.png" />
+    </a><figcaption class="image-caption">Klik Accept</figcaption>
+    </figure></p>
+<p>Klik <strong>Yes</strong></p>
+<p><figure><a class="lightgallery" href="/img/windows10-18.png" title="Klik Yes" data-thumbnail="/img/windows10-18.png" data-sub-html="<h2>Klik Yes</h2><p>Klik Yes</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/windows10-18.png"
+            data-srcset="/img/windows10-18.png, /img/windows10-18.png 1.5x, /img/windows10-18.png 2x"
+            data-sizes="auto"
+            alt="/img/windows10-18.png" />
+    </a><figcaption class="image-caption">Klik Yes</figcaption>
+    </figure></p>
+<p>Masukkan nomor telepon atau kosongkan, lalu klik <strong>Next</strong></p>
+<p><figure><a class="lightgallery" href="/img/windows10-19.png" title="Nomor Telepon" data-thumbnail="/img/windows10-19.png" data-sub-html="<h2>Masukkan Nomor Telepon atau Kosongkan</h2><p>Nomor Telepon</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/windows10-19.png"
+            data-srcset="/img/windows10-19.png, /img/windows10-19.png 1.5x, /img/windows10-19.png 2x"
+            data-sizes="auto"
+            alt="/img/windows10-19.png" />
+    </a><figcaption class="image-caption">Masukkan Nomor Telepon atau Kosongkan</figcaption>
+    </figure></p>
+<p><strong>Back up your files  with OneDrive</strong> kita pilih <strong>Only save file to this PC</strong></p>
+<p><figure><a class="lightgallery" href="/img/windows10-20.png" title="Only Save File to PC" data-thumbnail="/img/windows10-20.png" data-sub-html="<h2>Hanya save file ke PC</h2><p>Only Save File to PC</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/windows10-20.png"
+            data-srcset="/img/windows10-20.png, /img/windows10-20.png 1.5x, /img/windows10-20.png 2x"
+            data-sizes="auto"
+            alt="/img/windows10-20.png" />
+    </a><figcaption class="image-caption">Hanya save file ke PC</figcaption>
+    </figure></p>
+<p>Selanjutnya klik <strong>No,thanks</strong></p>
+<p><figure><a class="lightgallery" href="/img/windows10-21.png" title="No,Thanks" data-thumbnail="/img/windows10-21.png" data-sub-html="<h2>Klik No Thanks</h2><p>No,Thanks</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/windows10-21.png"
+            data-srcset="/img/windows10-21.png, /img/windows10-21.png 1.5x, /img/windows10-21.png 2x"
+            data-sizes="auto"
+            alt="/img/windows10-21.png" />
+    </a><figcaption class="image-caption">Klik No Thanks</figcaption>
+    </figure></p>
+<p>Tunggu sampai selesai dan berhasil</p>
+<p><figure><a class="lightgallery" href="/img/windows10-22.png" title="Menunggu" data-thumbnail="/img/windows10-22.png" data-sub-html="<h2>Menunggu</h2><p>Menunggu</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/windows10-22.png"
+            data-srcset="/img/windows10-22.png, /img/windows10-22.png 1.5x, /img/windows10-22.png 2x"
+            data-sizes="auto"
+            alt="/img/windows10-22.png" />
+    </a><figcaption class="image-caption">Menunggu</figcaption>
+    </figure></p>
+<p><figure><a class="lightgallery" href="/img/windows10-23.png" title="Berhasil" data-thumbnail="/img/windows10-23.png" data-sub-html="<h2>Berhasil</h2><p>Berhasil</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/windows10-23.png"
+            data-srcset="/img/windows10-23.png, /img/windows10-23.png 1.5x, /img/windows10-23.png 2x"
+            data-sizes="auto"
+            alt="/img/windows10-23.png" />
+    </a><figcaption class="image-caption">Berhasil</figcaption>
+    </figure></p>
+<p><figure><a class="lightgallery" href="/img/windows10-24.png" title="Test Notepad" data-thumbnail="/img/windows10-24.png" data-sub-html="<h2>Test Notepad</h2><p>Test Notepad</p>">
+        <img
+            class="lazyload"
+            src="/svg/loading.min.svg"
+            data-src="/img/windows10-24.png"
+            data-srcset="/img/windows10-24.png, /img/windows10-24.png 1.5x, /img/windows10-24.png 2x"
+            data-sizes="auto"
+            alt="/img/windows10-24.png" />
+    </a><figcaption class="image-caption">Test Notepad</figcaption>
+    </figure></p>
+<h2 id="selesai">Selesai</h2>
+<p>Selamat Mencoba !!</p>
+<h2 id="referensi">Referensi</h2>
+<ul>
+<li><a href="https://id.wikipedia.org/wiki/VMware_Workstation">https://id.wikipedia.org/wiki/VMware_Workstation</a></li>
+</ul>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2021-02-01</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"><span>
+                            <a class="link-to-markdown" href="/installasi-windows10-di-vmware/index.md" target="_blank">Read Markdown</a>
+                        </span></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="https://aryapramudika.github.io/installasi-windows10-di-vmware/" data-title="Installasi Windows 10 Di VMWare Workstation" data-via="pramdka" data-hashtags="Windows,Komputer,VMWare,VirtualBox,Prakerin"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="https://aryapramudika.github.io/installasi-windows10-di-vmware/" data-hashtag="Windows"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="Share on WhatsApp" data-sharer="whatsapp" data-url="https://aryapramudika.github.io/installasi-windows10-di-vmware/" data-title="Installasi Windows 10 Di VMWare Workstation" data-web><i class="fab fa-whatsapp fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/windows/">Windows</a>,&nbsp;<a href="/tags/komputer/">Komputer</a>,&nbsp;<a href="/tags/vmware/">VMWare</a>,&nbsp;<a href="/tags/virtualbox/">VirtualBox</a>,&nbsp;<a href="/tags/prakerin/">Prakerin</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/membuat-multi-bootable-di-flashdisk/" class="prev" rel="prev" title="Membuat Multi Bootable Di Flashdisk"><i class="fas fa-angle-left fa-fw"></i>Membuat Multi Bootable Di Flashdisk</a></div>
+</div>
+<div id="comments"><div id="disqus_thread" class="comment"></div><noscript>
+                Please enable JavaScript to view the comments powered by <a href="https://disqus.com/?ref_noscript">Disqus</a>.
+            </noscript></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by Hugo</div><div class="footer-line"><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">Arya Pramudika</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.css"><script type="text/javascript" src="https://arya.disqus.com/embed.js" defer></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.3/dist/smooth-scroll.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/autocomplete.js@0.37.1/dist/autocomplete.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lunr@2.3.8/lunr.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.2.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lightgallery.js@1.2.0/dist/js/lightgallery.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-thumbnail.js@1.2.0/dist/lg-thumbnail.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lg-zoom.js@1.2.0/dist/lg-zoom.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.4.0/sharer.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{},"data":{"id-1":"/etc/","id-2":"/etc/"},"lightGallery":{"actualSize":false,"exThumbImage":"data-thumbnail","hideBarsDelay":2000,"selector":".lightgallery","speed":400,"thumbContHeight":80,"thumbWidth":80,"thumbnail":true},"math":{"delimiters":[{"display":true,"left":"$$","right":"$$"},{"display":true,"left":"\\[","right":"\\]"},{"display":false,"left":"$","right":"$"},{"display":false,"left":"\\(","right":"\\)"}],"strict":false},"search":{"highlightTag":"em","lunrIndexURL":"/index.json","maxResultLength":10,"noResultsFound":"No results found","snippetLength":30,"type":"lunr"},"typeit":{"cursorChar":"|","cursorSpeed":1000,"data":{"id-1":["id-1"],"id-2":["id-2"]},"duration":-1,"speed":100}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
