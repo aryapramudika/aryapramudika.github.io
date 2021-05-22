@@ -9,11 +9,11 @@ Mikrotik merupakan sistem operasi Linux base yang diperuntukkan sebagai network 
 
 1. RouterOS
 
-Mikrotik RouterOS adalah sistem operasi yang bisa digunakan untuk manajemen jaringan. Mikrotik RouterOS bisa di install di komputer yang berbasis X86,ARM64,ARM untuk lebih lengkapnya silahkan kunjungi web Mikrotik [MikrotikRouterOS](https://mikrotik.com/software)
+Mikrotik RouterOS adalah sistem operasi yang bisa digunakan untuk manajemen jaringan. Mikrotik RouterOS bisa di install di komputer yang berbasis X86,ARM64,ARM untuk lebih lengkapnya silahkan kunjungi web Mikrotik [RouterOS](https://mikrotik.com/software)
 
 2. RouterBoard
 
-Mikrotik RouterBoard adalah perangkat keras yang dibuat khusus untuk menjalankan RouterOS,terdapat banyak sekali jenis RouterBoard ini untuk lebih detailnya silahkan kunjungi web Mikrotik [MikrotikRouterBoard](https://mikrotik.com/products)
+Mikrotik RouterBoard adalah pe rangkat keras yang dibuat khusus untuk menjalankan RouterOS,terdapat banyak sekali jenis RouterBoard ini untuk lebih detailnya silahkan kunjungi web Mikrotik [RouterBoard](https://mikrotik.com/products)
 
 
 ## Konfigurasi Dasar Mikrotik
