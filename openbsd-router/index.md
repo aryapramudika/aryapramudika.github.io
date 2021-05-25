@@ -9,7 +9,7 @@
 
 ## Konfigurasi Interface
 
-```sh
+```Shell
 buntal# ifconfig
 lo0: flags=8049<UP,LOOPBACK,RUNNING,MULTICAST> mtu 32768
         index 4 priority 0 llprio 3
@@ -41,31 +41,31 @@ pflog0: flags=141<UP,RUNNING,PROMISC> mtu 33136
         index 5 priority 0 llprio 3
         groups: pflog```
       
-Disini sumber internet dari *em0*, *em1* akan saya konfigurasi sebagai dhcp server untuk client
+Disini sumber internet dari **em0**, **em1** akan saya konfigurasi sebagai dhcp server untuk client
 
-### Konfigurasi IP Static di *em1*
+### Konfigurasi IP Static di **em1**
 
 Disini saya menggunakan IP 192.168.1.0/24 untuk di distribusikan ke client
 
 
-```sh
+```Shell
 echo 'inet 192.168.1.1 255.255.255.0 NONE' >> /etc/hostname.em1
 ```
 Ubah File Permission menjadi 640
 
-```sh
+```Shell
 chmod 640 /etc/hostname.em1
 ```
 
 Lalu Restart Interface em1
 
-```sh
+```Shell
 sh /etc/netstart em1
 ```
 
 ### Enable IP Forwarding
 
-```sh
+```Shell
 echo 'net.inet.ip.forwarding=1' > /etc/sysctl.conf
 ```
 
@@ -73,12 +73,14 @@ echo 'net.inet.ip.forwarding=1' > /etc/sysctl.conf
 
 Copy file example dari /etc/example
 
-```cp /etc/example/dhcpd.conf /etc/dhcpd.conf
+```Shell
+cp /etc/example/dhcpd.conf /etc/dhcpd.conf
 ```
 
 Edit file, disini saya menggunakan nano
 
-```nano /etc/dhcpd.conf
+```Shell
+nano /etc/dhcpd.conf
 #       $OpenBSD: dhcpd.conf,v 1.1 2014/07/11 21:20:10 deraadt Exp $
 #
 # DHCP server options.
@@ -112,15 +114,15 @@ subnet 192.168.1.0 netmask 255.255.255.0 {
 }
 ```
 
-Saya mengubah domain-name router menjadi *buntal.local* dengan dns server isp *192.168.122.1*
+Saya mengubah domain-name router menjadi **buntal.local** dengan dns server isp **192.168.122.1**
 
-Saya tidak perlu ip tetap di client tertentu jadi saya hapus konfigurasi *host static-client*, *host static-pxe-client*
+Saya tidak perlu ip tetap di client tertentu jadi saya hapus konfigurasi **host static-client**, **host static-pxe-client**
 
 Saya ubah range IP menjadi 192.168.1.2-192.168.1.254
 
 Hasil Akhir
 
-```
+```Shell
 #       $OpenBSD: dhcpd.conf,v 1.1 2014/07/11 21:20:10 deraadt Exp $
 #
 # DHCP server options.
@@ -144,7 +146,7 @@ subnet 192.168.1.0 netmask 255.255.255.0 {
 ```
 Enable dan start dhcpd services
 
-```
+```Shell
 buntal# rcctl enable dhcpd && rcctl start dhcpd                         
 dhcpd(ok)
 ```

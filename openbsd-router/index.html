@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/aryapramudika.github.io\/openbsd-router\/"
-        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "BSD, OpenBSD, Router","wordcount":  493 ,
+        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "BSD, OpenBSD, Router","wordcount":  500 ,
         "url": "https:\/\/aryapramudika.github.io\/openbsd-router\/","datePublished": "2021-05-25T18:41:22+07:00","dateModified": "2021-05-25T18:41:22+07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/aryapramudika.github.io\/images\/avatar.png"},"author": {
@@ -106,7 +106,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Membangun Router Sederhana dengan OpenBSD</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Arya Pramudika</a></span>&nbsp;<span class="post-category">included in <a href="/categories/bsd/"><i class="far fa-folder fa-fw"></i>bsd</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-05-25">2021-05-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;493 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-05-25">2021-05-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;500 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
@@ -182,7 +182,7 @@
 </span><span class="lnt">40
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh">buntal# ifconfig
+<pre class="chroma"><code class="language-Shell" data-lang="Shell">buntal# ifconfig
 lo0: <span class="nv">flags</span><span class="o">=</span>8049&lt;UP,LOOPBACK,RUNNING,MULTICAST&gt; mtu <span class="m">32768</span>
         index <span class="m">4</span> priority <span class="m">0</span> llprio <span class="m">3</span>
         groups: lo
@@ -213,14 +213,14 @@ pflog0: <span class="nv">flags</span><span class="o">=</span>141&lt;UP,RUNNING,P
         index <span class="m">5</span> priority <span class="m">0</span> llprio <span class="m">3</span>
         groups: pflog<span class="sb">```</span>
       
-Disini sumber internet dari *em0*, *em1* akan saya konfigurasi sebagai dhcp server untuk client
+Disini sumber internet dari **em0**, **em1** akan saya konfigurasi sebagai dhcp server untuk client
 
-<span class="c1">### Konfigurasi IP Static di *em1*</span>
+<span class="c1">### Konfigurasi IP Static di **em1**</span>
 
 Disini saya menggunakan IP 192.168.1.0/24 untuk di distribusikan ke client
 
 
-<span class="sb">```</span>sh
+<span class="sb">```</span>Shell
 <span class="nb">echo</span> <span class="s1">&#39;inet 192.168.1.1 255.255.255.0 NONE&#39;</span> &gt;&gt; /etc/hostname.em1
 </code></pre></td></tr></table>
 </div>
@@ -230,7 +230,7 @@ Disini saya menggunakan IP 192.168.1.0/24 untuk di distribusikan ke client
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh">chmod <span class="m">640</span> /etc/hostname.em1
+<pre class="chroma"><code class="language-Shell" data-lang="Shell">chmod <span class="m">640</span> /etc/hostname.em1
 </code></pre></td></tr></table>
 </div>
 </div><p>Lalu Restart Interface em1</p>
@@ -239,7 +239,7 @@ Disini saya menggunakan IP 192.168.1.0/24 untuk di distribusikan ke client
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh">sh /etc/netstart em1
+<pre class="chroma"><code class="language-Shell" data-lang="Shell">sh /etc/netstart em1
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="enable-ip-forwarding">Enable IP Forwarding</h3>
@@ -248,16 +248,18 @@ Disini saya menggunakan IP 192.168.1.0/24 untuk di distribusikan ke client
 <pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-sh" data-lang="sh"><span class="nb">echo</span> <span class="s1">&#39;net.inet.ip.forwarding=1&#39;</span> &gt; /etc/sysctl.conf
+<pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="nb">echo</span> <span class="s1">&#39;net.inet.ip.forwarding=1&#39;</span> &gt; /etc/sysctl.conf
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="konfigurasi-dhcp-server">Konfigurasi DHCP Server</h2>
 <p>Copy file example dari /etc/example</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code></code></pre></td>
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-cp" data-lang="cp"></code></pre></td></tr></table>
+<pre class="chroma"><code class="language-Shell" data-lang="Shell">cp /etc/example/dhcpd.conf /etc/dhcpd.conf
+</code></pre></td></tr></table>
 </div>
 </div><p>Edit file, disini saya menggunakan nano</p>
 <div class="highlight"><div class="chroma">
@@ -293,43 +295,45 @@ Disini saya menggunakan IP 192.168.1.0/24 untuk di distribusikan ke client
 </span><span class="lnt">29
 </span><span class="lnt">30
 </span><span class="lnt">31
+</span><span class="lnt">32
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">#       $OpenBSD: dhcpd.conf,v 1.1 2014/07/11 21:20:10 deraadt Exp $
-#
-# DHCP server options.
-# See dhcpd.conf(5) and dhcpd(8) for more information.
-#
+<pre class="chroma"><code class="language-Shell" data-lang="Shell">nano /etc/dhcpd.conf
+<span class="c1">#       $OpenBSD: dhcpd.conf,v 1.1 2014/07/11 21:20:10 deraadt Exp $</span>
+<span class="c1">#</span>
+<span class="c1"># DHCP server options.</span>
+<span class="c1"># See dhcpd.conf(5) and dhcpd(8) for more information.</span>
+<span class="c1">#</span>
 
-# Network:              192.168.1.0/255.255.255.0
-# Domain name:          my.domain
-# Name servers:         192.168.1.3 and 192.168.1.5
-# Default router:       192.168.1.1
-# Addresses:            192.168.1.32 - 192.168.1.127
-#
-option  domain-name &#34;my.domain&#34;;
-option  domain-name-servers 192.168.1.3, 192.168.1.5;
+<span class="c1"># Network:              192.168.1.0/255.255.255.0</span>
+<span class="c1"># Domain name:          my.domain</span>
+<span class="c1"># Name servers:         192.168.1.3 and 192.168.1.5</span>
+<span class="c1"># Default router:       192.168.1.1</span>
+<span class="c1"># Addresses:            192.168.1.32 - 192.168.1.127</span>
+<span class="c1">#</span>
+option  domain-name <span class="s2">&#34;my.domain&#34;</span><span class="p">;</span>
+option  domain-name-servers 192.168.1.3, 192.168.1.5<span class="p">;</span>
 
-subnet 192.168.1.0 netmask 255.255.255.0 {
-        option routers 192.168.1.1;
+subnet 192.168.1.0 netmask 255.255.255.0 <span class="o">{</span>
+        option routers 192.168.1.1<span class="p">;</span>
 
-        range 192.168.1.32 192.168.1.127;
+        range 192.168.1.32 192.168.1.127<span class="p">;</span>
 
-        host static-client {
-                hardware ethernet 22:33:44:55:66:77;
-                fixed-address 192.168.1.200;
-        }
+        host static-client <span class="o">{</span>
+                hardware ethernet 22:33:44:55:66:77<span class="p">;</span>
+                fixed-address 192.168.1.200<span class="p">;</span>
+        <span class="o">}</span>
 
-        host pxe-client {
-                hardware ethernet 02:03:04:05:06:07;
-                filename &#34;pxeboot&#34;;
-                next-server 192.168.1.1;
-        }
-}
+        host pxe-client <span class="o">{</span>
+                hardware ethernet 02:03:04:05:06:07<span class="p">;</span>
+                filename <span class="s2">&#34;pxeboot&#34;</span><span class="p">;</span>
+                next-server 192.168.1.1<span class="p">;</span>
+        <span class="o">}</span>
+<span class="o">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><p>Saya mengubah domain-name router menjadi <em>buntal.local</em> dengan dns server isp <em>192.168.122.1</em></p>
-<p>Saya tidak perlu ip tetap di client tertentu jadi saya hapus konfigurasi <em>host static-client</em>, <em>host static-pxe-client</em></p>
+</div><p>Saya mengubah domain-name router menjadi <strong>buntal.local</strong> dengan dns server isp <strong>192.168.122.1</strong></p>
+<p>Saya tidak perlu ip tetap di client tertentu jadi saya hapus konfigurasi <strong>host static-client</strong>, <strong>host static-pxe-client</strong></p>
 <p>Saya ubah range IP menjadi 192.168.1.2-192.168.1.254</p>
 <p>Hasil Akhir</p>
 <div class="highlight"><div class="chroma">
@@ -356,25 +360,25 @@ subnet 192.168.1.0 netmask 255.255.255.0 {
 </span><span class="lnt">20
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">#       $OpenBSD: dhcpd.conf,v 1.1 2014/07/11 21:20:10 deraadt Exp $
-#
-# DHCP server options.
-# See dhcpd.conf(5) and dhcpd(8) for more information.
-#
+<pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="c1">#       $OpenBSD: dhcpd.conf,v 1.1 2014/07/11 21:20:10 deraadt Exp $</span>
+<span class="c1">#</span>
+<span class="c1"># DHCP server options.</span>
+<span class="c1"># See dhcpd.conf(5) and dhcpd(8) for more information.</span>
+<span class="c1">#</span>
 
-# Network:              192.168.1.0/255.255.255.0
-# Domain name:          my.domain
-# Name servers:         192.168.1.3 and 192.168.1.5
-# Default router:       192.168.1.1
-# Addresses:            192.168.1.32 - 192.168.1.127
-#
-option  domain-name &#34;buntal.local&#34;;
-option  domain-name-servers 192.168.122.1;
+<span class="c1"># Network:              192.168.1.0/255.255.255.0</span>
+<span class="c1"># Domain name:          my.domain</span>
+<span class="c1"># Name servers:         192.168.1.3 and 192.168.1.5</span>
+<span class="c1"># Default router:       192.168.1.1</span>
+<span class="c1"># Addresses:            192.168.1.32 - 192.168.1.127</span>
+<span class="c1">#</span>
+option  domain-name <span class="s2">&#34;buntal.local&#34;</span><span class="p">;</span>
+option  domain-name-servers 192.168.122.1<span class="p">;</span>
 
-subnet 192.168.1.0 netmask 255.255.255.0 {
-        option routers 192.168.1.1;
-        range 192.168.1.2 192.168.1.254;
-}
+subnet 192.168.1.0 netmask 255.255.255.0 <span class="o">{</span>
+        option routers 192.168.1.1<span class="p">;</span>
+        range 192.168.1.2 192.168.1.254<span class="p">;</span>
+<span class="o">}</span>
 
 </code></pre></td></tr></table>
 </div>
@@ -385,8 +389,8 @@ subnet 192.168.1.0 netmask 255.255.255.0 {
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">buntal# rcctl enable dhcpd &amp;&amp; rcctl start dhcpd                         
-dhcpd(ok)
+<pre class="chroma"><code class="language-Shell" data-lang="Shell">buntal# rcctl <span class="nb">enable</span> dhcpd <span class="o">&amp;&amp;</span> rcctl start dhcpd                         
+dhcpd<span class="o">(</span>ok<span class="o">)</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>Mohon maaf kalau ada kekurangan</p>
