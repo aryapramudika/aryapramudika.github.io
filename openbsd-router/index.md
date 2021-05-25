@@ -159,4 +159,5 @@ Mohon maaf kalau ada kekurangan
 
 * https://openbsdrouterguide.net/
 * https://www.cyberciti.biz/faq/openbsd-restart-network/
+* google.com
 
