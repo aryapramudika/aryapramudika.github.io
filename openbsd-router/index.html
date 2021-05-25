@@ -427,10 +427,10 @@ dhcpd<span class="o">(</span>ok<span class="o">)</span>
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="nv">utama</span><span class="o">=</span><span class="s2">&#34;em0&#34;</span>  
+<pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="nv">ext_if</span><span class="o">=</span><span class="s2">&#34;em0&#34;</span>  
 <span class="nv">lan</span><span class="o">=</span><span class="s2">&#34;em1&#34;</span>  
 
-pass out on <span class="nv">$utama</span> inet from <span class="nv">$lan</span>:network to any nat-to <span class="nv">$utama</span>
+pass out on <span class="nv">$ext_if</span> inet from <span class="nv">$lan</span>:network to any nat-to <span class="nv">$ext_if</span>
 
 </code></pre></td></tr></table>
 </div>

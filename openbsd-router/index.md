@@ -172,10 +172,10 @@ nano /etc/pf.conf
 Tambahkan konfigurasi ke baris paling bawah
 
 ```Shell
-utama="em0"  
+ext_if="em0"  
 lan="em1"  
 
-pass out on $utama inet from $lan:network to any nat-to $utama
+pass out on $ext_if inet from $lan:network to any nat-to $ext_if
 
 ```
 
