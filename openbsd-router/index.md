@@ -39,7 +39,8 @@ enc0: flags=0<>
         status: active
 pflog0: flags=141<UP,RUNNING,PROMISC> mtu 33136
         index 5 priority 0 llprio 3
-        groups: pflog```
+        groups: pflog
+```
       
 Disini sumber internet dari **em0**, **em1** akan saya konfigurasi sebagai dhcp server untuk client
 
