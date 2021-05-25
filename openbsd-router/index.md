@@ -10,7 +10,10 @@
 ## Konfigurasi Interface
 
 ```Shell
-buntal# ifconfig
+ifconfig
+```
+
+```Output
 lo0: flags=8049<UP,LOOPBACK,RUNNING,MULTICAST> mtu 32768
         index 4 priority 0 llprio 3
         groups: lo
