@@ -82,6 +82,8 @@ Edit file, disini saya menggunakan nano
 
 ```Shell
 nano /etc/dhcpd.conf
+```
+``` Output
 #       $OpenBSD: dhcpd.conf,v 1.1 2014/07/11 21:20:10 deraadt Exp $
 #
 # DHCP server options.
