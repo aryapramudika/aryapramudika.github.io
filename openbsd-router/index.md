@@ -128,7 +128,7 @@ Saya ubah range IP menjadi 192.168.1.2-192.168.1.254
 
 Hasil Akhir
 
-```Shell
+```Output
 #       $OpenBSD: dhcpd.conf,v 1.1 2014/07/11 21:20:10 deraadt Exp $
 #
 # DHCP server options.
