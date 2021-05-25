@@ -9,7 +9,8 @@
 
 ## Konfigurasi Interface
 
-```buntal# ifconfig
+```sh
+buntal# ifconfig
 lo0: flags=8049<UP,LOOPBACK,RUNNING,MULTICAST> mtu 32768
         index 4 priority 0 llprio 3
         groups: lo
@@ -47,22 +48,25 @@ Disini sumber internet dari *em0*, *em1* akan saya konfigurasi sebagai dhcp serv
 Disini saya menggunakan IP 192.168.1.0/24 untuk di distribusikan ke client
 
 
-```echo 'inet 192.168.1.1 255.255.255.0 NONE' >> /etc/hostname.em1
+```sh
+echo 'inet 192.168.1.1 255.255.255.0 NONE' >> /etc/hostname.em1
 ```
 Ubah File Permission menjadi 640
 
-```
+```sh
 chmod 640 /etc/hostname.em1
 ```
 
 Lalu Restart Interface em1
 
-```sh /etc/netstart em1
+```sh
+sh /etc/netstart em1
 ```
 
 ### Enable IP Forwarding
 
-```echo 'net.inet.ip.forwarding=1' > /etc/sysctl.conf
+```sh
+echo 'net.inet.ip.forwarding=1' > /etc/sysctl.conf
 ```
 
 ## Konfigurasi DHCP Server
