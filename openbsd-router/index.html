@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/aryapramudika.github.io\/openbsd-router\/"
-        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "BSD, OpenBSD, Router","wordcount":  490 ,
+        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "BSD, OpenBSD, Router","wordcount":  529 ,
         "url": "https:\/\/aryapramudika.github.io\/openbsd-router\/","datePublished": "2021-05-25T18:41:22+07:00","dateModified": "2021-05-25T18:41:22+07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/aryapramudika.github.io\/images\/avatar.png"},"author": {
@@ -106,7 +106,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Membangun Router Sederhana dengan OpenBSD</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Arya Pramudika</a></span>&nbsp;<span class="post-category">included in <a href="/categories/bsd/"><i class="far fa-folder fa-fw"></i>bsd</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-05-25">2021-05-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;490 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-05-25">2021-05-25</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;529 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
@@ -130,6 +130,7 @@
       </ul>
     </li>
     <li><a href="#konfigurasi-dhcp-server">Konfigurasi DHCP Server</a></li>
+    <li><a href="#konfigurasi-nat">Konfigurasi NAT</a></li>
     <li><a href="#referensi">Referensi</a></li>
   </ul>
 </nav></div>
@@ -391,12 +392,47 @@ subnet 192.168.1.0 netmask 255.255.255.0 <span class="o">{</span>
 dhcpd<span class="o">(</span>ok<span class="o">)</span>
 </code></pre></td></tr></table>
 </div>
+</div><h2 id="konfigurasi-nat">Konfigurasi NAT</h2>
+<p>Copy file example</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Shell" data-lang="Shell">cp /etc/examples/pf.conf /etc/pf.conf
+</code></pre></td></tr></table>
+</div>
+</div><p>lalu edit dengan nano</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Shell" data-lang="Shell">nano /etc/pf.conf
+</code></pre></td></tr></table>
+</div>
+</div><p>Tambahkan konfigurasi di baris paling bawah</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Shell" data-lang="Shell"><span class="nv">utama</span><span class="o">=</span><span class="s2">&#34;em0&#34;</span>  
+<span class="nv">lan</span><span class="o">=</span><span class="s2">&#34;em1&#34;</span>  
+
+pass out on <span class="nv">$utama</span> inet from <span class="nv">$lan</span>:network to any nat-to <span class="nv">$utama</span>
+
+</code></pre></td></tr></table>
+</div>
 </div><p>Mohon maaf kalau ada kekurangan</p>
 <h2 id="referensi">Referensi</h2>
 <ul>
 <li><a href="https://openbsdrouterguide.net/">https://openbsdrouterguide.net/</a></li>
 <li><a href="https://www.cyberciti.biz/faq/openbsd-restart-network/">https://www.cyberciti.biz/faq/openbsd-restart-network/</a></li>
-<li>google.com</li>
 </ul>
 </div><div class="post-footer" id="post-footer">
     <div class="post-info">

@@ -153,11 +153,33 @@ Enable dan start dhcpd services
 buntal# rcctl enable dhcpd && rcctl start dhcpd                         
 dhcpd(ok)
 ```
+
+## Konfigurasi NAT
+
+Copy file example
+
+```Shell
+cp /etc/examples/pf.conf /etc/pf.conf
+```
+lalu edit dengan nano
+
+```Shell
+nano /etc/pf.conf
+```
+Tambahkan konfigurasi di baris paling bawah
+
+```Shell
+utama="em0"  
+lan="em1"  
+
+pass out on $utama inet from $lan:network to any nat-to $utama
+
+```
+
 Mohon maaf kalau ada kekurangan
 
 ## Referensi
 
 * https://openbsdrouterguide.net/
 * https://www.cyberciti.biz/faq/openbsd-restart-network/
-* google.com
 
