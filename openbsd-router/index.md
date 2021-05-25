@@ -169,7 +169,7 @@ lalu edit dengan nano
 ```Shell
 nano /etc/pf.conf
 ```
-Tambahkan konfigurasi di baris paling bawah
+Tambahkan konfigurasi ke baris paling bawah
 
 ```Shell
 utama="em0"  
