@@ -1,7 +1,5 @@
 # About
 
 
-Web ini dibuat sebagai catatan belajar saya selama belajar di SMK dan belajar secara otodidak.
-
-Web ini dibuat dengan SSG(Static Site Generator), [Hugo](https://gohugo.io)
+Pelajar abadi....
 
