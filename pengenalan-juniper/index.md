@@ -32,7 +32,7 @@ Junos OS digunakan di semua produk Juniper mulai dari Router,Switch, dan Firewal
 
 ## Routing Engine(RE) & Packet Forwarding Engine (PFE)
 
-[/img/repfe.png]
+![RePFe](/img/repfe.png "RE & PFE")
 
 ## Perangkat Juniper
 
@@ -56,6 +56,7 @@ Junos OS digunakan di semua produk Juniper mulai dari Router,Switch, dan Firewal
 ## Juniper Certification
 
 [/img/jnp-learn-path.png]
+![learn-path](/img/jnp-learn-path.png "Juniper Certification")
 
 
 
