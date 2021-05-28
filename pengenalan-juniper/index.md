@@ -61,4 +61,5 @@ Junos OS digunakan di semua produk Juniper mulai dari Router,Switch, dan Firewal
 
 * https://learningportal.juniper.net/
 * https://packetsanalyzed.blogspot.com/2011/06/junos-control-and-forwarding-plane.html
+* https://id.wikipedia.org/wiki/Juniper_Networks
 
