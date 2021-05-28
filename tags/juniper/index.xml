@@ -1,10 +1,10 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>jaringan - Category - Hemmm</title>
-        <link>https://aryapramudika.github.io/categories/jaringan/</link>
-        <description>jaringan - Category - Hemmm</description>
+        <title>Juniper - Tag - Hemmm</title>
+        <link>https://aryapramudika.github.io/tags/juniper/</link>
+        <description>Juniper - Tag - Hemmm</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>aryapramudika1@gmail.com (Arya Pramudika)</managingEditor>
-            <webMaster>aryapramudika1@gmail.com (Arya Pramudika)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 28 May 2021 22:18:58 &#43;0700</lastBuildDate><atom:link href="https://aryapramudika.github.io/categories/jaringan/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>aryapramudika1@gmail.com (Arya Pramudika)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 28 May 2021 22:18:58 &#43;0700</lastBuildDate><atom:link href="https://aryapramudika.github.io/tags/juniper/" rel="self" type="application/rss+xml" /><item>
     <title>Pengenalan Juniper</title>
     <link>https://aryapramudika.github.io/pengenalan-juniper/</link>
     <pubDate>Fri, 28 May 2021 22:18:58 &#43;0700</pubDate>

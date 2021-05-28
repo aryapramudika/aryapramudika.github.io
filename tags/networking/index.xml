@@ -4,7 +4,17 @@
         <link>https://aryapramudika.github.io/tags/networking/</link>
         <description>Networking - Tag - Hemmm</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>aryapramudika1@gmail.com (Arya Pramudika)</managingEditor>
-            <webMaster>aryapramudika1@gmail.com (Arya Pramudika)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Wed, 27 Jan 2021 15:18:22 &#43;0700</lastBuildDate><atom:link href="https://aryapramudika.github.io/tags/networking/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>aryapramudika1@gmail.com (Arya Pramudika)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 28 May 2021 22:18:58 &#43;0700</lastBuildDate><atom:link href="https://aryapramudika.github.io/tags/networking/" rel="self" type="application/rss+xml" /><item>
+    <title>Pengenalan Juniper</title>
+    <link>https://aryapramudika.github.io/pengenalan-juniper/</link>
+    <pubDate>Fri, 28 May 2021 22:18:58 &#43;0700</pubDate>
+    <author>Author</author>
+    <guid>https://aryapramudika.github.io/pengenalan-juniper/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/img/thumb/juniper-pengenalan.png" referrerpolicy="no-referrer">
+            </div>Apa itu Juniper? Juniper Networks, Inc. adalah perusahaan Teknologi Informasi yang bermarkas di Sunnyvale, California. Perusahaan ini mendesain dan menjual layanan dan perangkat-perangkat jaringan IP (Internet Protocol). Juniper juga bekerjasama dengan Nokia Siemens Networks, Ericsson, dan Alcatel-Lucent dalam menyediakan solusi jaringan IP/MPLS (Multiprotocol Label Switching) bagi pelanggan.
+Produk Juniper terdiri atas keluarga router T-series, M-series, E-series, MX-series, dan J-series, Switch ethernet EX-series, perangkat optimasi WAN WX-series, dan perangkat Session &amp; Resource Control (SRC).]]></description>
+</item><item>
     <title>Installasi GNS3 Di Arch Linux/Based</title>
     <link>https://aryapramudika.github.io/installasi-gns3-di-arch-linux/</link>
     <pubDate>Wed, 27 Jan 2021 15:18:22 &#43;0700</pubDate>

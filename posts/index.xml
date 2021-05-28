@@ -4,7 +4,17 @@
         <link>https://aryapramudika.github.io/posts/</link>
         <description>All Posts | Hemmm</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>aryapramudika1@gmail.com (Arya Pramudika)</managingEditor>
-            <webMaster>aryapramudika1@gmail.com (Arya Pramudika)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 25 May 2021 18:41:22 &#43;0700</lastBuildDate><atom:link href="https://aryapramudika.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>aryapramudika1@gmail.com (Arya Pramudika)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 28 May 2021 22:18:58 &#43;0700</lastBuildDate><atom:link href="https://aryapramudika.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Pengenalan Juniper</title>
+    <link>https://aryapramudika.github.io/pengenalan-juniper/</link>
+    <pubDate>Fri, 28 May 2021 22:18:58 &#43;0700</pubDate>
+    <author>Author</author>
+    <guid>https://aryapramudika.github.io/pengenalan-juniper/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/img/thumb/juniper-pengenalan.png" referrerpolicy="no-referrer">
+            </div>Apa itu Juniper? Juniper Networks, Inc. adalah perusahaan Teknologi Informasi yang bermarkas di Sunnyvale, California. Perusahaan ini mendesain dan menjual layanan dan perangkat-perangkat jaringan IP (Internet Protocol). Juniper juga bekerjasama dengan Nokia Siemens Networks, Ericsson, dan Alcatel-Lucent dalam menyediakan solusi jaringan IP/MPLS (Multiprotocol Label Switching) bagi pelanggan.
+Produk Juniper terdiri atas keluarga router T-series, M-series, E-series, MX-series, dan J-series, Switch ethernet EX-series, perangkat optimasi WAN WX-series, dan perangkat Session &amp; Resource Control (SRC).]]></description>
+</item><item>
     <title>Membangun Router Sederhana dengan OpenBSD</title>
     <link>https://aryapramudika.github.io/openbsd-router/</link>
     <pubDate>Tue, 25 May 2021 18:41:22 &#43;0700</pubDate>
