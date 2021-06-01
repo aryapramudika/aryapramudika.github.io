@@ -33,7 +33,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/aryapramudika.github.io\/juniper-cli\/"
-        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Juniper, Networking","wordcount":  231 ,
+        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Juniper, Networking","wordcount":  242 ,
         "url": "https:\/\/aryapramudika.github.io\/juniper-cli\/","datePublished": "2021-06-01T18:36:32+07:00","dateModified": "2021-06-01T18:36:32+07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/aryapramudika.github.io\/images\/avatar.png"},"author": {
@@ -110,16 +110,16 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Basic Configuration Juniper</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Arya Pramudika</a></span>&nbsp;<span class="post-category">included in <a href="/categories/jaringan/"><i class="far fa-folder fa-fw"></i>Jaringan</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-06-01">2021-06-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;231 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-06-01">2021-06-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;242 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;2 minutes&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
         src="/svg/loading.min.svg"
-        data-src="/img/thumb/juniper-basic-cli.png"
-        data-srcset="/img/thumb/juniper-basic-cli.png, /img/thumb/juniper-basic-cli.png 1.5x, /img/thumb/juniper-basic-cli.png 2x"
+        data-src="/img/thumb/juniper-configuration.png"
+        data-srcset="/img/thumb/juniper-configuration.png, /img/thumb/juniper-configuration.png 1.5x, /img/thumb/juniper-configuration.png 2x"
         data-sizes="auto"
-        alt="/img/thumb/juniper-basic-cli.png"
-        title="/img/thumb/juniper-basic-cli.png" /></div><div class="details toc" id="toc-static"  kept="">
+        alt="/img/thumb/juniper-configuration.png"
+        title="/img/thumb/juniper-configuration.png" /></div><div class="details toc" id="toc-static"  kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
                     <span><i class="details-icon fas fa-angle-right"></i></span>
@@ -157,6 +157,7 @@
         <li><a href="#ntp-server">NTP Server</a></li>
       </ul>
     </li>
+    <li><a href="#konfigurasi-ssh">Konfigurasi SSH</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h2 id="candidate--active-configuration">Candidate &amp; Active Configuration</h2>
@@ -348,6 +349,17 @@ Tue Jun  <span class="m">1</span> 19:15:00 WIT <span class="m">2021</span>
 <td class="lntd">
 <pre class="chroma"><code class="language-Shell" data-lang="Shell">root@Juniper-R2# <span class="nb">set</span> system ntp server 162.159.200.1 
 root@Juniper-R2# commit 
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="konfigurasi-ssh">Konfigurasi SSH</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Shell" data-lang="Shell">root@Juniper-R2# <span class="nb">set</span> system services ssh
+root@Juniper-R2# commit
 </code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">

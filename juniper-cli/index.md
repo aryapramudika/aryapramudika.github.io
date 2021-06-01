@@ -123,5 +123,12 @@ root@Juniper-R2# set system ntp server 162.159.200.1
 root@Juniper-R2# commit 
 ```
 
+## Konfigurasi SSH
+
+```Shell
+root@Juniper-R2# set system services ssh
+root@Juniper-R2# commit
+```
+
 
 
