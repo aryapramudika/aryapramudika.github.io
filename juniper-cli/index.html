@@ -6,7 +6,7 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>Basic Juniper CLI - Hemmm</title><meta name="Description" content="About LoveIt Theme"><meta property="og:title" content="Basic Juniper CLI" />
-<meta property="og:description" content="Konfigurasi Hostname 1 2 3  root@Juniper-R1# set system host-name Juniper-R2 root@Juniper-R1# commit root@Juniper-R2#   Konfigurasi Root Password 1 2 3 4  root@Juniper-R2# set system root-authentication plain-text-password New password: Retype new password: root@Juniper-R2#   " />
+<meta property="og:description" content="Konfigurasi Hostname 1 2 3  root@Juniper-R1# set system host-name Juniper-R2 root@Juniper-R1# commit root@Juniper-R2#   Konfigurasi Root Password 1 2 3 4  root@Juniper-R2# set system root-authentication plain-text-password New password: Retype new password: root@Juniper-R2#   Menambah user baru 1 2 3 4  root@Juniper-R2#set system login user pramudika class super-user authentication plain-text-password New password: Retype new password: root@Juniper-R2#   " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://aryapramudika.github.io/juniper-cli/" /><meta property="og:image" content="https://aryapramudika.github.io"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-06-01T18:36:32&#43;07:00" />
@@ -16,7 +16,7 @@
 <meta name="twitter:image" content="https://aryapramudika.github.io"/>
 
 <meta name="twitter:title" content="Basic Juniper CLI"/>
-<meta name="twitter:description" content="Konfigurasi Hostname 1 2 3  root@Juniper-R1# set system host-name Juniper-R2 root@Juniper-R1# commit root@Juniper-R2#   Konfigurasi Root Password 1 2 3 4  root@Juniper-R2# set system root-authentication plain-text-password New password: Retype new password: root@Juniper-R2#   "/>
+<meta name="twitter:description" content="Konfigurasi Hostname 1 2 3  root@Juniper-R1# set system host-name Juniper-R2 root@Juniper-R1# commit root@Juniper-R2#   Konfigurasi Root Password 1 2 3 4  root@Juniper-R2# set system root-authentication plain-text-password New password: Retype new password: root@Juniper-R2#   Menambah user baru 1 2 3 4  root@Juniper-R2#set system login user pramudika class super-user authentication plain-text-password New password: Retype new password: root@Juniper-R2#   "/>
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -29,7 +29,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/aryapramudika.github.io\/juniper-cli\/"
-        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Juniper, Networking","wordcount":  31 ,
+        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Juniper, Networking","wordcount":  53 ,
         "url": "https:\/\/aryapramudika.github.io\/juniper-cli\/","datePublished": "2021-06-01T18:36:32+07:00","dateModified": "2021-06-01T18:36:32+07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/aryapramudika.github.io\/images\/avatar.png"},"author": {
@@ -106,7 +106,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Basic Juniper CLI</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Arya Pramudika</a></span>&nbsp;<span class="post-category">included in <a href="/categories/jaringan/"><i class="far fa-folder fa-fw"></i>jaringan</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-06-01">2021-06-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;31 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-06-01">2021-06-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;53 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
@@ -124,6 +124,7 @@
   <ul>
     <li><a href="#konfigurasi-hostname">Konfigurasi Hostname</a></li>
     <li><a href="#konfigurasi-root-password">Konfigurasi Root Password</a></li>
+    <li><a href="#menambah-user-baru">Menambah user baru</a></li>
   </ul>
 </nav></div>
             </div><div class="content" id="content"><h2 id="konfigurasi-hostname">Konfigurasi Hostname</h2>
@@ -134,7 +135,7 @@
 </span><span class="lnt">3
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Shell" data-lang="Shell">root@Juniper-R1# <span class="nb">set</span> system host-name Juniper-R2
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">root@Juniper-R1# set system host-name Juniper-R2
 root@Juniper-R1# commit 
 root@Juniper-R2#
 </code></pre></td></tr></table>
@@ -148,7 +149,22 @@ root@Juniper-R2#
 </span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-Shell" data-lang="Shell">root@Juniper-R2# <span class="nb">set</span> system root-authentication plain-text-password    
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">root@Juniper-R2# set system root-authentication plain-text-password    
+New password:
+Retype new password:
+root@Juniper-R2#
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="menambah-user-baru">Menambah user baru</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">root@Juniper-R2#set system login user pramudika class super-user authentication plain-text-password 
 New password:
 Retype new password:
 root@Juniper-R2#
