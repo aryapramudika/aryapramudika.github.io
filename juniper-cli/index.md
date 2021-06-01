@@ -95,5 +95,31 @@ rollback 1
 commit
 ```
 
+## Konfigurasi Waktu 
+
+Melihat waktu
+
+```Shell
+run show system uptime
+```
+
+### Konfigurasi Zona Waktu
+```Shell
+root@Juniper-R2# set system time-zone Asia/Jakarta 
+root@Juniper-R2# commit
+```
+ 
+### Manual
+```Shell
+root@Juniper-R2# run set date "202106011915.00" 
+Tue Jun  1 19:15:00 WIT 2021
+```
+### NTP Server
+Dengan Alamat NTP id.pool.ntp.org
+```Shell
+root@Juniper-R2# set system ntp server 162.159.200.1 
+root@Juniper-R2# commit 
+```
+
 
 
