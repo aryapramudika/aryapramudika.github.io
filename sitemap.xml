@@ -2,19 +2,21 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://aryapramudika.github.io/categories/</loc><lastmod>2021-05-28T22:18:58&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://aryapramudika.github.io/</loc><lastmod>2021-05-28T22:18:58&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://aryapramudika.github.io/categories/jaringan/</loc><lastmod>2021-05-28T22:18:58&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://aryapramudika.github.io/tags/juniper/</loc><lastmod>2021-05-28T22:18:58&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://aryapramudika.github.io/tags/networking/</loc><lastmod>2021-05-28T22:18:58&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://aryapramudika.github.io/juniper-cli/</loc><lastmod>2021-06-01T18:36:32&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://aryapramudika.github.io/categories/</loc><lastmod>2021-06-01T18:36:32&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://aryapramudika.github.io/</loc><lastmod>2021-06-01T18:36:32&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://aryapramudika.github.io/categories/jaringan/</loc><lastmod>2021-06-01T18:36:32&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://aryapramudika.github.io/tags/juniper/</loc><lastmod>2021-06-01T18:36:32&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://aryapramudika.github.io/tags/networking/</loc><lastmod>2021-06-01T18:36:32&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://aryapramudika.github.io/posts/</loc><lastmod>2021-06-01T18:36:32&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://aryapramudika.github.io/tags/</loc><lastmod>2021-06-01T18:36:32&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://aryapramudika.github.io/basic-cli-juniper/</loc><lastmod>2021-05-29T16:09:37&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
             <loc>https://aryapramudika.github.io/pengenalan-juniper/</loc><lastmod>2021-05-28T22:18:58&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://aryapramudika.github.io/posts/</loc><lastmod>2021-05-28T22:18:58&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://aryapramudika.github.io/tags/</loc><lastmod>2021-05-28T22:18:58&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://aryapramudika.github.io/tags/bsd/</loc><lastmod>2021-05-25T18:41:22&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://aryapramudika.github.io/categories/bsd/</loc><lastmod>2021-05-25T18:41:22&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://aryapramudika.github.io/openbsd-router/</loc><lastmod>2021-05-25T18:41:22&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://aryapramudika.github.io/tags/openbsd/</loc><lastmod>2021-05-25T18:41:22&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>https://aryapramudika.github.io/tags/router/</loc><lastmod>2021-05-25T18:41:22&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://aryapramudika.github.io/tags/bsd/</loc><lastmod>2021-05-25T18:41:22&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://aryapramudika.github.io/categories/bsd/</loc><lastmod>2021-05-25T18:41:22&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://aryapramudika.github.io/openbsd-router/</loc><lastmod>2021-05-25T18:41:22&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://aryapramudika.github.io/tags/openbsd/</loc><lastmod>2021-05-25T18:41:22&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
+            <loc>https://aryapramudika.github.io/tags/router/</loc><lastmod>2021-05-25T18:41:22&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url><url>
             <loc>https://aryapramudika.github.io/installasi-packettracer-di-arch-linux/</loc><lastmod>2021-01-28T13:09:36&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://aryapramudika.github.io/tags/arch/</loc><lastmod>2021-01-27T15:18:22&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
             <loc>https://aryapramudika.github.io/installasi-gns3-di-arch-linux/</loc><lastmod>2021-01-27T15:18:22&#43;07:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>

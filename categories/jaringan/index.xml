@@ -4,7 +4,28 @@
         <link>https://aryapramudika.github.io/categories/jaringan/</link>
         <description>jaringan - Category - Hemmm</description>
         <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>aryapramudika1@gmail.com (Arya Pramudika)</managingEditor>
-            <webMaster>aryapramudika1@gmail.com (Arya Pramudika)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Fri, 28 May 2021 22:18:58 &#43;0700</lastBuildDate><atom:link href="https://aryapramudika.github.io/categories/jaringan/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>aryapramudika1@gmail.com (Arya Pramudika)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Tue, 01 Jun 2021 18:36:32 &#43;0700</lastBuildDate><atom:link href="https://aryapramudika.github.io/categories/jaringan/" rel="self" type="application/rss+xml" /><item>
+    <title>Basic Juniper CLI</title>
+    <link>https://aryapramudika.github.io/juniper-cli/</link>
+    <pubDate>Tue, 01 Jun 2021 18:36:32 &#43;0700</pubDate>
+    <author>Author</author>
+    <guid>https://aryapramudika.github.io/juniper-cli/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/img/thumb/juniper-pengenalan.png" referrerpolicy="no-referrer">
+            </div>Konfigurasi Hostname 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20  [edit] root@Juniper-R1# set system host-name Juniper-R2 [edit] root@Juniper-R1# commit commit complete [edit] root@Juniper-R2#``` ## Konfigurasi Root Password ```Console [edit] root@Juniper-R2# set system root-authentication plain-text-password New password: Retype new password: [edit] root@Juniper-R2#   ]]></description>
+</item><item>
+    <title>Basic Cli Juniper</title>
+    <link>https://aryapramudika.github.io/basic-cli-juniper/</link>
+    <pubDate>Sat, 29 May 2021 16:09:37 &#43;0700</pubDate>
+    <author>Author</author>
+    <guid>https://aryapramudika.github.io/basic-cli-juniper/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/img/thumb/juniper-pengenalan.png" referrerpolicy="no-referrer">
+            </div>User Default Login user = root password =
+Unix Mode Kita bisa mengoperasikan perintah-perintah UNIX(FreeBSD) di mode ini misal untuk pindah direktori dll. ditandai de
+Operational Mode Dengan menggunakan perintah
+1  cli   ]]></description>
+</item><item>
     <title>Pengenalan Juniper</title>
     <link>https://aryapramudika.github.io/pengenalan-juniper/</link>
     <pubDate>Fri, 28 May 2021 22:18:58 &#43;0700</pubDate>
