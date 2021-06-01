@@ -88,7 +88,7 @@ root@Juniper-R2>
 ```
 ### Rollback
 
-Mengembalikan konfigurasi awal sebelum di commit, nomor commit bisa dilihat di **run show system commit***
+Mengembalikan konfigurasi awal sebelum di commit, nomor commit bisa dilihat di **run show system commit**
 
 ```Shell
 rollback 1
