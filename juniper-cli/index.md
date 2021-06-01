@@ -20,8 +20,8 @@ root@Juniper-R2#run show configuration
 ## Konfigurasi Hostname
 
 ```Shell
-root@Juniper-R1# set system host-name Juniper-R2
-root@Juniper-R1# commit 
+root@Juniper-R2## set system host-name Juniper-R2
+root@Juniper-R2#commit 
 root@Juniper-R2#
 ```
 
