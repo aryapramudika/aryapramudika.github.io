@@ -18,18 +18,6 @@
 1  root@Juniper-R2# show   Active Active konfigurasi adalah konfigurasi yang sedang berjalan atau setelah di commit
 1  root@Juniper-R2#run show configuration   Konfigurasi Hostname 1 2 3  root@Juniper-R2## set system host-name Juniper-R2 root@Juniper-R2#commit root@Juniper-R2#   Konfigurasi Root Password 1 2 3 4  root@Juniper-R2# set system root-authentication plain-text-password New password: Retype new password: root@Juniper-R2#   Manajemen User Menambah User Baru 1 2 3 4  root@Juniper-R2#set system login user pramudika class super-user authentication plain-text-password New password: Retype new password: root@Juniper-R2#   Menghapus User Baru 1 2 3  root@Juniper-R2# delete system login user pramudika root@Juniper-R2# commit commit complete   Commit Commit biasa 1  root@Juniper-R2#commit   Commit dengan Komentar 1  root@Juniper-R2#commit comment &#34;Menambahkan IP di em2&#34;   Commit di jam tertentu 1  root@Juniper-R2#commit at &#34;2021-01-01 19:02:00&#34;   Commit check(Mengecek konfigurasi sudah benar atau ada yang salah) 1 2  root@Juniper-R2# commit check configuration check succeeds   Commit&amp;Quit 1 2 3 4 5  root@Juniper-R2# commit and-quit commit complete Exiting configuration mode root@Juniper-R2&gt;   Rollback Mengembalikan konfigurasi awal sebelum di commit, nomor commit bisa dilihat di]]></description>
 </item><item>
-    <title>Basic Cli Juniper</title>
-    <link>https://aryapramudika.github.io/basic-cli-juniper/</link>
-    <pubDate>Sat, 29 May 2021 16:09:37 &#43;0700</pubDate>
-    <author>Author</author>
-    <guid>https://aryapramudika.github.io/basic-cli-juniper/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/img/thumb/juniper-pengenalan.png" referrerpolicy="no-referrer">
-            </div>User Default Login user = root password =
-Unix Mode Kita bisa mengoperasikan perintah-perintah UNIX(FreeBSD) di mode ini misal untuk pindah direktori dll. ditandai de
-Operational Mode Dengan menggunakan perintah
-1  cli   ]]></description>
-</item><item>
     <title>Pengenalan Juniper</title>
     <link>https://aryapramudika.github.io/pengenalan-juniper/</link>
     <pubDate>Fri, 28 May 2021 22:18:58 &#43;0700</pubDate>
