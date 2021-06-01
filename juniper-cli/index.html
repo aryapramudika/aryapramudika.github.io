@@ -6,7 +6,9 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title>Basic Juniper CLI - Hemmm</title><meta name="Description" content="About LoveIt Theme"><meta property="og:title" content="Basic Juniper CLI" />
-<meta property="og:description" content="Konfigurasi Hostname 1 2 3  root@Juniper-R1# set system host-name Juniper-R2 root@Juniper-R1# commit root@Juniper-R2#   Konfigurasi Root Password 1 2 3 4  root@Juniper-R2# set system root-authentication plain-text-password New password: Retype new password: root@Juniper-R2#   Menambah user baru 1 2 3 4  root@Juniper-R2#set system login user pramudika class super-user authentication plain-text-password New password: Retype new password: root@Juniper-R2#   " />
+<meta property="og:description" content="Candidate &amp; Active Configuration Candidate Candidate konfigurasi adalah konfigurasi yang kita lakukan sebelum commit
+1  root@Juniper-R2# show   Active Active konfigurasi adalah konfigurasi yang sedang berjalan atau setelah di commit
+1  root@Juniper-R2#run show configuration   Konfigurasi Hostname 1 2 3  root@Juniper-R1# set system host-name Juniper-R2 root@Juniper-R1# commit root@Juniper-R2#   Konfigurasi Root Password 1 2 3 4  root@Juniper-R2# set system root-authentication plain-text-password New password: Retype new password: root@Juniper-R2#   Manajemen User Menambah User Baru 1 2 3 4  root@Juniper-R2#set system login user pramudika class super-user authentication plain-text-password New password: Retype new password: root@Juniper-R2#   Menghapus User Baru 1 2 3  root@Juniper-R2# delete system login user pramudika root@Juniper-R2# commit commit complete   Commit Commit biasa 1  root@Juniper-R2#commit   Commit dengan Komentar 1  root@Juniper-R2#commit comment &#34;Menambahkan IP di em2&#34;   Commit di jam tertentu 1  root@Juniper-R2#commit at &#34;2021-01-01 19:02:00&#34;   Commit check(Mengecek konfigurasi sudah benar atau ada yang salah) 1 2  root@Juniper-R2# commit check configuration check succeeds   Commit&amp;Quit 1 2 3 4 5  root@Juniper-R2# commit and-quit commit complete Exiting configuration mode root@Juniper-R2&gt;   Rollback Mengembalikan konfigurasi awal sebelum di commit, nomor commit bisa dilihat di run show system commit*" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://aryapramudika.github.io/juniper-cli/" /><meta property="og:image" content="https://aryapramudika.github.io"/><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-06-01T18:36:32&#43;07:00" />
@@ -16,7 +18,9 @@
 <meta name="twitter:image" content="https://aryapramudika.github.io"/>
 
 <meta name="twitter:title" content="Basic Juniper CLI"/>
-<meta name="twitter:description" content="Konfigurasi Hostname 1 2 3  root@Juniper-R1# set system host-name Juniper-R2 root@Juniper-R1# commit root@Juniper-R2#   Konfigurasi Root Password 1 2 3 4  root@Juniper-R2# set system root-authentication plain-text-password New password: Retype new password: root@Juniper-R2#   Menambah user baru 1 2 3 4  root@Juniper-R2#set system login user pramudika class super-user authentication plain-text-password New password: Retype new password: root@Juniper-R2#   "/>
+<meta name="twitter:description" content="Candidate &amp; Active Configuration Candidate Candidate konfigurasi adalah konfigurasi yang kita lakukan sebelum commit
+1  root@Juniper-R2# show   Active Active konfigurasi adalah konfigurasi yang sedang berjalan atau setelah di commit
+1  root@Juniper-R2#run show configuration   Konfigurasi Hostname 1 2 3  root@Juniper-R1# set system host-name Juniper-R2 root@Juniper-R1# commit root@Juniper-R2#   Konfigurasi Root Password 1 2 3 4  root@Juniper-R2# set system root-authentication plain-text-password New password: Retype new password: root@Juniper-R2#   Manajemen User Menambah User Baru 1 2 3 4  root@Juniper-R2#set system login user pramudika class super-user authentication plain-text-password New password: Retype new password: root@Juniper-R2#   Menghapus User Baru 1 2 3  root@Juniper-R2# delete system login user pramudika root@Juniper-R2# commit commit complete   Commit Commit biasa 1  root@Juniper-R2#commit   Commit dengan Komentar 1  root@Juniper-R2#commit comment &#34;Menambahkan IP di em2&#34;   Commit di jam tertentu 1  root@Juniper-R2#commit at &#34;2021-01-01 19:02:00&#34;   Commit check(Mengecek konfigurasi sudah benar atau ada yang salah) 1 2  root@Juniper-R2# commit check configuration check succeeds   Commit&amp;Quit 1 2 3 4 5  root@Juniper-R2# commit and-quit commit complete Exiting configuration mode root@Juniper-R2&gt;   Rollback Mengembalikan konfigurasi awal sebelum di commit, nomor commit bisa dilihat di run show system commit*"/>
 <meta name="application-name" content="LoveIt">
 <meta name="apple-mobile-web-app-title" content="LoveIt"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -29,7 +33,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/aryapramudika.github.io\/juniper-cli\/"
-        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Juniper, Networking","wordcount":  53 ,
+        },"image": ["https:\/\/aryapramudika.github.io\/images\/Apple-Devices-Preview.png"],"genre": "posts","keywords": "Juniper, Networking","wordcount":  181 ,
         "url": "https:\/\/aryapramudika.github.io\/juniper-cli\/","datePublished": "2021-06-01T18:36:32+07:00","dateModified": "2021-06-01T18:36:32+07:00","license": "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher": {
             "@type": "Organization",
             "name": "xxxx","logo": "https:\/\/aryapramudika.github.io\/images\/avatar.png"},"author": {
@@ -106,7 +110,7 @@
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animated flipInX">Basic Juniper CLI</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>Arya Pramudika</a></span>&nbsp;<span class="post-category">included in <a href="/categories/jaringan/"><i class="far fa-folder fa-fw"></i>jaringan</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-06-01">2021-06-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;53 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime="2021-06-01">2021-06-01</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;181 words&nbsp;
                 <i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
         </div><div class="featured-image"><img
         class="lazyload"
@@ -122,12 +126,54 @@
                 </div>
                 <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
   <ul>
+    <li><a href="#candidate--active-configuration">Candidate &amp; Active Configuration</a>
+      <ul>
+        <li><a href="#candidate">Candidate</a></li>
+        <li><a href="#active">Active</a></li>
+      </ul>
+    </li>
     <li><a href="#konfigurasi-hostname">Konfigurasi Hostname</a></li>
     <li><a href="#konfigurasi-root-password">Konfigurasi Root Password</a></li>
-    <li><a href="#menambah-user-baru">Menambah user baru</a></li>
+    <li><a href="#manajemen-user">Manajemen User</a>
+      <ul>
+        <li><a href="#menambah-user-baru">Menambah User Baru</a></li>
+        <li><a href="#menghapus-user-baru">Menghapus User Baru</a></li>
+      </ul>
+    </li>
+    <li><a href="#commit">Commit</a>
+      <ul>
+        <li><a href="#commit-biasa">Commit biasa</a></li>
+        <li><a href="#commit-dengan-komentar">Commit dengan Komentar</a></li>
+        <li><a href="#commit-di-jam-tertentu">Commit di jam tertentu</a></li>
+        <li><a href="#commit-checkmengecek-konfigurasi-sudah-benar-atau-ada-yang-salah">Commit check(Mengecek konfigurasi sudah benar atau ada yang salah)</a></li>
+        <li><a href="#commitquit">Commit&amp;Quit</a></li>
+        <li><a href="#rollback">Rollback</a></li>
+      </ul>
+    </li>
   </ul>
 </nav></div>
-            </div><div class="content" id="content"><h2 id="konfigurasi-hostname">Konfigurasi Hostname</h2>
+            </div><div class="content" id="content"><h2 id="candidate--active-configuration">Candidate &amp; Active Configuration</h2>
+<h3 id="candidate">Candidate</h3>
+<p>Candidate konfigurasi adalah konfigurasi yang kita lakukan sebelum commit</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Shell" data-lang="Shell">root@Juniper-R2# show
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="active">Active</h3>
+<p>Active konfigurasi adalah konfigurasi yang sedang berjalan atau setelah di commit</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Shell" data-lang="Shell">root@Juniper-R2#run show configuration
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="konfigurasi-hostname">Konfigurasi Hostname</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -155,7 +201,8 @@ Retype new password:
 root@Juniper-R2#
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="menambah-user-baru">Menambah user baru</h2>
+</div><h2 id="manajemen-user">Manajemen User</h2>
+<h3 id="menambah-user-baru">Menambah User Baru</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -168,6 +215,87 @@ root@Juniper-R2#
 New password:
 Retype new password:
 root@Juniper-R2#
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="menghapus-user-baru">Menghapus User Baru</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Shell" data-lang="Shell">root@Juniper-R2# delete system login user pramudika 
+root@Juniper-R2# commit 
+commit <span class="nb">complete</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="commit">Commit</h2>
+<h3 id="commit-biasa">Commit biasa</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Shell" data-lang="Shell">root@Juniper-R2#commit
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="commit-dengan-komentar">Commit dengan Komentar</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Shell" data-lang="Shell">root@Juniper-R2#commit comment <span class="s2">&#34;Menambahkan IP di em2&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="commit-di-jam-tertentu">Commit di jam tertentu</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Shell" data-lang="Shell">root@Juniper-R2#commit at <span class="s2">&#34;2021-01-01 19:02:00&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="commit-checkmengecek-konfigurasi-sudah-benar-atau-ada-yang-salah">Commit check(Mengecek konfigurasi sudah benar atau ada yang salah)</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Shell" data-lang="Shell">root@Juniper-R2# commit check 
+configuration check succeeds
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="commitquit">Commit&amp;Quit</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Shell" data-lang="Shell">root@Juniper-R2# commit and-quit 
+commit <span class="nb">complete</span>
+Exiting configuration mode
+
+root@Juniper-R2&gt; 
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="rollback">Rollback</h3>
+<p>Mengembalikan konfigurasi awal sebelum di commit, nomor commit bisa dilihat di <strong>run show system commit</strong>*</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-Shell" data-lang="Shell">rollback <span class="m">1</span>
+commit
 </code></pre></td></tr></table>
 </div>
 </div></div><div class="post-footer" id="post-footer">
